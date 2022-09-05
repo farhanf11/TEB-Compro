@@ -78,245 +78,1342 @@
                 menu.classList.toggle("hidden");
             });
         </script>
-    </nav>  
+      </nav>  
 
-    <div class="mt-10 sm:mt-0">
-        <div class="md:grid md:grid-cols-2 md:gap-6">
-          <div class="mt-5 md:mt-0 md:col-span-2">
-            <form action="#" method="POST">
-              <div class="overflow-hidden">
-                <div class="px-4 py-5 bg-white sm:p-6">
-                  <h2 class="mt-10 font-bold text-2xl mb-5">Form Materials Paket Standard</h2>
-                  <!-- uraian material 1-->
-                  <div class="grid grid-cols-12 gap-6">  
-                    <!-- no urut -->
-                    <div class="md:col-span-2 col-span-4">
-                      <label for="kabel" class="block text-sm font-medium text-gray-700">
-                        Kabel
-                      </label>
-                      <input disabled 
-                        type="text"
-                        id="kabel" 
-                        name="kabel" 
-                        autocomplete="kabel" 
-                        value="NYY 4x10" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal 
-                        text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
-                        rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
-                        focus:border-blue-600 focus:outline-none"
-                      >
-                    </div>
-
-                    <!-- qty -->
-                    <div class="md:col-span-2 col-span-4">
-                      <label for="Qty" class="block text-sm font-medium text-gray-700">
-                        Qty
-                      </label>
-                      <input disabled 
-                        type="text"
-                        id="Qty" 
-                        name="Qty" 
-                        autocomplete="Qty" 
-                        value="5" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal 
-                        text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
-                        rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
-                        focus:border-blue-600 focus:outline-none"
-                      >
-                    </div>
-                    
-                    <!-- deskripsi -->
-                    <div class="md:col-span-2 col-span-4">
-                      <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                        Satuan
-                      </label>
-                      <input type="text" name="costumer_name" id="costumer_name" 
-                        autocomplete="given-name" 
-                        value="10" disabled
-                        class="form-control block w-full px-3 py-1.5 text-base 
-                        font-normal text-gray-700 bg-white bg-clip-padding border 
-                        border-solid border-gray-300 rounded transition ease-in-out 
-                        m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
-                        focus:outline-none"
-                      >
-                    </div>
-
-                    <!-- up foto -->
-                    <div class="md:col-span-4 col-span-6">
-                        <div class="flex justify-center">
-                            <div class="mb-3 w-96">
-                              <label for="country" class="block text-sm font-medium text-gray-700">Value Upload</label>
-                              <input class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" type="file" id="formFileMultiple" multiple>
-                            </div>
+      <div class="mt-10 sm:mt-0">
+          <div class="md:grid md:grid-cols-2 md:gap-6">
+            <div class="mt-5 md:mt-0 md:col-span-2">
+              <form action="#" method="POST">
+                <div class="overflow-hidden">
+                  <!-- card 1 -->
+                  <div class="py-6 px-40">
+                    <h2 class="font-bold text-2xl mb-5">Form Materials</h2>
+                    <div class="border-1 md:py-5 rounded px-5 shadow bg-white">
+                      <div class="md:px-24 px-5"></div>
+                        <label for="kabel" class="block text-sm font-medium text-gray-700 font-semibold md:text-xl mb-2">
+                          Kabel (NYY 4x10)
+                        </label>
+                        <!-- uraian paket standard-->
+                        <div class="grid grid-cols-12 gap-6"> 
+                          <!-- qty -->
+                          <div class="md:col-span-2 col-span-4">
+                            <label for="Qty" class="block text-sm font-medium text-gray-700">
+                              Qty
+                            </label>
+                            <input disabled 
+                              type="text"
+                              id="Qty" 
+                              name="Qty" 
+                              autocomplete="Qty" 
+                              value="5" 
+                              class="form-control block w-full px-3 py-1.5 text-base font-normal 
+                              text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
+                              rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
+                              focus:border-blue-600 focus:outline-none"
+                            >
                           </div>
                           
-                          <!-- Custom scripts -->
-                          <script type="text/javascript">
-                            const checkbox = document.getElementById("flexCheckIndeterminate");
-                            checkbox.indeterminate = true;
-                          </script>
-                    </div>
-                    
-                    <!-- satuan -->
-                    <div class="md:col-span-5 col-span-6">
-                      <label for="number" class="block text-sm font-medium text-gray-700">Satuan</label>
-                      <input type="text" 
-                        id="satuan" 
-                        name="satuan" 
-                        autocomplete="satuan" 
-                        placeholder="A" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                      >
-                    </div>
+                          <!-- deskripsi -->
+                          <div class="md:col-span-2 col-span-4">
+                            <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                              Satuan
+                            </label>
+                            <input type="text" name="costumer_name" id="costumer_name" 
+                              autocomplete="given-name" 
+                              value="10" disabled
+                              class="form-control block w-full px-3 py-1.5 text-base 
+                              font-normal text-gray-700 bg-white bg-clip-padding border 
+                              border-solid border-gray-300 rounded transition ease-in-out 
+                              m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                              focus:outline-none"
+                            >
+                          </div>
+                        </div>
+                        <!-- uraian paket tambahan-->
+                        <label for="kabel" class="block text-sm font-medium text-red-700 font-semibold mt-5 mb-2">
+                          Kabel NYY 4x10 (Tambahan)
+                        </label>
 
-                    <!-- Good / Not Good -->
-                    <div class="col-span-1 md:col-span-3">
-                      <label for="country" class="block text-sm font-medium text-gray-700">Status</label>
-                      <div class="flex justify-center">                         
-                        <div>
-                            <div class="form-check">
-                                <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label inline-block text-gray-800" for="flexCheckDefault">
-                                    OK
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="flexCheckChecked" checked>
-                                <label class="form-check-label inline-block text-gray-800" for="flexCheckChecked">
-                                    NG
-                                </label>
-                            </div>
-                        </div>  
-                    </div>
-                  
-                    <!-- Note -->
-                    <div class="md:col-span-4 col-span-3 mt-5 md:mt-0">
-                      <label for="costumer_name" class="block text-sm font-medium text-gray-700">Note</label>
-                      <input type="text" name="costumer_name" id="costumer_name" autocomplete="given-name" class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
+                        <!-- tambahan -->
+                        <div class="grid grid-cols-12 gap-6">              
+                        <!-- qty -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="Qty" class="block text-sm font-medium text-gray-700">
+                            Qty
+                          </label>
+                          <input 
+                            type="number"
+                            id="Qty" 
+                            name="Qty" 
+                            autocomplete="Qty" 
+                            value="10" 
+                            class="form-control block w-full px-3 py-1.5 text-base font-normal 
+                            text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
+                            rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
+                            focus:border-blue-600 focus:outline-none"
+                          >
+                        </div>
+                        
+                        <!-- satuan -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Satuan
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="M" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+
+                        <!-- harga -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Harga (per satuan)
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="129,000" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+
+                        <!-- harga -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Harga Total
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="645,000" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <!-- ttd -->
-                  <div class="container">
-                    <div class="card">
-                        <div class="card-header">
-                            Form Tanda Tangan
+                  <!-- card 1 -->
+                  <div class="py-6 px-40">
+                    <h2 class="font-bold text-2xl mb-5">Form Materials</h2>
+                    <div class="border-1 md:py-5 rounded px-5 shadow bg-white">
+                      <div class="md:px-24 px-5"></div>
+                        <label for="kabel" class="block text-sm font-medium text-gray-700 font-semibold md:text-xl mb-2">
+                          Kabel (NYY 4x10)
+                        </label>
+                        <!-- uraian paket standard-->
+                        <div class="grid grid-cols-12 gap-6"> 
+                          <!-- qty -->
+                          <div class="md:col-span-2 col-span-4">
+                            <label for="Qty" class="block text-sm font-medium text-gray-700">
+                              Qty
+                            </label>
+                            <input disabled 
+                              type="text"
+                              id="Qty" 
+                              name="Qty" 
+                              autocomplete="Qty" 
+                              value="5" 
+                              class="form-control block w-full px-3 py-1.5 text-base font-normal 
+                              text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
+                              rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
+                              focus:border-blue-600 focus:outline-none"
+                            >
+                          </div>
+                          
+                          <!-- deskripsi -->
+                          <div class="md:col-span-2 col-span-4">
+                            <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                              Satuan
+                            </label>
+                            <input type="text" name="costumer_name" id="costumer_name" 
+                              autocomplete="given-name" 
+                              value="10" disabled
+                              class="form-control block w-full px-3 py-1.5 text-base 
+                              font-normal text-gray-700 bg-white bg-clip-padding border 
+                              border-solid border-gray-300 rounded transition ease-in-out 
+                              m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                              focus:outline-none"
+                            >
+                          </div>
                         </div>
-                        <div class="card-body">
-                            <!-- canvas tanda tangan  -->
-                            <canvas id="signature-pad" class="signature-pad"></canvas>
-            
-                            <!-- tombol submit  -->
-                            <div style="float: left;">
-                                <button id="btn-submit" class="btn btn-primary">
-                                    Submit
-                                </button>
-                            </div>
-            
-                            <div style="float: right;">
-                                <!-- tombol ganti warna  -->
-                                <button type="button" class="btn btn-success" id="change-color">
-                                    Change Color
-                                </button>
-            
-                                <!-- tombol undo  -->
-                                <button type="button" class="btn btn-dark" id="undo">
-                                    <span class="fas fa-undo"></span>
-                                    Undo
-                                </button>
-            
-                                <!-- tombol hapus tanda tangan  -->
-                                <button type="button" class="btn btn-danger" id="clear">
-                                    <span class="fas fa-eraser"></span>
-                                    Clear
-                                </button>
-                            </div>
+                        <!-- uraian paket tambahan-->
+                        <label for="kabel" class="block text-sm font-medium text-red-700 font-semibold mt-5 mb-2">
+                          Kabel NYY 4x10 (Tambahan)
+                        </label>
+
+                        <!-- tambahan -->
+                        <div class="grid grid-cols-12 gap-6">              
+                        <!-- qty -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="Qty" class="block text-sm font-medium text-gray-700">
+                            Qty
+                          </label>
+                          <input 
+                            type="number"
+                            id="Qty" 
+                            name="Qty" 
+                            autocomplete="Qty" 
+                            value="10" 
+                            class="form-control block w-full px-3 py-1.5 text-base font-normal 
+                            text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
+                            rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
+                            focus:border-blue-600 focus:outline-none"
+                          >
                         </div>
+                        
+                        <!-- satuan -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Satuan
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="M" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+
+                        <!-- harga -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Harga (per satuan)
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="129,000" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+
+                        <!-- harga -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Harga Total
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="645,000" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+                      </div>
                     </div>
-                </div>
-            
-                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
-                <script>
-                    // script di dalam ini akan dijalankan pertama kali saat dokumen dimuat
-                    document.addEventListener('DOMContentLoaded', function () {
-                        resizeCanvas();
-                    })
-            
-                    //script ini berfungsi untuk menyesuaikan tanda tangan dengan ukuran canvas
-                    function resizeCanvas() {
-                        var ratio = Math.max(window.devicePixelRatio || 1, 1);
-                        canvas.width = canvas.offsetWidth * ratio;
-                        canvas.height = canvas.offsetHeight * ratio;
-                        canvas.getContext("2d").scale(ratio, ratio);
-                    }
-            
-            
-                    var canvas = document.getElementById('signature-pad');
-            
-                    //warna dasar signaturepad
-                    var signaturePad = new SignaturePad(canvas, {
-                        backgroundColor: 'rgb(255, 255, 255)'
-                    });
-            
-                    //saat tombol clear diklik maka akan menghilangkan seluruh tanda tangan
-                    document.getElementById('clear').addEventListener('click', function () {
-                        signaturePad.clear();
-                    });
-            
-                    //saat tombol undo diklik maka akan mengembalikan tanda tangan sebelumnya
-                    document.getElementById('undo').addEventListener('click', function () {
-                        var data = signaturePad.toData();
-                        if (data) {
-                            data.pop(); // remove the last dot or line
-                            signaturePad.fromData(data);
-                        }
-                    });
-            
-                    //saat tombol change color diklik maka akan merubah warna pena
-                    document.getElementById('change-color').addEventListener('click', function () {
-            
-                        //jika warna pena biru maka buat menjadi hitam dan sebaliknya
-                        if(signaturePad.penColor == "rgba(0, 0, 255, 1)"){
-            
-                            signaturePad.penColor = "rgba(0, 0, 0, 1)";
-                        }else{
-                            signaturePad.penColor = "rgba(0, 0, 255, 1)";
-                        }
-                    })
-            
-                    //fungsi untuk menyimpan tanda tangan dengan metode ajax
-                    $(document).on('click', '#btn-submit', function () {
-                        var signature = signaturePad.toDataURL();
-            
-                        $.ajax({
-                            url: "proses.php",
-                            data: {
-                                foto: signature,
-                            },
-                            method: "POST",
-                            success: function () {
-                                location.reload();
-                                alert('Tanda Tangan Berhasil Disimpan');
-                            }
-            
-                        })
-                    })
-                </script>
-                <!-- ttd end -->
+                  </div>
 
-                <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
-                  <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                    Save
-                  </button>
+                  <!-- card 1 -->
+                  <div class="py-6 px-40">
+                    <h2 class="font-bold text-2xl mb-5">Form Materials</h2>
+                    <div class="border-1 md:py-5 rounded px-5 shadow bg-white">
+                      <div class="md:px-24 px-5"></div>
+                        <label for="kabel" class="block text-sm font-medium text-gray-700 font-semibold md:text-xl mb-2">
+                          Kabel (NYY 4x10)
+                        </label>
+                        <!-- uraian paket standard-->
+                        <div class="grid grid-cols-12 gap-6"> 
+                          <!-- qty -->
+                          <div class="md:col-span-2 col-span-4">
+                            <label for="Qty" class="block text-sm font-medium text-gray-700">
+                              Qty
+                            </label>
+                            <input disabled 
+                              type="text"
+                              id="Qty" 
+                              name="Qty" 
+                              autocomplete="Qty" 
+                              value="5" 
+                              class="form-control block w-full px-3 py-1.5 text-base font-normal 
+                              text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
+                              rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
+                              focus:border-blue-600 focus:outline-none"
+                            >
+                          </div>
+                          
+                          <!-- deskripsi -->
+                          <div class="md:col-span-2 col-span-4">
+                            <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                              Satuan
+                            </label>
+                            <input type="text" name="costumer_name" id="costumer_name" 
+                              autocomplete="given-name" 
+                              value="10" disabled
+                              class="form-control block w-full px-3 py-1.5 text-base 
+                              font-normal text-gray-700 bg-white bg-clip-padding border 
+                              border-solid border-gray-300 rounded transition ease-in-out 
+                              m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                              focus:outline-none"
+                            >
+                          </div>
+                        </div>
+                        <!-- uraian paket tambahan-->
+                        <label for="kabel" class="block text-sm font-medium text-red-700 font-semibold mt-5 mb-2">
+                          Kabel NYY 4x10 (Tambahan)
+                        </label>
+
+                        <!-- tambahan -->
+                        <div class="grid grid-cols-12 gap-6">              
+                        <!-- qty -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="Qty" class="block text-sm font-medium text-gray-700">
+                            Qty
+                          </label>
+                          <input 
+                            type="number"
+                            id="Qty" 
+                            name="Qty" 
+                            autocomplete="Qty" 
+                            value="10" 
+                            class="form-control block w-full px-3 py-1.5 text-base font-normal 
+                            text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
+                            rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
+                            focus:border-blue-600 focus:outline-none"
+                          >
+                        </div>
+                        
+                        <!-- satuan -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Satuan
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="M" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+
+                        <!-- harga -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Harga (per satuan)
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="129,000" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+
+                        <!-- harga -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Harga Total
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="645,000" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card 1 -->
+                  <div class="py-6 px-40">
+                    <h2 class="font-bold text-2xl mb-5">Form Materials</h2>
+                    <div class="border-1 md:py-5 rounded px-5 shadow bg-white">
+                      <div class="md:px-24 px-5"></div>
+                        <label for="kabel" class="block text-sm font-medium text-gray-700 font-semibold md:text-xl mb-2">
+                          Kabel (NYY 4x10)
+                        </label>
+                        <!-- uraian paket standard-->
+                        <div class="grid grid-cols-12 gap-6"> 
+                          <!-- qty -->
+                          <div class="md:col-span-2 col-span-4">
+                            <label for="Qty" class="block text-sm font-medium text-gray-700">
+                              Qty
+                            </label>
+                            <input disabled 
+                              type="text"
+                              id="Qty" 
+                              name="Qty" 
+                              autocomplete="Qty" 
+                              value="5" 
+                              class="form-control block w-full px-3 py-1.5 text-base font-normal 
+                              text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
+                              rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
+                              focus:border-blue-600 focus:outline-none"
+                            >
+                          </div>
+                          
+                          <!-- deskripsi -->
+                          <div class="md:col-span-2 col-span-4">
+                            <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                              Satuan
+                            </label>
+                            <input type="text" name="costumer_name" id="costumer_name" 
+                              autocomplete="given-name" 
+                              value="10" disabled
+                              class="form-control block w-full px-3 py-1.5 text-base 
+                              font-normal text-gray-700 bg-white bg-clip-padding border 
+                              border-solid border-gray-300 rounded transition ease-in-out 
+                              m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                              focus:outline-none"
+                            >
+                          </div>
+                        </div>
+                        <!-- uraian paket tambahan-->
+                        <label for="kabel" class="block text-sm font-medium text-red-700 font-semibold mt-5 mb-2">
+                          Kabel NYY 4x10 (Tambahan)
+                        </label>
+
+                        <!-- tambahan -->
+                        <div class="grid grid-cols-12 gap-6">              
+                        <!-- qty -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="Qty" class="block text-sm font-medium text-gray-700">
+                            Qty
+                          </label>
+                          <input 
+                            type="number"
+                            id="Qty" 
+                            name="Qty" 
+                            autocomplete="Qty" 
+                            value="10" 
+                            class="form-control block w-full px-3 py-1.5 text-base font-normal 
+                            text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
+                            rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
+                            focus:border-blue-600 focus:outline-none"
+                          >
+                        </div>
+                        
+                        <!-- satuan -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Satuan
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="M" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+
+                        <!-- harga -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Harga (per satuan)
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="129,000" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+
+                        <!-- harga -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Harga Total
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="645,000" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card 1 -->
+                  <div class="py-6 px-40">
+                    <h2 class="font-bold text-2xl mb-5">Form Materials</h2>
+                    <div class="border-1 md:py-5 rounded px-5 shadow bg-white">
+                      <div class="md:px-24 px-5"></div>
+                        <label for="kabel" class="block text-sm font-medium text-gray-700 font-semibold md:text-xl mb-2">
+                          Kabel (NYY 4x10)
+                        </label>
+                        <!-- uraian paket standard-->
+                        <div class="grid grid-cols-12 gap-6"> 
+                          <!-- qty -->
+                          <div class="md:col-span-2 col-span-4">
+                            <label for="Qty" class="block text-sm font-medium text-gray-700">
+                              Qty
+                            </label>
+                            <input disabled 
+                              type="text"
+                              id="Qty" 
+                              name="Qty" 
+                              autocomplete="Qty" 
+                              value="5" 
+                              class="form-control block w-full px-3 py-1.5 text-base font-normal 
+                              text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
+                              rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
+                              focus:border-blue-600 focus:outline-none"
+                            >
+                          </div>
+                          
+                          <!-- deskripsi -->
+                          <div class="md:col-span-2 col-span-4">
+                            <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                              Satuan
+                            </label>
+                            <input type="text" name="costumer_name" id="costumer_name" 
+                              autocomplete="given-name" 
+                              value="10" disabled
+                              class="form-control block w-full px-3 py-1.5 text-base 
+                              font-normal text-gray-700 bg-white bg-clip-padding border 
+                              border-solid border-gray-300 rounded transition ease-in-out 
+                              m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                              focus:outline-none"
+                            >
+                          </div>
+                        </div>
+                        <!-- uraian paket tambahan-->
+                        <label for="kabel" class="block text-sm font-medium text-red-700 font-semibold mt-5 mb-2">
+                          Kabel NYY 4x10 (Tambahan)
+                        </label>
+
+                        <!-- tambahan -->
+                        <div class="grid grid-cols-12 gap-6">              
+                        <!-- qty -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="Qty" class="block text-sm font-medium text-gray-700">
+                            Qty
+                          </label>
+                          <input 
+                            type="number"
+                            id="Qty" 
+                            name="Qty" 
+                            autocomplete="Qty" 
+                            value="10" 
+                            class="form-control block w-full px-3 py-1.5 text-base font-normal 
+                            text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
+                            rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
+                            focus:border-blue-600 focus:outline-none"
+                          >
+                        </div>
+                        
+                        <!-- satuan -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Satuan
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="M" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+
+                        <!-- harga -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Harga (per satuan)
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="129,000" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+
+                        <!-- harga -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Harga Total
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="645,000" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card 1 -->
+                  <div class="py-6 px-40">
+                    <h2 class="font-bold text-2xl mb-5">Form Materials</h2>
+                    <div class="border-1 md:py-5 rounded px-5 shadow bg-white">
+                      <div class="md:px-24 px-5"></div>
+                        <label for="kabel" class="block text-sm font-medium text-gray-700 font-semibold md:text-xl mb-2">
+                          Kabel (NYY 4x10)
+                        </label>
+                        <!-- uraian paket standard-->
+                        <div class="grid grid-cols-12 gap-6"> 
+                          <!-- qty -->
+                          <div class="md:col-span-2 col-span-4">
+                            <label for="Qty" class="block text-sm font-medium text-gray-700">
+                              Qty
+                            </label>
+                            <input disabled 
+                              type="text"
+                              id="Qty" 
+                              name="Qty" 
+                              autocomplete="Qty" 
+                              value="5" 
+                              class="form-control block w-full px-3 py-1.5 text-base font-normal 
+                              text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
+                              rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
+                              focus:border-blue-600 focus:outline-none"
+                            >
+                          </div>
+                          
+                          <!-- deskripsi -->
+                          <div class="md:col-span-2 col-span-4">
+                            <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                              Satuan
+                            </label>
+                            <input type="text" name="costumer_name" id="costumer_name" 
+                              autocomplete="given-name" 
+                              value="10" disabled
+                              class="form-control block w-full px-3 py-1.5 text-base 
+                              font-normal text-gray-700 bg-white bg-clip-padding border 
+                              border-solid border-gray-300 rounded transition ease-in-out 
+                              m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                              focus:outline-none"
+                            >
+                          </div>
+                        </div>
+                        <!-- uraian paket tambahan-->
+                        <label for="kabel" class="block text-sm font-medium text-red-700 font-semibold mt-5 mb-2">
+                          Kabel NYY 4x10 (Tambahan)
+                        </label>
+
+                        <!-- tambahan -->
+                        <div class="grid grid-cols-12 gap-6">              
+                        <!-- qty -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="Qty" class="block text-sm font-medium text-gray-700">
+                            Qty
+                          </label>
+                          <input 
+                            type="number"
+                            id="Qty" 
+                            name="Qty" 
+                            autocomplete="Qty" 
+                            value="10" 
+                            class="form-control block w-full px-3 py-1.5 text-base font-normal 
+                            text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
+                            rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
+                            focus:border-blue-600 focus:outline-none"
+                          >
+                        </div>
+                        
+                        <!-- satuan -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Satuan
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="M" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+
+                        <!-- harga -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Harga (per satuan)
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="129,000" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+
+                        <!-- harga -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Harga Total
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="645,000" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card 1 -->
+                  <div class="py-6 px-40">
+                    <h2 class="font-bold text-2xl mb-5">Form Materials</h2>
+                    <div class="border-1 md:py-5 rounded px-5 shadow bg-white">
+                      <div class="md:px-24 px-5"></div>
+                        <label for="kabel" class="block text-sm font-medium text-gray-700 font-semibold md:text-xl mb-2">
+                          Kabel (NYY 4x10)
+                        </label>
+                        <!-- uraian paket standard-->
+                        <div class="grid grid-cols-12 gap-6"> 
+                          <!-- qty -->
+                          <div class="md:col-span-2 col-span-4">
+                            <label for="Qty" class="block text-sm font-medium text-gray-700">
+                              Qty
+                            </label>
+                            <input disabled 
+                              type="text"
+                              id="Qty" 
+                              name="Qty" 
+                              autocomplete="Qty" 
+                              value="5" 
+                              class="form-control block w-full px-3 py-1.5 text-base font-normal 
+                              text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
+                              rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
+                              focus:border-blue-600 focus:outline-none"
+                            >
+                          </div>
+                          
+                          <!-- deskripsi -->
+                          <div class="md:col-span-2 col-span-4">
+                            <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                              Satuan
+                            </label>
+                            <input type="text" name="costumer_name" id="costumer_name" 
+                              autocomplete="given-name" 
+                              value="10" disabled
+                              class="form-control block w-full px-3 py-1.5 text-base 
+                              font-normal text-gray-700 bg-white bg-clip-padding border 
+                              border-solid border-gray-300 rounded transition ease-in-out 
+                              m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                              focus:outline-none"
+                            >
+                          </div>
+                        </div>
+                        <!-- uraian paket tambahan-->
+                        <label for="kabel" class="block text-sm font-medium text-red-700 font-semibold mt-5 mb-2">
+                          Kabel NYY 4x10 (Tambahan)
+                        </label>
+
+                        <!-- tambahan -->
+                        <div class="grid grid-cols-12 gap-6">              
+                        <!-- qty -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="Qty" class="block text-sm font-medium text-gray-700">
+                            Qty
+                          </label>
+                          <input 
+                            type="number"
+                            id="Qty" 
+                            name="Qty" 
+                            autocomplete="Qty" 
+                            value="10" 
+                            class="form-control block w-full px-3 py-1.5 text-base font-normal 
+                            text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
+                            rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
+                            focus:border-blue-600 focus:outline-none"
+                          >
+                        </div>
+                        
+                        <!-- satuan -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Satuan
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="M" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+
+                        <!-- harga -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Harga (per satuan)
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="129,000" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+
+                        <!-- harga -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Harga Total
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="645,000" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card 1 -->
+                  <div class="py-6 px-40">
+                    <h2 class="font-bold text-2xl mb-5">Form Materials</h2>
+                    <div class="border-1 md:py-5 rounded px-5 shadow bg-white">
+                      <div class="md:px-24 px-5"></div>
+                        <label for="kabel" class="block text-sm font-medium text-gray-700 font-semibold md:text-xl mb-2">
+                          Kabel (NYY 4x10)
+                        </label>
+                        <!-- uraian paket standard-->
+                        <div class="grid grid-cols-12 gap-6"> 
+                          <!-- qty -->
+                          <div class="md:col-span-2 col-span-4">
+                            <label for="Qty" class="block text-sm font-medium text-gray-700">
+                              Qty
+                            </label>
+                            <input disabled 
+                              type="text"
+                              id="Qty" 
+                              name="Qty" 
+                              autocomplete="Qty" 
+                              value="5" 
+                              class="form-control block w-full px-3 py-1.5 text-base font-normal 
+                              text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
+                              rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
+                              focus:border-blue-600 focus:outline-none"
+                            >
+                          </div>
+                          
+                          <!-- deskripsi -->
+                          <div class="md:col-span-2 col-span-4">
+                            <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                              Satuan
+                            </label>
+                            <input type="text" name="costumer_name" id="costumer_name" 
+                              autocomplete="given-name" 
+                              value="10" disabled
+                              class="form-control block w-full px-3 py-1.5 text-base 
+                              font-normal text-gray-700 bg-white bg-clip-padding border 
+                              border-solid border-gray-300 rounded transition ease-in-out 
+                              m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                              focus:outline-none"
+                            >
+                          </div>
+                        </div>
+                        <!-- uraian paket tambahan-->
+                        <label for="kabel" class="block text-sm font-medium text-red-700 font-semibold mt-5 mb-2">
+                          Kabel NYY 4x10 (Tambahan)
+                        </label>
+
+                        <!-- tambahan -->
+                        <div class="grid grid-cols-12 gap-6">              
+                        <!-- qty -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="Qty" class="block text-sm font-medium text-gray-700">
+                            Qty
+                          </label>
+                          <input 
+                            type="number"
+                            id="Qty" 
+                            name="Qty" 
+                            autocomplete="Qty" 
+                            value="10" 
+                            class="form-control block w-full px-3 py-1.5 text-base font-normal 
+                            text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
+                            rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
+                            focus:border-blue-600 focus:outline-none"
+                          >
+                        </div>
+                        
+                        <!-- satuan -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Satuan
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="M" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+
+                        <!-- harga -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Harga (per satuan)
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="129,000" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+
+                        <!-- harga -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Harga Total
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="645,000" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card 1 -->
+                  <div class="py-6 px-40">
+                    <h2 class="font-bold text-2xl mb-5">Form Materials</h2>
+                    <div class="border-1 md:py-5 rounded px-5 shadow bg-white">
+                      <div class="md:px-24 px-5"></div>
+                        <label for="kabel" class="block text-sm font-medium text-gray-700 font-semibold md:text-xl mb-2">
+                          Kabel (NYY 4x10)
+                        </label>
+                        <!-- uraian paket standard-->
+                        <div class="grid grid-cols-12 gap-6"> 
+                          <!-- qty -->
+                          <div class="md:col-span-2 col-span-4">
+                            <label for="Qty" class="block text-sm font-medium text-gray-700">
+                              Qty
+                            </label>
+                            <input disabled 
+                              type="text"
+                              id="Qty" 
+                              name="Qty" 
+                              autocomplete="Qty" 
+                              value="5" 
+                              class="form-control block w-full px-3 py-1.5 text-base font-normal 
+                              text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
+                              rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
+                              focus:border-blue-600 focus:outline-none"
+                            >
+                          </div>
+                          
+                          <!-- deskripsi -->
+                          <div class="md:col-span-2 col-span-4">
+                            <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                              Satuan
+                            </label>
+                            <input type="text" name="costumer_name" id="costumer_name" 
+                              autocomplete="given-name" 
+                              value="10" disabled
+                              class="form-control block w-full px-3 py-1.5 text-base 
+                              font-normal text-gray-700 bg-white bg-clip-padding border 
+                              border-solid border-gray-300 rounded transition ease-in-out 
+                              m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                              focus:outline-none"
+                            >
+                          </div>
+                        </div>
+                        <!-- uraian paket tambahan-->
+                        <label for="kabel" class="block text-sm font-medium text-red-700 font-semibold mt-5 mb-2">
+                          Kabel NYY 4x10 (Tambahan)
+                        </label>
+
+                        <!-- tambahan -->
+                        <div class="grid grid-cols-12 gap-6">              
+                        <!-- qty -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="Qty" class="block text-sm font-medium text-gray-700">
+                            Qty
+                          </label>
+                          <input 
+                            type="number"
+                            id="Qty" 
+                            name="Qty" 
+                            autocomplete="Qty" 
+                            value="10" 
+                            class="form-control block w-full px-3 py-1.5 text-base font-normal 
+                            text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
+                            rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
+                            focus:border-blue-600 focus:outline-none"
+                          >
+                        </div>
+                        
+                        <!-- satuan -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Satuan
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="M" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+
+                        <!-- harga -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Harga (per satuan)
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="129,000" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+
+                        <!-- harga -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Harga Total
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="645,000" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card 1 -->
+                  <div class="py-6 px-40">
+                    <h2 class="font-bold text-2xl mb-5">Form Materials</h2>
+                    <div class="border-1 md:py-5 rounded px-5 shadow bg-white">
+                      <div class="md:px-24 px-5"></div>
+                        <label for="kabel" class="block text-sm font-medium text-gray-700 font-semibold md:text-xl mb-2">
+                          Kabel (NYY 4x10)
+                        </label>
+                        <!-- uraian paket standard-->
+                        <div class="grid grid-cols-12 gap-6"> 
+                          <!-- qty -->
+                          <div class="md:col-span-2 col-span-4">
+                            <label for="Qty" class="block text-sm font-medium text-gray-700">
+                              Qty
+                            </label>
+                            <input disabled 
+                              type="text"
+                              id="Qty" 
+                              name="Qty" 
+                              autocomplete="Qty" 
+                              value="5" 
+                              class="form-control block w-full px-3 py-1.5 text-base font-normal 
+                              text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
+                              rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
+                              focus:border-blue-600 focus:outline-none"
+                            >
+                          </div>
+                          
+                          <!-- deskripsi -->
+                          <div class="md:col-span-2 col-span-4">
+                            <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                              Satuan
+                            </label>
+                            <input type="text" name="costumer_name" id="costumer_name" 
+                              autocomplete="given-name" 
+                              value="10" disabled
+                              class="form-control block w-full px-3 py-1.5 text-base 
+                              font-normal text-gray-700 bg-white bg-clip-padding border 
+                              border-solid border-gray-300 rounded transition ease-in-out 
+                              m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                              focus:outline-none"
+                            >
+                          </div>
+                        </div>
+                        <!-- uraian paket tambahan-->
+                        <label for="kabel" class="block text-sm font-medium text-red-700 font-semibold mt-5 mb-2">
+                          Kabel NYY 4x10 (Tambahan)
+                        </label>
+
+                        <!-- tambahan -->
+                        <div class="grid grid-cols-12 gap-6">              
+                        <!-- qty -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="Qty" class="block text-sm font-medium text-gray-700">
+                            Qty
+                          </label>
+                          <input 
+                            type="number"
+                            id="Qty" 
+                            name="Qty" 
+                            autocomplete="Qty" 
+                            value="10" 
+                            class="form-control block w-full px-3 py-1.5 text-base font-normal 
+                            text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
+                            rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
+                            focus:border-blue-600 focus:outline-none"
+                          >
+                        </div>
+                        
+                        <!-- satuan -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Satuan
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="M" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+
+                        <!-- harga -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Harga (per satuan)
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="129,000" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+
+                        <!-- harga -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Harga Total
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="645,000" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- card 1 -->
+                  <div class="py-6 px-40">
+                    <h2 class="font-bold text-2xl mb-5">Form Materials</h2>
+                    <div class="border-1 md:py-5 rounded px-5 shadow bg-white">
+                      <div class="md:px-24 px-5"></div>
+                        <label for="kabel" class="block text-sm font-medium text-gray-700 font-semibold md:text-xl mb-2">
+                          Kabel (NYY 4x10)
+                        </label>
+                        <!-- uraian paket standard-->
+                        <div class="grid grid-cols-12 gap-6"> 
+                          <!-- qty -->
+                          <div class="md:col-span-2 col-span-4">
+                            <label for="Qty" class="block text-sm font-medium text-gray-700">
+                              Qty
+                            </label>
+                            <input disabled 
+                              type="text"
+                              id="Qty" 
+                              name="Qty" 
+                              autocomplete="Qty" 
+                              value="5" 
+                              class="form-control block w-full px-3 py-1.5 text-base font-normal 
+                              text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
+                              rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
+                              focus:border-blue-600 focus:outline-none"
+                            >
+                          </div>
+                          
+                          <!-- deskripsi -->
+                          <div class="md:col-span-2 col-span-4">
+                            <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                              Satuan
+                            </label>
+                            <input type="text" name="costumer_name" id="costumer_name" 
+                              autocomplete="given-name" 
+                              value="10" disabled
+                              class="form-control block w-full px-3 py-1.5 text-base 
+                              font-normal text-gray-700 bg-white bg-clip-padding border 
+                              border-solid border-gray-300 rounded transition ease-in-out 
+                              m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                              focus:outline-none"
+                            >
+                          </div>
+                        </div>
+                        <!-- uraian paket tambahan-->
+                        <label for="kabel" class="block text-sm font-medium text-red-700 font-semibold mt-5 mb-2">
+                          Kabel NYY 4x10 (Tambahan)
+                        </label>
+
+                        <!-- tambahan -->
+                        <div class="grid grid-cols-12 gap-6">              
+                        <!-- qty -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="Qty" class="block text-sm font-medium text-gray-700">
+                            Qty
+                          </label>
+                          <input 
+                            type="number"
+                            id="Qty" 
+                            name="Qty" 
+                            autocomplete="Qty" 
+                            value="10" 
+                            class="form-control block w-full px-3 py-1.5 text-base font-normal 
+                            text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
+                            rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
+                            focus:border-blue-600 focus:outline-none"
+                          >
+                        </div>
+                        
+                        <!-- satuan -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Satuan
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="M" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+
+                        <!-- harga -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Harga (per satuan)
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="129,000" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+
+                        <!-- harga -->
+                        <div class="md:col-span-2 col-span-4">
+                          <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                            Harga Total
+                          </label>
+                          <input type="text" name="costumer_name" id="costumer_name" 
+                            autocomplete="given-name" 
+                            value="645,000" disabled
+                            class="form-control block w-full px-3 py-1.5 text-base 
+                            font-normal text-gray-700 bg-white bg-clip-padding border 
+                            border-solid border-gray-300 rounded transition ease-in-out 
+                            m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
+                            focus:outline-none"
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- button -->
+                  <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+                    <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                      Submit
+                    </button>
+                  </div>
                 </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
-        </div>
       </div>
 
   </body>
