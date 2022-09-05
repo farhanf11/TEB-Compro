@@ -10,6 +10,21 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="shortcut icon" href="../images/compro.ico">
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="Description" content="Enter your description here" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <style>
+            /* mengatur ukuran canvas tanda tangan  */
+            canvas {
+                border: 1px solid #ccc;
+                border-radius: 0.5rem;
+                width: 100%;
+                height: 400px;
+            }
+        </style>
     <title>Form Material</title>
   </head>
   <body>
@@ -155,7 +170,7 @@
                     </div>
 
                     <!-- Good / Not Good -->
-                    <div class="col-span-3 md:col-span-1">
+                    <div class="col-span-1 md:col-span-3">
                       <label for="country" class="block text-sm font-medium text-gray-700">Status</label>
                       <div class="flex justify-center">                         
                         <div>
@@ -175,12 +190,124 @@
                     </div>
                   
                     <!-- Note -->
-                    <div class="md:col-span-6 col-span-3 mt-5 md:mt-0">
+                    <div class="md:col-span-4 col-span-3 mt-5 md:mt-0">
                       <label for="costumer_name" class="block text-sm font-medium text-gray-700">Note</label>
                       <input type="text" name="costumer_name" id="costumer_name" autocomplete="given-name" class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
                     </div>
                   </div>
                 </div>
+
+                <!-- ttd -->
+                  <div class="container">
+                    <div class="card">
+                        <div class="card-header">
+                            Form Tanda Tangan
+                        </div>
+                        <div class="card-body">
+                            <!-- canvas tanda tangan  -->
+                            <canvas id="signature-pad" class="signature-pad"></canvas>
+            
+                            <!-- tombol submit  -->
+                            <div style="float: left;">
+                                <button id="btn-submit" class="btn btn-primary">
+                                    Submit
+                                </button>
+                            </div>
+            
+                            <div style="float: right;">
+                                <!-- tombol ganti warna  -->
+                                <button type="button" class="btn btn-success" id="change-color">
+                                    Change Color
+                                </button>
+            
+                                <!-- tombol undo  -->
+                                <button type="button" class="btn btn-dark" id="undo">
+                                    <span class="fas fa-undo"></span>
+                                    Undo
+                                </button>
+            
+                                <!-- tombol hapus tanda tangan  -->
+                                <button type="button" class="btn btn-danger" id="clear">
+                                    <span class="fas fa-eraser"></span>
+                                    Clear
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+                <script>
+                    // script di dalam ini akan dijalankan pertama kali saat dokumen dimuat
+                    document.addEventListener('DOMContentLoaded', function () {
+                        resizeCanvas();
+                    })
+            
+                    //script ini berfungsi untuk menyesuaikan tanda tangan dengan ukuran canvas
+                    function resizeCanvas() {
+                        var ratio = Math.max(window.devicePixelRatio || 1, 1);
+                        canvas.width = canvas.offsetWidth * ratio;
+                        canvas.height = canvas.offsetHeight * ratio;
+                        canvas.getContext("2d").scale(ratio, ratio);
+                    }
+            
+            
+                    var canvas = document.getElementById('signature-pad');
+            
+                    //warna dasar signaturepad
+                    var signaturePad = new SignaturePad(canvas, {
+                        backgroundColor: 'rgb(255, 255, 255)'
+                    });
+            
+                    //saat tombol clear diklik maka akan menghilangkan seluruh tanda tangan
+                    document.getElementById('clear').addEventListener('click', function () {
+                        signaturePad.clear();
+                    });
+            
+                    //saat tombol undo diklik maka akan mengembalikan tanda tangan sebelumnya
+                    document.getElementById('undo').addEventListener('click', function () {
+                        var data = signaturePad.toData();
+                        if (data) {
+                            data.pop(); // remove the last dot or line
+                            signaturePad.fromData(data);
+                        }
+                    });
+            
+                    //saat tombol change color diklik maka akan merubah warna pena
+                    document.getElementById('change-color').addEventListener('click', function () {
+            
+                        //jika warna pena biru maka buat menjadi hitam dan sebaliknya
+                        if(signaturePad.penColor == "rgba(0, 0, 255, 1)"){
+            
+                            signaturePad.penColor = "rgba(0, 0, 0, 1)";
+                        }else{
+                            signaturePad.penColor = "rgba(0, 0, 255, 1)";
+                        }
+                    })
+            
+                    //fungsi untuk menyimpan tanda tangan dengan metode ajax
+                    $(document).on('click', '#btn-submit', function () {
+                        var signature = signaturePad.toDataURL();
+            
+                        $.ajax({
+                            url: "proses.php",
+                            data: {
+                                foto: signature,
+                            },
+                            method: "POST",
+                            success: function () {
+                                location.reload();
+                                alert('Tanda Tangan Berhasil Disimpan');
+                            }
+            
+                        })
+                    })
+                </script>
+                <!-- ttd end -->
+
                 <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
                   <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                     Save
