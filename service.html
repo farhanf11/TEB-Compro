@@ -1,0 +1,286 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <!--navbar-->
+    <nav class="bg-white shadow-lg">
+        <div class="px-4">
+            <div class="flex justify-between">
+                <div>
+                    <img class="h-10 mt-2 mr-4" src="./images/logo.png" alt="">
+                </div>
+                <div class="hidden md:flex justify-arround">
+                    <a href="index.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Home</a>
+                    <a href="./service.html" class="block text-sm px-2 py-4 text-white bg-blue-500 font-semibold">Service</a>
+                    <a href="./product.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Product</a>
+                    <a href="./project.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Project</a>
+                    <a href="./about-us.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">About Us</a>
+                    <a href="./contact.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Contact</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                  <button class="outline-none mobile-menu-button right-0">
+                    <svg class=" w-6 h-6 text-gray-500 hover:text-blue-500 "
+                        x-show="!showMenu"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                  </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li><a href="./index.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Home</a></li>
+                <li><a href="./service.html" class="block text-sm px-2 py-4 text-white bg-blue-500 font-semibold">Service</a></li>
+                <li><a href="./product.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Product</a></li>
+                <li><a href="./project.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Project</a></li>
+                <li><a href="./about-us.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">About Us</a></li>
+                <li><a href="./contact.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Contact</a></li>
+            </ul>
+        </div>
+        <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
+    </nav>  
+
+    <!--content-->
+    <div class="lg:px-40 md:px-16 px-7">
+        <!-- branding -->
+        <div class="md:grid grid-cols-2 mt-10">
+            <div class="flex justify-center">
+                <img src="./images/branding development.png" class="xl:mt-14 h-40 md:h-48 lg:h-60 lg:ml-16" alt="">
+            </div>
+            <div>
+                <div class="font-semibold md:text-2xl mb-2 md:mb-5 xl:mt-10">
+                    Branding Development
+                </div>
+                <p class="xl:pr-36 text-sm md:text-lg mb-5">
+                    We are here to offer a very versatile portfolio,
+                    including DC charger, AC charger and site management system charging. 
+                    Meeting the increasing prevalence of EVs, our smart-charging infrastructure solution
+                    combines EV charging and distributing energy resources to optimize charging serve and energy efficiency.
+                </p>
+            </div>
+        </div>
+
+        <!-- location service -->
+        <div class="md:grid grid-cols-2 mt-10">
+            <!-- for mobile -->
+            <div class="md:hidden flex justify-center">
+                <img src="./images/location-service.png" class="h-48" alt="">
+            </div>
+            
+            <div class="xl:pl-48">
+                <div class="font-semibold md:text-2xl mb-2 md:mb-5 xl:mt-20">
+                    Location Service
+                </div>
+                <p class="text-sm md:text-lg md:mb-10">
+                    Our installation and service has reached all major cities in Indonesia.
+                </p>
+            </div>
+            <img src="./images/location-service.png" class="hidden md:flex md:h-60 lg:h-72" alt="">
+        </div>
+
+        <!-- Comitioning Test -->
+        <div class="md:grid grid-cols-2 mt-10">
+            <div class="flex justify-center">
+                <img src="./images/comitioning-test.png" class="xl:mt-14 h-40 md:h-48 lg:h-60 lg:ml-16" alt="">
+            </div>
+            <div>
+                <div class="font-semibold md:text-2xl mb-2 md:mb-5 xl:mt-12">
+                    Comitioning Test
+                </div>
+                <p class="xl:pr-36 text-sm md:text-lg md:mb-10">
+                    Testing the characteristics of Individual Test, Sub Unit Test, 
+                    Safety Interlock Test, Fail-Safe Test (Run Back Test), Endurance and Performance Test in general
+                </p>
+            </div>
+        </div>
+
+        <!-- training development -->
+        <div class="md:grid grid-cols-2 mt-10">
+            <div class="md:hidden flex justify-center">
+                <img src="./images/training development.png" class="h-40" alt="">
+            </div>
+            
+            <div class="xl:pl-48">
+                <div class="font-semibold text-center md:text-left md:text-2xl mb-2 md:mb-5 xl:mt-16">
+                    Training Development
+                </div>
+                <p class="text-sm md:text-lg md:mb-10">
+                    Testing the characteristics of Individual Test, Sub Unit Test, 
+                    Safety Interlock Test, Fail-Safe Test (Run Back Test), Endurance and Performance Test in general
+                </p>
+            </div>
+            <img src="./images/training development.png" class="hidden md:flex justify-center md:h-60 md:ml-12" alt="">
+        </div>
+    </div>
+    
+    <!-- footer -->
+    <footer class="mt-10">
+        <div class="flex justify-end">
+            <img src="./images/footer.png" class="right-0" alt="">
+        </div>
+        <div class="bg-gray-600 py-4 px-7 md:flex justify-between">
+            <div class="gap-5 md:mt-4">
+                <!-- logo white -->
+                <img src="./images/TEB-logo.png" class="md:h-10 h-7" alt="">
+                <p class="text-gray-300 ">Brought new energy, for
+                    a bright and better future</p>
+                
+                   <div class="flex gap-10">
+                        <!-- email -->
+                        <a href="mailto:admin@trienergiberkarya.com" class="flex gap-1 mt-2">
+                            <img src="./images/email.png" class="w-5 h-5 mt-1" alt="">
+                            <p class="text-white">Send Email</p>
+                        </a>
+                        <!-- wa me -->
+                        <a href="https://api.whatsapp.com/send?phone=+62811977861&text=Halo%2C%20saya%20*Isi_Nama*%20ingin%20bertanya%20mengenai%20*.....................*" class="flex gap-1 mt-2">
+                            <img src="./images/wa.png" class="w-5 h-5 mt-1" alt="">
+                            <p class="text-white">Contact Us</p>
+                        </a>
+                   </div>
+
+                    
+                    <div class="flex gap-10">
+                        <!-- instagram -->
+                        <a href="https://www.instagram.com/trienergi.id/" class="flex gap-1 mt-2">
+                            <img src="./images/Instagram.png" class="w-5 h-5 mt-1" alt="">
+                            <p class="text-white">Instagram TEB</p>
+                        </a>
+
+                        <!-- youtube -->
+                        <a href="https://www.youtube.com/channel/UCrCY054Kz5zkpnh8tjDaoCQ" class="flex gap-1 mt-2">
+                            <img src="./images/youtube.png" class="w-5 h-5 mt-1" alt="">
+                            <p class="text-white">Youtube Channel</p>
+                        </a>
+                    </div>
+            </div>
+            <!-- kolom 2 footer -->
+            <div class="column-2 md:grid hidden">
+                <div>
+                    <div class="mb-2">
+                        <p class="text-white text-xl font-medium underline">Projects</p>
+                        <ul class="text-gray-300">
+                            <li>
+                                <a href="" class="hover:text-blue-300">Home Charging</a>
+                            </li>
+                            <li>
+                                <a href="" class="hover:text-blue-300">Public Area</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="event">
+                            <p class="text-white text-xl font-medium underline">Event</p>
+                            <ul class="text-gray-300">
+                                <li>
+                                    <a href="" class="hover:text-blue-300">Home Charging</a>
+                                </li>
+                                <li>
+                                    <a href="" class="hover:text-blue-300">Public Area</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- kolom 3 footer -->
+            <div class="md:grid hidden">
+                <p class="text-white text-xl font-medium underline">Products</p>
+                <ul class="text-gray-300">
+                    <li>
+                        <a href="./products/ac-mini.html" class="hover:text-blue-300">AC Charger Mini</a>
+                    </li>
+                    <li>
+                        <a href="./products/wallbox.html" class="hover:text-blue-300">DC Charger Wallbox</a>
+                    </li>
+                    <li>
+                        <a href="" class="hover:text-blue-300">DC Charger 50-150kw</a>
+                    </li>
+                    <li>
+                        <a href="" class="hover:text-blue-300">DC Fast Charger 150-350kw</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex justify-left">
+                <div id="google_translate_element" class=""></div>
+                    <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({pageLanguage: 'id'}, 'google_translate_element');
+                        }
+                    </script>
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </div>
+        </div>      
+    </footer>
+
+    <!-- whatsapp -->
+    <div style="position:fixed;right:20px;bottom:80px;">
+        <a href="https://api.whatsapp.com/send?phone=+62811977861&text=Halo%2C%20saya%20*Isi_Nama*%20ingin%20bertanya%20mengenai%20*.....................*">
+            <img src="./images/whatsapp.png" class="w-14">
+        </a>
+    </div>
+    
+    <!-- Implement the Back Top Top Button -->
+    <button id="to-top-button" onclick="goToTop()" title="Go To Top"
+        class="hidden fixed z-90 bottom-5 right-6 border-0 w-12 h-12 rounded-full drop-shadow-md bg-indigo-500 text-white text-3xl font-bold">&uarr;</button>
+
+    <!-- Javascript code -->
+    <script>
+        var toTopButton = document.getElementById("to-top-button");
+
+        // When the user scrolls down 200px from the top of the document, show the button
+        window.onscroll = function () {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                toTopButton.classList.remove("hidden");
+            } else {
+                toTopButton.classList.add("hidden");
+            }
+        }
+
+        // When the user clicks on the button, smoothy scroll to the top of the document
+        function goToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

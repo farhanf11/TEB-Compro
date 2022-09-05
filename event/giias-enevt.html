@@ -1,0 +1,376 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>GIIAS Event</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <nav class="bg-white shadow-lg">
+        <div class="px-4">
+            <div class="flex justify-between">
+                <div>
+                    <a href="../index.html">
+                        <img class="h-10 mt-2 mr-4" src="../images/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="hidden md:flex justify-arround">
+                    <a href="../index.html" class="block text-sm px-2 py-4 text-white bg-blue-500 font-semibold">Home</a>
+                    <a href="../service.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Service</a>
+                    <a href="../product.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Product</a>
+                    <a href="../project.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Project</a>
+                    <a href="../about-us.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">About Us</a>
+                    <a href="../contact.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Contact</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                  <button class="outline-none mobile-menu-button right-0">
+                    <svg class=" w-6 h-6 hover:text-blue-500 "
+                        x-show="!showMenu" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                  </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li><a href="../index.html" class="block text-sm px-2 py-4 text-white bg-blue-500 font-semibold">Home</a></li>
+                <li><a href="../service.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Service</a></li>
+                <li><a href="../product.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Product</a></li>
+                <li><a href="../project.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Project</a></li>
+                <li><a href="../about-us.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">About Us</a></li>
+                <li><a href="../contact.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Contact</a></li>
+            </ul>
+        </div>
+        <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
+    </nav>  
+
+    <script>
+        function Menu(e) {
+            let list = document.querySelector('ul');
+
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'),
+                list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'),
+                    list.classList.remove('opacity-100'))
+        }
+    </script>
+
+    <!-- content -->
+    <div class="mb-15 lg:px-20 px-10">
+        <!--tablet dan desktop-->
+        <div class="flex justify-center">
+            <img src="../images/event/gaikindo-gias.jpg" class="lg:w-full md:w-80 w-60 py-10" alt="">
+        </div>
+        <h1 class="font-bold text-xl lg:text-2xl md:mt-5 text-left">GIIAS Electric Vehicle Test Track</h1>
+        <p class="text-left xl:text-2xl text-gray-500 lg:mt-5 pr-5 mb-8">
+            Hadirnya inovasi teknologi terbaru dari industri otomotif Indonesia selalu menjadi 
+            alasan utama masyarakat untuk hadir di setiap penyelenggaraan GIIAS. Tidak terkecuali 
+            ditahun ini, para peserta akan menghadirkan berbagai teknologi dan produk terbarunya 
+            untuk masyarakat. Tercatat puluhan kendaraan dengan teknologi terkini, termasuk juga 
+            kendaraan bermotor berbasis baterai direncanakan akan diperkenalkan dan diluncurkan pada GIIAS 2022.
+
+            Total 25 merek kendaraan penumpang dan komersial akan berpartisipasi pada GIIAS 2022, 
+            yaitu Audi, BMW, Chery, Daihatsu, DFSK, Honda, Hyundai, Isuzu, KIA, Lexus, Mazda, MG, 
+            Mini, Mitsubishi Motors, Nissan, Porsche, Subaru, Suzuki, Toyota, VW, Wuling, dan dari 
+            kendaraan komersial hadir Hino, Isuzu, Mitsubishi Fuso dan UD Trucks.
+        </p>
+
+        <!-- 2 -->
+        <div class="xl:grid xl:grid-cols-2 gap-2 lg:gap-8">
+            <div class="md:flex md:justify-center">
+                <img src="../images/event/gias-event.jpeg" class="h-48 md:h-60 lg:h-96 mb-4" alt="">
+            </div>
+            <p class="xl:text-2xl text-gray-500">
+                dengan adanya acara ini seluruh pengunjung akan mendapatkan pendampingan 
+                dari para product expert kendaraan listrik, dari masing-masing Agen Pemegang 
+                Merek (APM) yang juga akan memberikan berbagai informasi terkait kelebihan dari 
+                kendaraan listrik dan pengalaman berkendara yang benar dan sesuai dengan karakter 
+                kendaraan listrik yang Ia sebut berbeda dengan kendaraan bermotor lainnya. Menurutnya 
+                akan ada lebih dari sepuluh jenis kendaraan listrik dari berbagai merek yang dapat dicoba 
+                langsung oleh para pengujung di area GIIAS EV Test Track yang terletak pada 
+                Hall 10 ICE – BSD City, Kab. Tangerang.
+            </p>
+        </div>
+        
+        <!-- galery -->
+        <section class="border-t">
+            <h1 class="font-semibold text-xl mt-10 text-center">Galery Event</h1>
+            <div class="flex justify-center py-10">
+                <video controls class="md:h-80 " src="../video/intro.mp4" type="video/webm"></video>
+            </div>
+            <div class="flex justify-around gap-3 px-5 md:mt-14">
+                <!-- 1 -->
+                <div class="">  
+                    <div class="flex space-x-2 justify-center">
+                        <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" data-bs-toggle="modal"
+                            data-bs-target="#giias1"
+                            class="mt-2 inline-block
+                            font-medium text-xs leading-tight uppercase rounded 
+                            shadow-md hover:shadow-xl
+                            focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                            <img src="../images/event/gias-1.jpeg" class="w-36 md:w-48 lg:w-60 shadow-2xl rounded-lg" alt="">
+                        </button>
+                    </div>
+                    <div class="modal fade fixed lg:top-5 top-40 left-16 lg:left-72 hidden w-full h-full"
+                        id="giias1" tabindex="-1" aria-labelledby="giias1Label" aria-modal="true"
+                        role="dialog">
+                        <div class="modal-dialog modal-xl relative w-auto pointer-events-none">
+                            <div class="rounded-md lg:pb-0 pb-10 md:w-8/12 w-12/12">
+                                <div>
+                                    <img src="../images/event/gias-1.jpeg" class="w-8/12 rounded-md" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- galery 2 -->
+                <div class="">  
+                    <div class="flex space-x-2 justify-center">
+                        <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" data-bs-toggle="modal"
+                            data-bs-target="#giias2"
+                            class="mt-2 inline-block
+                            font-medium text-xs leading-tight uppercase rounded 
+                            shadow-md hover:shadow-xl
+                            focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                            <img src="../images/event/gias-2.jpeg" class="w-36 md:w-48 lg:w-60 shadow-2xl rounded-lg" alt="">
+                        </button>
+                    </div>
+                    <div class="modal fade fixed lg:top-5 top-40 left-16 lg:left-72 hidden w-full h-full"
+                        id="giias2" tabindex="-1" aria-labelledby="giias2Label" aria-modal="true"
+                        role="dialog">
+                        <div class="modal-dialog modal-xl relative w-auto pointer-events-none">
+                            <div class="rounded-md lg:pb-0 pb-10 md:w-8/12 w-12/12">
+                                <div>
+                                    <img src="../images/event/gias-2.jpeg" class="w-8/12 rounded-md" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="">  
+                    <div class="flex space-x-2 justify-center">
+                        <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" data-bs-toggle="modal"
+                            data-bs-target="#giias3"
+                            class="mt-2 inline-block
+                            font-medium text-xs leading-tight uppercase rounded 
+                            shadow-md hover:shadow-xl
+                            focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                            <img src="../images/event/gias-3.jpeg" class="w-36 md:w-48 lg:w-60 shadow-2xl rounded-lg" alt="">
+                        </button>
+                    </div>
+                    <div class="modal fade fixed lg:top-5 top-40 left-16 lg:left-72 hidden w-full h-full"
+                        id="giias3" tabindex="-1" aria-labelledby="giias3Label" aria-modal="true"
+                        role="dialog">
+                        <div class="modal-dialog modal-xl relative w-auto pointer-events-none">
+                            <div class="rounded-md lg:pb-0 pb-10 md:w-8/12 w-12/12">
+                                <div>
+                                    <img src="../images/event/gias-3.jpeg" class="w-8/12 rounded-md" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- flex end -->
+
+            <!-- flex -->
+            <div class="flex justify-around gap-3 px-5 py-10">
+                <div class="">  
+                    <div class="flex space-x-2 justify-center">
+                        <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" data-bs-toggle="modal"
+                            data-bs-target="#giias4"
+                            class="mt-2 inline-block
+                            font-medium text-xs leading-tight uppercase rounded 
+                            shadow-md hover:shadow-xl
+                            focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                            <img src="../images/event/gias-4.jpeg" class="w-36 md:w-48 lg:w-60 shadow-2xl rounded-lg" alt="">
+                        </button>
+                    </div>
+                    <div class="modal fade fixed lg:top-5 top-40 left-16 lg:left-72 hidden w-full h-full"
+                        id="giias4" tabindex="-1" aria-labelledby="giias4Label" aria-modal="true"
+                        role="dialog">
+                        <div class="modal-dialog modal-xl relative w-auto pointer-events-none">
+                            <div class="rounded-md lg:pb-0 pb-10 md:w-8/12 w-12/12">
+                                <div>
+                                    <img src="../images/event/gias-4.jpeg" class="w-8/12 rounded-md" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="">  
+                    <div class="flex space-x-2 justify-center">
+                        <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" data-bs-toggle="modal"
+                            data-bs-target="#giias5"
+                            class="mt-2 inline-block
+                            font-medium text-xs leading-tight uppercase rounded 
+                            shadow-md hover:shadow-xl
+                            focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                            <img src="../images/event/gias-5.jpeg" class="w-36 md:w-48 lg:w-60 shadow-2xl rounded-lg" alt="">
+                        </button>
+                    </div>
+                    <div class="modal fade fixed lg:top-5 top-40 left-16 lg:left-72 hidden w-full h-full"
+                        id="giias5" tabindex="-1" aria-labelledby="giias5Label" aria-modal="true"
+                        role="dialog">
+                        <div class="modal-dialog modal-xl relative w-auto pointer-events-none">
+                            <div class="rounded-md lg:pb-0 pb-10 md:w-8/12 w-12/12">
+                                <div>
+                                    <img src="../images/event/gias-5.jpeg" class="w-8/12 rounded-md" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6 -->
+                <div class="">  
+                    <div class="flex space-x-2 justify-center">
+                        <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" data-bs-toggle="modal"
+                            data-bs-target="#giias6"
+                            class="mt-2 inline-block
+                            font-medium text-xs leading-tight uppercase rounded 
+                            shadow-md hover:shadow-xl
+                            focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                            <img src="../images/event/gias-6.jpeg" class="w-36 md:w-48 lg:w-60 shadow-2xl rounded-lg" alt="">
+                        </button>
+                    </div>
+                    <div class="modal fade fixed lg:top-5 top-40 left-16 lg:left-72 hidden w-full h-full"
+                        id="giias6" tabindex="-1" aria-labelledby="giias6Label" aria-modal="true"
+                        role="dialog">
+                        <div class="modal-dialog modal-xl relative w-auto pointer-events-none">
+                            <div class="rounded-md lg:pb-0 pb-10 md:w-8/12 w-12/12">
+                                <div>
+                                    <img src="../images/event/gias-6.jpeg" class="w-8/12 rounded-md" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- end content -->
+
+    <!-- footer -->
+    <footer class="mt-10">
+        <div class="flex justify-end">
+            <img src="../images/footer.png" class="right-0" alt="">
+        </div>
+        <div class="bg-gray-600 py-4 px-7 md:flex justify-between">
+            <div class="gap-5 md:mt-4">
+                <!-- logo white -->
+                <img src="../images/TEB-logo.png" class="md:h-10 h-7" alt="">
+                <p class="text-gray-300 ">Brought new energy, for
+                    a bright and better future</p>
+                
+                    <!-- email -->
+                <a href="https://api.whatsapp.com/send?phone=+62811977861&text=Halo%2C%20saya%20*Isi_Nama*%20ingin%20bertanya%20mengenai%20*.....................*" class="flex gap-1 mt-2">
+                    <img src="../images/wa.png" class="w-5 h-5 mt-1" alt="">
+                    <p class="text-white">Contact Us</p>
+                </a>
+
+                <!-- wa me -->
+                <a href="mailto:admin@trienergiberkarya.com" class="flex gap-1 mt-2">
+                    <img src="../images/email.png" class="w-5 h-5 mt-1" alt="">
+                    <p class="text-white">Constumer Support</p>
+                </a>
+            </div>
+            <!-- kolom 2 footer -->
+            <div class="column-2 md:grid hidden">
+                <div>
+                    <div class="mb-2">
+                        <p class="text-white text-xl font-medium underline">Projects</p>
+                        <ul class="text-gray-300">
+                            <li>
+                                <a href="" class="hover:text-blue-300">Home Charging</a>
+                            </li>
+                            <li>
+                                <a href="" class="hover:text-blue-300">Public Area</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="event">
+                            <p class="text-white text-xl font-medium underline">Event</p>
+                            <ul class="text-gray-300">
+                                <li>
+                                    <a href="" class="hover:text-blue-300">Home Charging</a>
+                                </li>
+                                <li>
+                                    <a href="" class="hover:text-blue-300">Public Area</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- kolom 3 footer -->
+            <div class="md:grid hidden">
+                <p class="text-white text-xl font-medium underline">Products</p>
+                <ul class="text-gray-300">
+                    <li>
+                        <a href="../products/ac-mini.html" class="hover:text-blue-300">AC Charger Mini</a>
+                    </li>
+                    <li>
+                        <a href="../products/wallbox.html" class="hover:text-blue-300">DC Charger Wallbox</a>
+                    </li>
+                    <li>
+                        <a href="../products/dc50kw.html" class="hover:text-blue-300">DC Charger 50-150kw</a>
+                    </li>
+                    <li>
+                        <a href="../products/dc-fast-150kw.html" class="hover:text-blue-300">DC Fast Charger 150-350kw</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex justify-left">
+                <div id="google_translate_element" class=""></div>
+                    <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({pageLanguage: 'id'}, 'google_translate_element');
+                        }
+                    </script>
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </div>
+        </div>      
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</body>
+</html>

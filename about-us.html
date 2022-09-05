@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <style src="./inpt.css"></style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
+    <title>About TEB</title>
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="bg-white shadow-lg">
+        <div class="px-4">
+            <div class="flex justify-between">
+                <div>
+                    <img class="h-10 mt-2 mr-4" src="/images/logo.png" alt="">
+                </div>
+                <div class="hidden md:flex justify-arround">
+                    <a href="index.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-100 transition ease-in duration-600 hover:font-semibold hover:text-white">Home</a>
+                    <a href="./service.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-100 transition ease-in duration-600 hover:font-semibold hover:text-white">Service</a>
+                    <a href="./product.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-100 transition ease-in duration-600 hover:font-semibold hover:text-white">Product</a>
+                    <a href="./project.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-100 transition ease-in duration-600 hover:font-semibold hover:text-white">Project</a>
+                    <a href="./about-us.html" class="block text-sm px-2 py-4 text-white bg-blue-500 font-semibold">About Us</a>
+                    <a href="./contact.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-100 transition ease-in duration-600 hover:font-semibold hover:text-white">Contact</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                  <button class="outline-none mobile-menu-button right-0">
+                    <svg class=" w-6 h-6 text-gray-500 hover:text-blue-500 "
+                        x-show="!showMenu" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                  </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu ">
+            <ul class=" transition-all duration-500 ease-in">
+                <li><a href="./index.html" class="block text-sm px-2 py-4 text-white bg-blue-500 font-semibold">Home</a></li>
+                <li><a href="./service.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Service</a></li>
+                <li><a href="./product.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Product</a></li>
+                <li><a href="./project.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Project</a></li>
+                <li><a href="./about-us.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">About Us</a></li>
+                <li><a href="./contact.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Contact</a></li>
+            </ul>
+        </div>
+        <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
+    </nav>  
+
+    <script>
+        function Menu(e) {
+            let list = document.querySelector('ul');
+
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'),
+                list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'),
+                    list.classList.remove('opacity-100'))
+        }
+    </script>
+
+    <div class="mb-15 lg:px-56 px-20">
+        <!--tablet dan desktop-->
+        <div class="flex justify-center">
+            <img src="/images/compro.png" class="lg:w-96 md:w-80 w-60 py-10 pl-5" alt="">
+        </div>
+        <p class="text-left ml-5 xl:text-2xl lg:mt-5 pr-5 mb-8">
+            Our Company now is accustomed in supplying EV Charger for an electric Car, 
+            a new innovation for a better energy for a better future. Our company now is 
+            collaborate with one of the EV Charging Manufacture Company Delta Electronics Int'l (Singapore) Pte.
+            Ltd, with the distribution agrrement we have made on December 2019 our motivation is to be the pioneer 
+            for EV Charging in Indonesia and we are aspire to sustain the Growth of Our Company.
+        </p>
+
+        <!-- 2 -->
+        <div class="xl:grid xl:grid-cols-2 gap-2 lg:gap-8">
+            <div class="md:flex md:justify-center">
+                <img src="./images/about us1.png" class="w-48 md:w-96 lg:w-full mb-4" alt="">
+            </div>
+            <p class="xl:text-2xl">
+                With our home charging solutions, refueling your car is easy. 
+                Schedule a charging session and your car will automatically start 
+                charging while you sleep, eat dinner, or do other activities. 
+                Why waste time charging when you can focus on what really matters at home? 
+                Delta's charging solutions ensure charging your car at home is safe, 
+                fast and will reduce your electricity costs. The picture beside this 
+                is an example of how you can charge with the products we offer to meet 
+                your electric car needs safely and of course with guaranteed quality.
+            </p>
+        </div>
+        <div class="mt-4">
+            <!-- visi -->
+            <div>
+                <p class="mb-2 text-xl lg:text-2xl font-medium">Visiion</p>
+                <p class="xl:text-2xl">To be the pioneer EV Charging distributor in Indonesia</p>
+            </div>
+            <!-- misi -->
+            <div>
+                <p class="mb-2 text-xl xl:text-2xl font-medium mt-4">Mision</p>
+                <p class="mb-1 xl:text-2xl"> To provide new energy for the better future.</p>
+                <p class="mb-1 xl:text-2xl"> We are Satisfied our costumer with the product quality 
+                    and great result of the installation, because make our 
+                    costumer feels great is make our company great. We Provide 
+                    the satisfation The costumer with Highest Quality and most 
+                    competitive price
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="mt-10">
+        <div class="flex justify-end">
+            <img src="./images/footer.png" class="right-0" alt="">
+        </div>
+        <div class="bg-gray-200 py-7 md:flex justify-between">
+            <div class="flex gap-5 justify-around md:mt-7">
+                <img src="./images/ig.png" class="w-6 md:h-6 md:pt-0" alt="">
+                <img src="./images/linkedin2.png" class="w-6 md:h-6 md:pt-0" alt="">
+            </div>
+            <p class="pt-4 md:pt-0 flex justify-around text-sm md:text-lg font-medium md:mt-6">Copyright 2022 PT Tri Energi Berkarya. All Rights Reserved.</p>
+            <div class="flex justify-center gap-2 bg-white px-3 py-1 rounded-md">
+                <div id="google_translate_element" class=""></div>
+                    <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({pageLanguage: 'id'}, 'google_translate_element');
+                        }
+                    </script>
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </div>
+        </div>      
+    </footer>
+
+    <!-- whatsapp -->
+    <div style="position:fixed;right:20px;bottom:80px;">
+        <a href="https://api.whatsapp.com/send?phone=+62811977861&text=Halo%2C%20saya%20*Isi_Nama*%20ingin%20bertanya%20mengenai%20*.....................*">
+            <img src="./images/whatsapp.png" class="w-14">
+        </a>
+    </div>
+    
+    <!-- Implement the Back Top Top Button -->
+    <button id="to-top-button" onclick="goToTop()" title="Go To Top"
+        class="hidden fixed z-90 bottom-5 right-6 border-0 w-12 h-12 rounded-full drop-shadow-md bg-indigo-500 text-white text-3xl font-bold">&uarr;</button>
+
+    <!-- Javascript code -->
+    <script>
+        var toTopButton = document.getElementById("to-top-button");
+
+        // When the user scrolls down 200px from the top of the document, show the button
+        window.onscroll = function () {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                toTopButton.classList.remove("hidden");
+            } else {
+                toTopButton.classList.add("hidden");
+            }
+        }
+
+        // When the user clicks on the button, smoothy scroll to the top of the document
+        function goToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+
+</html>

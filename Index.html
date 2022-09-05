@@ -1,0 +1,752 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href="./input.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="./images/compro.ico">
+    <title>Home</title>
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="bg-white shadow-lg">
+        <div class="px-4">
+            <div class="flex justify-between">
+                <div>
+                    <img class="h-10 mt-2 mr-4" src="./images/logo.png" alt="">
+                </div>
+                <div class="hidden md:flex justify-arround">
+                    <a href="index.html" class="block text-sm px-2 py-4 text-white bg-blue-500 font-semibold">Home</a>
+                    <a href="./service.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Service</a>
+                    <a href="./product.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Product</a>
+                    <a href="./project.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Project</a>
+                    <a href="./about-us.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">About Us</a>
+                    <a href="./contact.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Contact</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                  <button class="outline-none mobile-menu-button right-0">
+                    <svg class=" w-6 h-6 text-gray-500 hover:text-blue-500 "
+                        x-show="!showMenu"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                  </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li><a href="./index.html" class="block text-sm px-2 py-4 text-white bg-blue-500 font-semibold">Home</a></li>
+                <li><a href="./service.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Service</a></li>
+                <li><a href="./product.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Product</a></li>
+                <li><a href="./project.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Project</a></li>
+                <li><a href="./about-us.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">About Us</a></li>
+                <li><a href="./contact.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Contact</a></li>
+            </ul>
+        </div>
+        <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
+    </nav>  
+    
+    <!--mobile menu-->
+    <script>
+        function Menu(e) {
+            let list = document.querySelector('ul');
+
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'),
+                list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'),
+                    list.classList.remove('opacity-100'))
+
+        }
+    </script>
+
+    <!--content-->
+    <div class="swiper-slide">
+        <img class="" src="images/TEB-compro.png" alt="image" />
+    </div>
+
+    <!--Team-->
+    <div class="flex justify-center md:gap-20 gap-10 py-10 border-b">
+        <img src="images/KAN.png" class="md:h-20 lg:h-24 w-80 h-12" alt="">
+        <img src="./images/delta-logo.png" class="md:h-16 lg:h-20 w-80 h-10" alt="">
+    </div>
+
+    <!-- Company Profile -->
+    <div class="lg:flex pb-15 bg-cyan-600 text-white">
+        <div class="grid content-center">
+            <p class="font-bold ml-5 text-xl lg:text-2xl lg:mt-10 md:mt-10 text-center">
+                Company Profile
+            </p>
+            <p class="text-center px-5 md:text-md lg:mt-10 lg:px-20">
+                Our Company now is accustomed in supplying EV Charger for an electric Car, 
+                a new innovation for a better energy for a better future. Our company now
+                 is collaborate with one of the EV Charging Manufacture Company Delta Electronics 
+                 Int'l (Singapore) Pte. Ltd, with the distribution agrrement we have made 
+                 on December 2019 our motivation is to be the pioneer for EV Charging in Indonesia 
+                 and we are aspire to sustain the Gflexth of Our Company.
+            </p>
+            <div class="flex justify-center mb-10">
+                <a href="./about-us.html"
+                    class="bg-white text-cyan-500 rounded-md text-lg md:text-xl font-semibold px-5 py-1 md:mt-10 mt-5 ml-5 hover:text-blue-600">Selengkapnya
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Keunggulan -->
+    <div class="pb-15 border-b px-10">
+        <p class="font-bold text-xl lg:text-2xl md:my-8 text-center mb-10 mt-10">
+            Our Superiority
+        </p>
+        <div class="px-6 md:px-20">
+            <div class="grid md:grid-cols-4 grid-cols-2 justify-around mb-10 gap-10">
+                <!-- quality -->
+                <div class="overflow-hidden cursor-pointer rounded-md relative group">
+                    <img src="./images/quality.png" class="w-20 object-cover aspect-square group-hover:scale-110 transition duration-300 ease-in-out" alt="">
+                    <p class="font-semibold md:text-xl">Product Quality</p>
+                    <p class="md:text-md text-xs">100% Original product with official guarantee</p>
+                </div>
+                <!-- help desk -->
+                <div class="overflow-hidden cursor-pointer rounded-md relative group">
+                    <img src="./images/contact.png" class="w-20 object-cover aspect-square group-hover:scale-110 transition duration-300 ease-in-out" alt="">
+                    <p class="font-semibold md:text-xl">Help Desk</p>
+                    <p class="md:text-md text-xs">Our CS ready to serve 24 Hours</p>
+                </div>
+                <!-- service -->
+                <div class="overflow-hidden cursor-pointer rounded-md relative group">
+                    <img src="./images/price-tag.png" class="w-20 object-cover aspect-square group-hover:scale-110 transition duration-300 ease-in-out" alt="">
+                    <p class="font-semibold md:text-xl">Best Price</p>
+                    <p class="md:text-md text-xs">Guaranteed cheap and competitive EV Charger price</p>
+                </div>
+                <!-- price -->
+                <div class="overflow-hidden cursor-pointer rounded-md relative group">
+                    <img src="./images/service.png" class="w-20 object-cover aspect-square group-hover:scale-110 transition duration-300 ease-in-out" alt="">
+                    <p class="font-semibold md:text-xl">Service Premium</p>
+                    <p class="md:text-md text-xs">Have an experienced team instalation and service</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- activity -->
+    <h1 class="font-bold ml-5 text-xl lg:text-2xl lg:mt-10 mb-10 text-center mt-10">ACTIVITY</h1>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide flex justify-center">
+                <div class="overflow-hidden cursor-pointer rounded-xl relative group">
+                    <div class="rounded-xl z-70 opacity-10 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/90 to-transparent bg-gradient-to-t inset-x-0 -bottom-1 text-white flex items-end">
+                        <div class="px-10">
+                            <div class="transform-gpu space-y-3 text-xl group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 pb-10 transform transition duration-300 ease-in-out">
+                                <a href="./event/giias-enevt.html" class="font-bold text-lg hover:text-blue-400">GIIAS</a>
+                                <p class="md:text-sm text-xs">
+                                    Hadirnya inovasi teknologi terbaru dari industri otomotif Indonesia selalu menjadi 
+                                    alasan utama masyarakat untuk hadir di setiap penyelenggaraan GIIAS. Tidak terkecuali 
+                                    ditahun ini, para peserta akan menghadirkan berbagai teknologi dan produk terbarunya 
+                                    untuk masyarakat. 
+                                    <p class="hidden md:flex md:text-sm text-xs">Tercatat puluhan kendaraan dengan teknologi terkini, termasuk juga 
+                                        kendaraan bermotor berbasis baterai direncanakan akan diperkenalkan dan diluncurkan pada 
+                                        GIIAS 2022 
+                                    </p>
+                                </p>
+                                <a href="./event/giias-event.html" class="text-blue-200 text-xs md:text-xl font-medium py-1 mt-3 hover:text-blue-600">
+                                    Selengkapnya
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="object-cover" src="/images/event/gaikindo-gias.jpg" alt="image" />
+                </div>
+            </div>
+            <div class="swiper-slide flex justify-center">
+                <div class="overflow-hidden cursor-pointer rounded-xl relative group">
+                    <div class="rounded-xl z-70 opacity-10 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/90 to-black/20 bg-gradient-to-t inset-x-0 -bottom-1 text-white flex items-end">
+                        <div class="px-10">
+                            <div class="transform-gpu space-y-3 text-xl group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 pb-10 transform transition duration-300 ease-in-out">
+                                <a href="./event/G20-event.html" class="font-bold text-lg hover:text-blue-400">G20 Bali 2022</a>
+                                <p class="md:text-sm text-xs">
+                                    Sits right in between the busy Java island and the captivating beauty of Lombok, 
+                                    Bali has always been the epicentre of Indonesia’s tourism destination. Full of 
+                                    magnificent scenery and vibrant culture, Bali resembles the paradise on earth 
+                                    where gods decide to reside, earning it the name the “Island of Gods”.
+                                </p>
+                                <a href="./event/giias-event.html"
+                                    class="text-blue-200 md:text-xl text-xs font-medium py-1 mt-3 hover:text-blue-600">Selengkapnya
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="object-cover" src="/images/event/g20/g20-event.png" alt="image" />
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.mySwiper', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+    <!-- news -->
+    <div class="py-10 px-10 text-white bg-gray-200 mt-14">
+        <p class="font-semibold text-black lg:text-2xl">News</p>
+        
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="md:flex justify-center gap-7 lg:gap-20 mt-10 lg:px-20 px-5">
+                    <img src="./images/news/paket-homecharging.jpeg" class="h-72 md:h-80 lg:h-96 transition-all ease-in duration-400 delay-100 mr-5" alt="">
+                    
+                    <div class="text-gray-600">
+                        <p class="text-md md:text-xl font-semibold lg:text-3xl mb-4 mt-5 md:mt-0">Paket Bundling Home Charging</p>
+                        <p class="text-sm md:text-xl lg:text-2xl">
+                            Bekerja sama dengan Hyundai, kali ini kami menawarkan paket program bundling
+                            upgrade dari AC mini Plus 7,4kw (7400 watt), ke Ac Max 11Kw (11.000 Watt).
+                            Khusus anda pengguna Hyundai Ioniq 5, Melalui Program Bundling yang disediakan 
+                            oleh Hyundai. Hanya dengan penambahan Rp. 5.000.000, anda dapat menikmati upgrade 
+                            alat charger mobil listrik dirumah anda.
+                            Kami juga akan membantu anda terkait promo penambahan daya atau pasang baru Pelanggan PLN.
+                            Silahkan hubungi CS kami untuk info lebih lanjut.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    
+    <!-- product -->
+    <div class="bg-white">
+        <h2 class="font-bold text-2xl md:text-2xl text-center mt-10 pt-10 border-t">Our Product</h2>
+        <p class="text-center md:px-40 px-10 lg:px-60 md:text-xl mt-5 text-gray-500">
+            With our home charging solutions, refueling your car is effortless. 
+            Schedule your charging session and your car automatically starts charging 
+            while you're asleep or having dinner. Why waste time on charging when you 
+            can focus on what's really important at home? Delta charging solutions make 
+            sure that charging your car at home is safe, fast and will reduce your electricity costs.
+        </p>
+        <div class="flex justify-around">
+            <a href="./product.html"
+                class="bg-white text-cyan-500 rounded-md text-lg md:text-2xl font-semibold px-5 py-1 mt-10 ml-5 hover:text-blue-600">
+                Selengkapnya
+            </a>
+        </div>
+        
+        <!-- produk-produk -->
+        <div class="flex justify-center">
+            <div class="grid md:grid-cols-5 gap-10 grid-cols-2 mt-14 mb-20">
+                <!-- ac mini -->
+                <div class="overflow-hidden cursor-pointer rounded-xl relative group">
+                    <div class="rounded-xl z-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/80 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-30 text-white flex items-end">
+                        <div>
+                            <div class="transform-gpu p-4 space-y-3 text-xl group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 pb-10 transform transition duration-300 ease-in-out">
+                                <a href="./projects/hyundai.html" class="font-bold text-xs md:text-md hover:text-blue-300">AC Mini</a>
+                                <p class="text-xs">more info...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img
+                        alt=""
+                        class="object-cover w-20 h-36 md:w-24 md:h-48 lg:w-40 lg:h-60 aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                        src="./images/product/ac mini.png"
+                    />
+                </div>
+                <!-- ac 22 kw -->
+                <div class="hidden md:grid overflow-hidden cursor-pointer rounded-xl relative group">
+                    <div class="rounded-xl z-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/80 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-30 text-white flex items-end">
+                        <div>
+                            <div class="transform-gpu p-4 space-y-3 text-xl group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 pb-10 transform transition duration-300 ease-in-out">
+                                <a href="./products/ac-city-22.html" class="font-bold text-xs md:text-md hover:text-blue-400">AC City 22 KW</a>
+                                <p class="text-xs">more info...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img
+                        alt=""
+                        class="object-cover w-20 h-36 md:w-24 md:h-48 lg:w-40 lg:h-60 aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                        src="./images/product/ac city charger 22kw.png"
+                    />
+                </div>
+                <!-- ac wall box -->
+                <div class="overflow-hidden cursor-pointer rounded-xl relative group">
+                    <div class="rounded-xl z-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/80 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-30 text-white flex items-end">
+                        <div>
+                            <div class="transform-gpu p-4 space-y-3 text-xl group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 pb-10 transform transition duration-300 ease-in-out">
+                                <a href="./products/wall-box.html" class="font-bold text-xs md:text-md hover:text-blue-400">DC Wall Box</a>
+                                <p class="text-xs">more info...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img
+                        alt=""
+                        class="object-cover w-20 h-36 md:w-24 md:h-48 lg:w-40 lg:h-60 aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                        src="./images/product/DC Wallbox.png"
+                    />
+                </div>
+                <!-- 50kw -->
+                <div class="overflow-hidden cursor-pointer rounded-xl relative group">
+                    <div class="rounded-xl z-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/80 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-30 text-white flex items-end">
+                        <div>
+                            <div class="transform-gpu p-4 space-y-3 text-xl group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 pb-10 transform transition duration-300 ease-in-out">
+                                <a href="./projects/hyundai.html" class="font-bold text-xs md:text-md hover:text-blue-400">DC Charger 50KW</a>
+                                <p class="text-xs">more info...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img
+                        alt=""
+                        class="object-cover w-20 h-36 md:w-24 md:h-48 lg:w-40 lg:h-60 aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                        src="./images/product/dc city charger 50kw.png"
+                    />
+                </div>
+                <!-- fast charger -->
+                <div class="overflow-hidden cursor-pointer rounded-xl relative group">
+                    <div class="rounded-xl z-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/80 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-30 text-white flex items-end">
+                        <div>
+                            <div class="transform-gpu p-4 space-y-3 text-xl group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 pb-10 transform transition duration-300 ease-in-out">
+                                <a href="./projects/hyundai.html" class="font-bold text-xs md:text-md hover:text-blue-400">DC Fast Charger</a>
+                                <p class="text-xs">more info...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img
+                        alt=""
+                        class="object-cover w-20 h-36 md:w-24 md:h-48 lg:w-40 lg:h-60 aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                        src="./images/product/dc city charger 150kw.png"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- clients -->
+    <div class="bg-white mt-10">
+        <h2 class="font-bold text-2xl md:text-2xl text-center mt-10 pt-10 border-t mb-10">Our Clients</h2>
+
+        <!-- klien -->
+        <div class='grid md:grid-cols-8 grid-cols-5 items-center justify-center gap-5 md:gap-10 px-5 md:px-10'>
+            <!-- 1 -->
+            <div class="overflow-hidden cursor-pointer rounded-md relative group">
+                <img
+                    alt=""
+                    class="object-cover w-40 aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                    src="./images/client/pln-client.png"
+                />
+            </div>
+            <!-- 2 -->
+            <div class="overflow-hidden cursor-pointer rounded-md relative group">
+                <img
+                    alt=""
+                    class="object-cover w-40 aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                    src="./images/client/hyundai-client.png"
+                />
+            </div>
+            <!-- 3 -->
+            <div class="overflow-hidden cursor-pointer rounded-md relative group">
+                <img
+                    alt=""
+                    class="object-cover w-40 aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                    src="./images/client/pertamina-client.png"
+                />
+            </div>
+            <!-- 4 -->
+            <div class="overflow-hidden cursor-pointer rounded-md relative group">
+                <img
+                    alt=""
+                    class="object-cover w-40 aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                    src="./images/client/lexus-client.jpeg"
+                />
+            </div>
+            <!-- 5 -->
+            <div class="overflow-hidden cursor-pointer rounded-md relative group">
+                <img
+                    alt=""
+                    class="object-cover w-40 aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                    src="./images/client/kia-client.jpeg"
+                />
+            </div>
+            <!-- 6 -->
+            <div class="overflow-hidden cursor-pointer rounded-md relative group">
+                <img
+                    alt=""
+                    class="object-cover w-40 aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                    src="./images/client/mitsubishi-client.png"
+                />
+            </div>
+            <!-- 7 -->
+            <div class="overflow-hidden cursor-pointer rounded-md relative group">
+                <img
+                    alt=""
+                    class="object-cover w-40 aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                    src="./images/client/porsche-client.png"
+                />
+            </div>
+            <!-- 8 -->
+            <div class="overflow-hidden cursor-pointer rounded-md relative group">
+                <img
+                    alt=""
+                    class="object-cover w-40 aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                    src="./images/client/bmw-client.jpeg"
+                />
+            </div>
+            <!-- 9 -->
+            <div class="overflow-hidden cursor-pointer rounded-md relative group">
+                <img
+                    alt=""
+                    class="object-cover w-40 aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                    src="./images/client/wuling-client.jpeg"
+                />
+            </div>
+            <!-- 10 -->
+            <div class="overflow-hidden cursor-pointer rounded-md relative group">
+                <img
+                    alt=""
+                    class="object-cover w-40 aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                    src="./images/client/mg-client.jpeg"
+                />
+            </div>
+            <!-- 11 -->
+            <div class="overflow-hidden cursor-pointer rounded-md relative group">
+                <img
+                    alt=""
+                    class="object-cover w-40 aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                    src="./images/client/nissan-client.png"
+                />
+            </div>
+            <!-- 12 -->
+            <div class="overflow-hidden cursor-pointer rounded-md relative group">
+                <img
+                    alt=""
+                    class="object-cover w-40 aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                    src="./images/client/toyota-client.jpeg"
+                />
+            </div>
+            <!-- 13 -->
+            <div class="overflow-hidden cursor-pointer rounded-md relative group">
+                <img
+                    alt=""
+                    class="object-cover w-40 aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                    src="./images/client/giias-client.jpeg"
+                />
+            </div>
+            <!-- 14 -->
+            <div class="overflow-hidden cursor-pointer rounded-md relative group">
+                <img
+                    alt=""
+                    class="object-cover w-40 aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                    src="./images/client/g20-client.jpeg"
+                />
+            </div>
+            <!-- 15 -->
+            <div class="overflow-hidden cursor-pointer rounded-md relative group">
+                <img
+                    alt=""
+                    class="object-cover w-40 aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                    src="./images/client/mini-client.jpeg"
+                />
+            </div>
+            <!-- 16 -->
+            <div class="overflow-hidden cursor-pointer rounded-md relative group">
+                <img
+                    alt=""
+                    class="object-cover w-40 aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                    src="./images/client/dfsk-client.jpeg"
+                />
+            </div>
+            <!-- 17 -->
+            <div class="overflow-hidden cursor-pointer rounded-md relative group">
+                <img
+                    alt=""
+                    class="object-cover w-40 aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                    src="./images/client/giias-client.jpeg"
+                />
+            </div>
+            <!-- 18 -->
+            <div class="overflow-hidden cursor-pointer rounded-md relative group">
+                <img
+                    alt=""
+                    class="object-cover w-40 aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                    src="./images/client/g20-client.jpeg"
+                />
+            </div>
+            <!-- 19 -->
+            <div class="overflow-hidden cursor-pointer rounded-md relative group">
+                <img
+                    alt=""
+                    class="object-cover w-40 aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                    src="./images/client/mercure-client.png"
+                />
+            </div>
+            <!-- 20 -->
+            <div class="overflow-hidden cursor-pointer rounded-md relative group">
+                <img
+                    alt=""
+                    class="object-cover w-40 aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                    src="./images/client/lippo-client.png"
+                />
+            </div>
+            <!-- 21 -->
+            <div class="overflow-hidden cursor-pointer rounded-md relative group">
+                <img
+                    alt=""
+                    class="object-cover w-40 aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                    src="./images/client/spklu-client.jpeg"
+                />
+            </div>
+            <!-- 22 -->
+            <div class="overflow-hidden cursor-pointer rounded-md relative group">
+                <img
+                    alt=""
+                    class="object-cover w-40 aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                    src="./images/client/santika-client.png"
+                />
+            </div>
+            <!-- 23 -->
+            <div class="overflow-hidden cursor-pointer rounded-md relative group">
+                <img
+                    alt=""
+                    class="object-cover w-40 aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                    src="./images/client/aston-client.png"
+                />
+            </div>
+            <!-- 24 -->
+            <div class="overflow-hidden cursor-pointer rounded-md relative group">
+                <img
+                    alt=""
+                    class="object-cover w-40 aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
+                    src="./images/client/mercure-client.png"
+                />
+            </div>
+        </div>
+    </div>
+
+    <!-- report -->
+    <section class="pricing_area pt-120 pb-120 md:mt-20 mt-10">
+        <div class="container">
+            <div class="flex">
+                <div class="w-full">
+                    <div class="pricing_menu mt-8 pb-8">
+                        <ul class="flex justify-center">
+                            <li class="nav-item">
+                                <button class="py-3 px-8 rounded-tl-full rounded-full font-semibold text-2xl">Report</button>
+                            </li>
+                        </ul>
+                    </div> <!-- pricing menu -->
+                    
+                    <div class="pricing_content mt-6_area">
+                        <div class="tab-content">
+                            <div class="active tab-pane" id="monthlyPlan" data-tab-content>
+                                <div class="md:flex justify-center">
+                                    <!-- single -->
+                                    <div class="w-full sm:w-3/12 md:w-6/12 lg:w-4/12">
+                                        <div class="single_pricing text-center mt-8 mx-3">
+                                            <div class="pricing_title relative inline-block">
+                                                <h4 class="title group-hover:text-white">Installation</h4>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="112" height="110" viewBox="0 0 112 110">
+                                                    <path class="services_shape" id="Polygon_15" data-name="Polygon 15" d="M51.2,2.329a11,11,0,0,1,9.6,0L96.15,19.478a11,11,0,0,1,5.927,7.466l8.76,38.665a11,11,0,0,1-2.1,9.258l-24.508,30.96A11,11,0,0,1,75.6,110H36.4a11,11,0,0,1-8.625-4.173L3.266,74.867a11,11,0,0,1-2.1-9.258l8.76-38.665a11,11,0,0,1,5.927-7.466Z" fill="#1ea5ff"/>
+                                                </svg>
+                                            </div>
+                                            <div class="pricing_content mt-6">
+                                                <span class="pricing_price font-bold text-black text-4xl">934</span>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    
+                                    <div class="w-full sm:w-4/12 md:w-7/12 lg:w-4/12">
+                                        <div class="single_pricing text-center mt-8 mx-3 active">
+                                            <div class="pricing_title relative inline-block">
+                                                <h4 class="title group-hover:text-white">Project</h4>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="112" height="110" viewBox="0 0 112 110">
+                                                    <path class="services_shape" id="Polygon_15" data-name="Polygon 15" d="M51.2,2.329a11,11,0,0,1,9.6,0L96.15,19.478a11,11,0,0,1,5.927,7.466l8.76,38.665a11,11,0,0,1-2.1,9.258l-24.508,30.96A11,11,0,0,1,75.6,110H36.4a11,11,0,0,1-8.625-4.173L3.266,74.867a11,11,0,0,1-2.1-9.258l8.76-38.665a11,11,0,0,1,5.927-7.466Z" fill="#1ea5ff"/>
+                                                </svg>
+                                            </div>
+                                            <div class="pricing_content mt-6">
+                                                <span class="pricing_price font-bold text-black text-4xl">1251</span>
+                                            </div>
+                                        </div>  <!-- single pricing -->
+                                    </div>
+                                    
+                                    <div class="w-full sm:w-4/12 md:w-7/12 lg:w-4/12">
+                                        <div class="single_pricing text-center mt-8 mx-3">
+                                            <div class="pricing_title relative inline-block">
+                                                <h4 class="title group-hover:text-white">Event</h4>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="112" height="110" viewBox="0 0 112 110">
+                                                    <path class="services_shape" id="Polygon_15" data-name="Polygon 15" d="M51.2,2.329a11,11,0,0,1,9.6,0L96.15,19.478a11,11,0,0,1,5.927,7.466l8.76,38.665a11,11,0,0,1-2.1,9.258l-24.508,30.96A11,11,0,0,1,75.6,110H36.4a11,11,0,0,1-8.625-4.173L3.266,74.867a11,11,0,0,1-2.1-9.258l8.76-38.665a11,11,0,0,1,5.927-7.466Z" fill="#1ea5ff"/>
+                                                </svg>
+                                            </div>
+                                            <div class="pricing_content mt-6">
+                                                <span class="pricing_price font-bold text-black text-4xl">20</span>
+                                            </div>
+                                        </div>  <!-- single pricing -->
+                                    </div>
+                                </div> <!-- flex -->
+                            </div>
+                        </div>
+                    </div> <!-- pricing menu -->
+                </div>
+            </div> <!-- flex -->
+        </div> <!-- container -->
+    </section>
+
+    <!-- footer -->
+    <footer class="mt-10">
+        <div class="flex justify-end">
+            <img src="./images/footer.png" class="right-0" alt="">
+        </div>
+        <div class="bg-gray-600 py-4 px-7 md:flex justify-between">
+            <div class="gap-5 md:mt-4">
+                <!-- logo white -->
+                <img src="./images/TEB-logo.png" class="md:h-10 h-7" alt="">
+                <p class="text-gray-300 ">Brought new energy, for
+                    a bright and better future</p>
+                
+                   <div class="flex gap-16">
+                        <!-- email -->
+                        <a href="mailto:admin@trienergiberkarya.com" class="flex gap-1 mt-2">
+                            <img src="./images/email.png" class="w-5 h-5 mt-1" alt="">
+                            <p class="text-white">Send Email</p>
+                        </a>
+                        <!-- wa me -->
+                        <a href="https://api.whatsapp.com/send?phone=+62811977861&text=Halo%2C%20saya%20*Isi_Nama*%20ingin%20bertanya%20mengenai%20*.....................*" class="flex gap-1 mt-2">
+                            <img src="./images/wa.png" class="w-5 h-5 mt-1" alt="">
+                            <p class="text-white">Contact Us</p>
+                        </a>
+                   </div>
+
+                    
+                    <div class="flex gap-10">
+                        <!-- instagram -->
+                        <a href="https://www.instagram.com/trienergi.id/" class="flex gap-1 mt-2">
+                            <img src="./images/Instagram.png" class="w-5 h-5 mt-1" alt="">
+                            <p class="text-white">Instagram TEB</p>
+                        </a>
+
+                        <!-- youtube -->
+                        <a href="https://www.youtube.com/channel/UCrCY054Kz5zkpnh8tjDaoCQ" class="flex gap-1 mt-2">
+                            <img src="./images/youtube.png" class="w-5 h-5 mt-1" alt="">
+                            <p class="text-white">Youtube Channel</p>
+                        </a>
+                    </div>
+            </div>
+            <!-- kolom 2 footer -->
+            <div class="column-2 md:grid hidden">
+                <div>
+                    <div class="mb-2">
+                        <p class="text-white text-xl font-medium underline">Projects</p>
+                        <ul class="text-gray-300">
+                            <li>
+                                <a href="" class="hover:text-blue-300">Home Charging</a>
+                            </li>
+                            <li>
+                                <a href="" class="hover:text-blue-300">Public Area</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="event">
+                            <p class="text-white text-xl font-medium underline">Event</p>
+                            <ul class="text-gray-300">
+                                <li>
+                                    <a href="" class="hover:text-blue-300">Home Charging</a>
+                                </li>
+                                <li>
+                                    <a href="" class="hover:text-blue-300">Public Area</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- kolom 3 footer -->
+            <div class="md:grid hidden">
+                <p class="text-white text-xl font-medium underline">Products</p>
+                <ul class="text-gray-300">
+                    <li>
+                        <a href="./products/ac-mini.html" class="hover:text-blue-300">AC Charger Mini</a>
+                    </li>
+                    <li>
+                        <a href="./products/wallbox.html" class="hover:text-blue-300">DC Charger Wallbox</a>
+                    </li>
+                    <li>
+                        <a href="" class="hover:text-blue-300">DC Charger 50-150kw</a>
+                    </li>
+                    <li>
+                        <a href="" class="hover:text-blue-300">DC Fast Charger 150-350kw</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex justify-left">
+                <div id="google_translate_element" class=""></div>
+                    <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({pageLanguage: 'id'}, 'google_translate_element');
+                        }
+                    </script>
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </div>
+        </div>      
+    </footer>
+
+    <!-- whatsapp -->
+    <div style="position:fixed;right:20px;bottom:80px;">
+        <a href="https://api.whatsapp.com/send?phone=+62811977861&text=Halo%2C%20saya%20*Isi_Nama*%20ingin%20bertanya%20mengenai%20*.....................*">
+            <img src="./images/whatsapp.png" class="w-14">
+        </a>
+    </div>
+    
+    <!-- Implement the Back Top Top Button -->
+    <button id="to-top-button" onclick="goToTop()" title="Go To Top"
+        class="hidden fixed z-90 bottom-5 right-6 border-0 w-12 h-12 rounded-full drop-shadow-md bg-indigo-500 text-white text-3xl font-bold">&uarr;</button>
+
+    <!-- Javascript code -->
+    <script>
+        var toTopButton = document.getElementById("to-top-button");
+
+        // When the user scrolls down 200px from the top of the document, show the button
+        window.onscroll = function () {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                toTopButton.classList.remove("hidden");
+            } else {
+                toTopButton.classList.add("hidden");
+            }
+        }
+
+        // When the user clicks on the button, smoothy scroll to the top of the document
+        function goToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+
+</html>
