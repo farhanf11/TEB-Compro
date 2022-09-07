@@ -3,7 +3,6 @@
   <head>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
     <script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
     <link rel="shortcut icon" href="../images/compro.ico">
     <meta charset="UTF-8">
@@ -22,8 +21,6 @@
         height: 400px;
       }
     </style>
-    
-    <title>Form Survei</title>
   </head>
   <body>
     <!--navbar-->
@@ -75,43 +72,51 @@
         </script>
     </nav>  
 
-    <div class="md:mt-10 sm:mt-0">
+    <div class="sm:mt-0">
       <div class="md:grid md:grid-cols-2 md:gap-6">
         <div class="md:mt-0 md:col-span-2">
             <form action="#" method="POST">
               <div class="overflow-hidden">
                 <div class="px-4 py-5 bg-white sm:p-6">
-                  <h2 class="md:mt-10 font-bold text-2xl mb-5">Form Survei</h2>
-                  <div class="grid grid-cols-6 gap-6">
+                  <h4 class="font-bold text-2xl text-center">Form Survei Tri Energi Berkarya</h4>
+                  <!-- awalan survei -->
+                  <div class="row">
                     <!-- name -->
-                    <div class="col-span-6 sm:col-span-3">
-                      <label for="note" class="block text-sm font-medium text-gray-700">Nama Kostumer</label>
-                      <input type="text" name="note" id="note" autocomplete="given-name" class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
+                    <div class="col-12 col-lg-3 form-group mt-3">
+                      <label for="name">Nama Kostumer</label>
+                      <input type="text" class="form-control form-control-sm" id="name" aria-describedby="name" placeholder="Enter name">
                     </div>
                     
-                    <!-- address -->
-                    <div class="col-span-6 sm:col-span-3">
+                    <!-- phone -->
+                    <div class="col-12 col-lg-3 mt-3">
                       <label for="phone_number" class="block text-sm font-medium text-gray-700">Nomor Telepon</label>
-                      <input type="number" name="phone_number" id="phone_number" autocomplete="family-name" class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
+                      <input class="form-control form-control-sm" type="number" placeholder="">
+                    </div>
+
+                    <!-- dealer -->
+                    <div class="col-12 col-lg-3 form-group mt-3">
+                      <label for="name text-sm ">Dealer/Perusahaan</label>
+                      <input type="text" class="form-control form-control-sm" id="name" aria-describedby="name" placeholder="Enter name">
                     </div>
 
                     <!-- date -->
-                    <div class="col-span-6 sm:col-span-3">
+                    <div class="col-12 col-lg-3 mt-3">
                       <div class="flex items-center justify-center">
-                        <div class="datepicker relative form-floating mb-3 xl:w-96" data-mdb-toggle-button="false">
+                        <div class="datepicker" data-mdb-toggle-button="false">
+                          <label for="floatingInput" class="text-gray-700">Tanggal</label>
                           <input type="text"
-                            class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                            placeholder="Select a date" data-mdb-toggle="datepicker" />
-                          <label for="floatingInput" class="text-gray-700">Select a date</label>
+                            class="form-control form-control-sm"
+                            placeholder="Select a date" data-mdb-toggle="datepicker" 
+                          />
                         </div>
                       </div>
                     </div>
                     
 
-                    <!-- baraang -->
-                    <div class="col-span-6 sm:col-span-3">
-                        <label for="country" class="block text-sm font-medium text-gray-700">Tipe Charger</label>
-                        <select id="country" name="country" autocomplete="country" class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
+                    <!-- tipe charger -->
+                    <div class="col-12 col-lg-4 mt-3">
+                        <label for="status" class="block text-sm font-medium text-gray-700">Tipe Charger</label>
+                        <select id="status" name="status" autocomplete="status" class="form-control form-control-sm">
                           <option>ACMINI 7,4KW</option>
                           <option>ACMAX SMART 22KW</option>
                           <option>ACMAX BASIC 22KW</option>
@@ -123,675 +128,584 @@
                     </div>
 
                     <!-- alamat -->
-                    <div class="col-span-12 sm:col-span-12">
+                    <div class="col-lg-8 col-12 mt-3">
                       <label for="address" class="block text-sm font-medium text-gray-700">Alamat Kostumer</label>
-                      <input 
+                      <textarea 
                         type="text" 
                         name="address" 
                         id="address" 
                         autocomplete="address" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        class="form-control form-control-sm"
                       >
+                      </textarea>
                     </div>
                   </div>
+                  <!-- end awalan survei -->
 
                   <!-- uraian pekerjaan 1-->
-                  <h2 class="mt-10 font-bold text-xl mb-5">Uraian Pekerjaan 1</h2>
-                  <div class="grid grid-cols-12 gap-6">  
+                  <h4 class="mt-5">Uraian Pekerjaan 1</h4>
+                  <div class="row">  
                     <!-- no urut -->
-                    <div class="md:col-span-2 col-span-4">
+                    <div class="col-3 col-lg-1 mt-3">
                       <label for="number" class="block text-sm font-medium text-gray-700">Number</label>
                       <input disabled 
                         id="number" 
                         name="number" 
                         autocomplete="number" 
                         placeholder="1" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        class="form-control form-control-sm"
                       >
                     </div>
                     
                     <!-- deskripsi -->
-                    <div class="md:col-span-6 col-span-8">
+                    <div class="col-9 col-lg-6 mt-3">
                       <label for="note" class="block text-sm font-medium text-gray-700">Deskripsi Pekerjaan</label>
                       <input type="text" name="note" id="note" 
                         autocomplete="given-name" 
                         placeholder="Cek Lokasi Pemasangan" disabled
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        class="form-control form-control-sm"
                       >
                     </div>
 
                     <!-- up foto -->
-                    <div class="md:col-span-4 col-span-6">
+                    <div class="col-12 col-lg-5 mt-3">
                         <div class="flex justify-center">
-                            <div class="mb-3 w-96">
-                              <label for="country" class="block text-sm font-medium text-gray-700">Value Upload</label>
-                              <input class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" type="file" id="formFileMultiple" multiple>
-                            </div>
+                          <div class="mb-3 w-96">
+                            <label for="status" class="block text-sm font-medium text-gray-700">Value Upload</label>
+                            <input class="form-control form-control-sm" type="file" id="formFileMultiple" multiple>
                           </div>
+                        </div>
                           
-                          <!-- Custom scripts -->
-                          <script type="text/javascript">
-                            const checkbox = document.getElementById("flexCheckIndeterminate");
-                            checkbox.indeterminate = true;
-                          </script>
+                        <!-- Custom scripts -->
+                        <script type="text/javascript">
+                          const checkbox = document.getElementById("flexCheckIndeterminate");
+                          checkbox.indeterminate = true;
+                        </script>
                     </div>
                     
                     <!-- satuan -->
-                    <div class="md:col-span-5 col-span-6">
+                    <div class="col-6 col-lg-2">
                       <label for="number" class="block text-sm font-medium text-gray-700">Satuan</label>
                       <input type="text" 
                         id="satuan" 
                         name="satuan" 
                         autocomplete="satuan" 
-                        placeholder="A" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        placeholder="input satuan" 
+                        class="form-control form-control-sm"
                       >
                     </div>
 
                     <!-- status -->
-                    <div class="col-span-3 md:col-span-1">
-                      <label for="country" class="block text-sm font-medium text-gray-700">Status</label>
-                      <div class="flex justify-center">                         
-                        <div>
-                          <div class="form-check">
-                            <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label inline-block text-gray-800" for="flexCheckDefault">
-                              OK
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label inline-block text-gray-800" for="flexCheckChecked">
-                              NG
-                            </label>
-                          </div>
-                        </div>
-                      </div>  
+                    <div class="col-6 col-lg-2">
+                      <label for="status" class="block text-sm font-medium text-gray-700">Status</label>
+                      <select id="status" name="status" autocomplete="status" class="form-control form-control-sm">
+                        <option>OK</option>
+                        <option>NG</option>
+                      </select>
                     </div>
                   
                     <!-- Note -->
-                    <div class="md:col-span-6 col-span-3 md:mt-0">
+                    <div class="col-lg-8 col-12">
                       <label for="note" class="block text-sm font-medium text-gray-700">Note</label>
-                      <input type="text" name="note" id="note" autocomplete="given-name" class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
+                      <textarea type="text" name="note" id="note" autocomplete="given-name" placeholder="catatan" class="form-control form-control-sm"></textarea>
                     </div>
                   </div>
 
                   <!-- uraian pekerjaan 2-->
-                  <h2 class="mt-10 font-bold text-xl mb-5">Uraian Pekerjaan 2</h2>
-                  <div class="grid grid-cols-12 gap-6">  
+                  <h4 class="mt-5">Uraian Pekerjaan 2</h4>
+                  <div class="row">  
                     <!-- no urut -->
-                    <div class="md:col-span-2 col-span-4">
+                    <div class="col-3 col-lg-1 mt-3">
                       <label for="number" class="block text-sm font-medium text-gray-700">Number</label>
                       <input disabled 
                         id="number" 
                         name="number" 
                         autocomplete="number" 
                         placeholder="1" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        class="form-control form-control-sm"
                       >
                     </div>
                     
                     <!-- deskripsi -->
-                    <div class="md:col-span-6 col-span-8">
+                    <div class="col-9 col-lg-6 mt-3">
                       <label for="note" class="block text-sm font-medium text-gray-700">Deskripsi Pekerjaan</label>
                       <input type="text" name="note" id="note" 
                         autocomplete="given-name" 
-                        placeholder="Cek Lokasi Pemasangan" disabled
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        placeholder="Periksa nilai arus dan keberadaan 
+                        ELCB/MCCB pada panel" disabled
+                        class="form-control form-control-sm"
                       >
                     </div>
 
                     <!-- up foto -->
-                    <div class="md:col-span-4 col-span-6">
+                    <div class="col-12 col-lg-5 mt-3">
                         <div class="flex justify-center">
-                            <div class="mb-3 w-96">
-                              <label for="country" class="block text-sm font-medium text-gray-700">Value Upload</label>
-                              <input class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" type="file" id="formFileMultiple" multiple>
-                            </div>
+                          <div class="mb-3 w-96">
+                            <label for="status" class="block text-sm font-medium text-gray-700">Value Upload</label>
+                            <input class="form-control form-control-sm" type="file" id="formFileMultiple" multiple>
                           </div>
+                        </div>
                           
-                          <!-- Custom scripts -->
-                          <script type="text/javascript">
-                            const checkbox = document.getElementById("flexCheckIndeterminate");
-                            checkbox.indeterminate = true;
-                          </script>
+                        <!-- Custom scripts -->
+                        <script type="text/javascript">
+                          const checkbox = document.getElementById("flexCheckIndeterminate");
+                          checkbox.indeterminate = true;
+                        </script>
                     </div>
                     
                     <!-- satuan -->
-                    <div class="md:col-span-5 col-span-6">
+                    <div class="col-6 col-lg-2">
                       <label for="number" class="block text-sm font-medium text-gray-700">Satuan</label>
                       <input type="text" 
                         id="satuan" 
                         name="satuan" 
                         autocomplete="satuan" 
-                        placeholder="A" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        placeholder="input satuan" 
+                        class="form-control form-control-sm"
                       >
                     </div>
 
-                    <!-- Good / Not Good -->
-                    <div class="col-span-3 md:col-span-1">
-                      <label for="country" class="block text-sm font-medium text-gray-700">Status</label>
-                      <div class="flex justify-center">                         
-                        <div>
-                          <div class="form-check">
-                            <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="flexCheckDefault">
-                              <label class="form-check-label inline-block text-gray-800" for="flexCheckDefault">
-                                OK
-                              </label>
-                            </div>
-                          <div class="form-check">
-                            <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="flexCheckChecked" checked>
-                              <label class="form-check-label inline-block text-gray-800" for="flexCheckChecked">
-                                NG
-                              </label>
-                            </div>
-                          </div>
-                        </div>  
-                      </div>
+                    <!-- status -->
+                    <div class="col-6 col-lg-2">
+                      <label for="status" class="block text-sm font-medium text-gray-700">Status</label>
+                      <select id="status" name="status" autocomplete="status" class="form-control form-control-sm">
+                        <option>OK</option>
+                        <option>NG</option>
+                      </select>
+                    </div>
                   
                     <!-- Note -->
-                    <div class="md:col-span-6 col-span-3 md:mt-0">
+                    <div class="col-lg-8 col-12">
                       <label for="note" class="block text-sm font-medium text-gray-700">Note</label>
-                      <input type="text" name="note" id="note" autocomplete="given-name" class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
+                      <textarea type="text" name="note" id="note" autocomplete="given-name" placeholder="catatan" class="form-control form-control-sm"></textarea>
                     </div>
                   </div>
 
                   <!-- uraian pekerjaan 3-->
-                  <h2 class="mt-10 font-bold text-xl mb-5">Uraian Pekerjaan 3</h2>
-                  <div class="grid grid-cols-12 gap-6">  
+                  <h4 class="mt-5">Uraian Pekerjaan 3</h4>
+                  <div class="row">  
                     <!-- no urut -->
-                    <div class="md:col-span-2 col-span-4">
+                    <div class="col-3 col-lg-1 mt-3">
                       <label for="number" class="block text-sm font-medium text-gray-700">Number</label>
                       <input disabled 
                         id="number" 
                         name="number" 
                         autocomplete="number" 
                         placeholder="1" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        class="form-control form-control-sm"
                       >
                     </div>
                     
                     <!-- deskripsi -->
-                    <div class="md:col-span-6 col-span-8">
+                    <div class="col-9 col-lg-6 mt-3">
                       <label for="note" class="block text-sm font-medium text-gray-700">Deskripsi Pekerjaan</label>
                       <input type="text" name="note" id="note" 
                         autocomplete="given-name" 
-                        placeholder="Cek Lokasi Pemasangan" disabled
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        placeholder="Periksa total daya kontrak PLN" disabled
+                        class="form-control form-control-sm"
                       >
                     </div>
 
                     <!-- up foto -->
-                    <div class="md:col-span-4 col-span-6">
+                    <div class="col-12 col-lg-5 mt-3">
                         <div class="flex justify-center">
-                            <div class="mb-3 w-96">
-                              <label for="country" class="block text-sm font-medium text-gray-700">Value Upload</label>
-                              <input class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" type="file" id="formFileMultiple" multiple>
-                            </div>
+                          <div class="mb-3 w-96">
+                            <label for="status" class="block text-sm font-medium text-gray-700">Value Upload</label>
+                            <input class="form-control form-control-sm" type="file" id="formFileMultiple" multiple>
                           </div>
+                        </div>
                           
-                          <!-- Custom scripts -->
-                          <script type="text/javascript">
-                            const checkbox = document.getElementById("flexCheckIndeterminate");
-                            checkbox.indeterminate = true;
-                          </script>
+                        <!-- Custom scripts -->
+                        <script type="text/javascript">
+                          const checkbox = document.getElementById("flexCheckIndeterminate");
+                          checkbox.indeterminate = true;
+                        </script>
                     </div>
                     
                     <!-- satuan -->
-                    <div class="md:col-span-5 col-span-6">
+                    <div class="col-6 col-lg-2">
                       <label for="number" class="block text-sm font-medium text-gray-700">Satuan</label>
                       <input type="text" 
                         id="satuan" 
                         name="satuan" 
                         autocomplete="satuan" 
-                        placeholder="A" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        placeholder="input satuan" 
+                        class="form-control form-control-sm"
                       >
                     </div>
 
-                    <!-- Good / Not Good -->
-                    <div class="col-span-3 md:col-span-1">
-                      <label for="country" class="block text-sm font-medium text-gray-700">Status</label>
-                      <div class="flex justify-center">                         
-                        <div>
-                          <div class="form-check">
-                            <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="flexCheckDefault">
-                              <label class="form-check-label inline-block text-gray-800" for="flexCheckDefault">
-                                OK
-                              </label>
-                            </div>
-                          <div class="form-check">
-                            <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="flexCheckChecked" checked>
-                              <label class="form-check-label inline-block text-gray-800" for="flexCheckChecked">
-                                NG
-                              </label>
-                            </div>
-                          </div>
-                        </div>  
-                      </div>
+                    <!-- status -->
+                    <div class="col-6 col-lg-2">
+                      <label for="status" class="block text-sm font-medium text-gray-700">Status</label>
+                      <select id="status" name="status" autocomplete="status" class="form-control form-control-sm">
+                        <option>OK</option>
+                        <option>NG</option>
+                      </select>
+                    </div>
                   
                     <!-- Note -->
-                    <div class="md:col-span-6 col-span-3 md:mt-0">
+                    <div class="col-lg-8 col-12">
                       <label for="note" class="block text-sm font-medium text-gray-700">Note</label>
-                      <input type="text" name="note" id="note" autocomplete="given-name" class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
+                      <textarea type="text" name="note" id="note" autocomplete="given-name" placeholder="catatan" class="form-control form-control-sm"></textarea>
                     </div>
                   </div>
 
                   <!-- uraian pekerjaan 4-->
-                  <h2 class="mt-10 font-bold text-xl mb-5">Uraian Pekerjaan 4</h2>
-                  <div class="grid grid-cols-12 gap-6">  
+                  <h4 class="mt-5">Uraian Pekerjaan 4</h4>
+                  <div class="row">  
                     <!-- no urut -->
-                    <div class="md:col-span-2 col-span-4">
+                    <div class="col-3 col-lg-1 mt-3">
                       <label for="number" class="block text-sm font-medium text-gray-700">Number</label>
                       <input disabled 
                         id="number" 
                         name="number" 
                         autocomplete="number" 
                         placeholder="1" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        class="form-control form-control-sm"
                       >
                     </div>
                     
                     <!-- deskripsi -->
-                    <div class="md:col-span-6 col-span-8">
+                    <div class="col-9 col-lg-6 mt-3">
                       <label for="note" class="block text-sm font-medium text-gray-700">Deskripsi Pekerjaan</label>
                       <input type="text" name="note" id="note" 
                         autocomplete="given-name" 
-                        placeholder="Cek Lokasi Pemasangan" disabled
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        placeholder="Periksa daya yang terpakai oleh 
+                        customer" disabled
+                        class="form-control form-control-sm"
                       >
                     </div>
 
                     <!-- up foto -->
-                    <div class="md:col-span-4 col-span-6">
+                    <div class="col-12 col-lg-5 mt-3">
                         <div class="flex justify-center">
-                            <div class="mb-3 w-96">
-                              <label for="country" class="block text-sm font-medium text-gray-700">Value Upload</label>
-                              <input class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" type="file" id="formFileMultiple" multiple>
-                            </div>
+                          <div class="mb-3 w-96">
+                            <label for="status" class="block text-sm font-medium text-gray-700">Value Upload</label>
+                            <input class="form-control form-control-sm" type="file" id="formFileMultiple" multiple>
                           </div>
+                        </div>
                           
-                          <!-- Custom scripts -->
-                          <script type="text/javascript">
-                            const checkbox = document.getElementById("flexCheckIndeterminate");
-                            checkbox.indeterminate = true;
-                          </script>
+                        <!-- Custom scripts -->
+                        <script type="text/javascript">
+                          const checkbox = document.getElementById("flexCheckIndeterminate");
+                          checkbox.indeterminate = true;
+                        </script>
                     </div>
                     
                     <!-- satuan -->
-                    <div class="md:col-span-5 col-span-6">
+                    <div class="col-6 col-lg-2">
                       <label for="number" class="block text-sm font-medium text-gray-700">Satuan</label>
                       <input type="text" 
                         id="satuan" 
                         name="satuan" 
                         autocomplete="satuan" 
-                        placeholder="A" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        placeholder="input satuan" 
+                        class="form-control form-control-sm"
                       >
                     </div>
 
-                    <!-- Good / Not Good -->
-                    <div class="col-span-3 md:col-span-1">
-                      <label for="country" class="block text-sm font-medium text-gray-700">Status</label>
-                      <div class="flex justify-center">                         
-                        <div>
-                          <div class="form-check">
-                            <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="flexCheckDefault">
-                              <label class="form-check-label inline-block text-gray-800" for="flexCheckDefault">
-                                OK
-                              </label>
-                            </div>
-                          <div class="form-check">
-                            <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="flexCheckChecked" checked>
-                              <label class="form-check-label inline-block text-gray-800" for="flexCheckChecked">
-                                NG
-                              </label>
-                            </div>
-                          </div>
-                        </div>  
-                      </div>
+                    <!-- status -->
+                    <div class="col-6 col-lg-2">
+                      <label for="status" class="block text-sm font-medium text-gray-700">Status</label>
+                      <select id="status" name="status" autocomplete="status" class="form-control form-control-sm">
+                        <option>OK</option>
+                        <option>NG</option>
+                      </select>
+                    </div>
                   
                     <!-- Note -->
-                    <div class="md:col-span-6 col-span-3 md:mt-0">
+                    <div class="col-lg-8 col-12">
                       <label for="note" class="block text-sm font-medium text-gray-700">Note</label>
-                      <input type="text" name="note" id="note" autocomplete="given-name" class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
+                      <textarea type="text" name="note" id="note" autocomplete="given-name" placeholder="catatan" class="form-control form-control-sm"></textarea>
                     </div>
                   </div>
 
                   <!-- uraian pekerjaan 5-->
-                  <h2 class="mt-10 font-bold text-xl mb-5">Uraian Pekerjaan 5</h2>
-                  <div class="grid grid-cols-12 gap-6">  
+                  <h4 class="mt-5">Uraian Pekerjaan 5</h4>
+                  <div class="row">  
                     <!-- no urut -->
-                    <div class="md:col-span-2 col-span-4">
+                    <div class="col-3 col-lg-1 mt-3">
                       <label for="number" class="block text-sm font-medium text-gray-700">Number</label>
                       <input disabled 
                         id="number" 
                         name="number" 
                         autocomplete="number" 
                         placeholder="1" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        class="form-control form-control-sm"
                       >
                     </div>
                     
                     <!-- deskripsi -->
-                    <div class="md:col-span-6 col-span-8">
+                    <div class="col-9 col-lg-6 mt-3">
                       <label for="note" class="block text-sm font-medium text-gray-700">Deskripsi Pekerjaan</label>
                       <input type="text" name="note" id="note" 
                         autocomplete="given-name" 
-                        placeholder="Cek Lokasi Pemasangan" disabled
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        placeholder="pare daya untuk pemasangan EV-Charging" disabled
+                        class="form-control form-control-sm"
                       >
                     </div>
 
                     <!-- up foto -->
-                    <div class="md:col-span-4 col-span-6">
+                    <div class="col-12 col-lg-5 mt-3">
                         <div class="flex justify-center">
-                            <div class="mb-3 w-96">
-                              <label for="country" class="block text-sm font-medium text-gray-700">Value Upload</label>
-                              <input class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" type="file" id="formFileMultiple" multiple>
-                            </div>
+                          <div class="mb-3 w-96">
+                            <label for="status" class="block text-sm font-medium text-gray-700">Value Upload</label>
+                            <input class="form-control form-control-sm" type="file" id="formFileMultiple" multiple>
                           </div>
+                        </div>
                           
-                          <!-- Custom scripts -->
-                          <script type="text/javascript">
-                            const checkbox = document.getElementById("flexCheckIndeterminate");
-                            checkbox.indeterminate = true;
-                          </script>
+                        <!-- Custom scripts -->
+                        <script type="text/javascript">
+                          const checkbox = document.getElementById("flexCheckIndeterminate");
+                          checkbox.indeterminate = true;
+                        </script>
                     </div>
                     
                     <!-- satuan -->
-                    <div class="md:col-span-5 col-span-6">
+                    <div class="col-6 col-lg-2">
                       <label for="number" class="block text-sm font-medium text-gray-700">Satuan</label>
                       <input type="text" 
                         id="satuan" 
                         name="satuan" 
                         autocomplete="satuan" 
-                        placeholder="A" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        placeholder="input satuan" 
+                        class="form-control form-control-sm"
                       >
                     </div>
 
-                    <!-- Good / Not Good -->
-                    <div class="col-span-3 md:col-span-1">
-                      <label for="country" class="block text-sm font-medium text-gray-700">Status</label>
-                      <div class="flex justify-center">                         
-                        <div>
-                          <div class="form-check">
-                            <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="flexCheckDefault">
-                              <label class="form-check-label inline-block text-gray-800" for="flexCheckDefault">
-                                OK
-                              </label>
-                            </div>
-                          <div class="form-check">
-                            <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="flexCheckChecked" checked>
-                              <label class="form-check-label inline-block text-gray-800" for="flexCheckChecked">
-                                NG
-                              </label>
-                            </div>
-                          </div>
-                        </div>  
-                      </div>
+                    <!-- status -->
+                    <div class="col-6 col-lg-2">
+                      <label for="status" class="block text-sm font-medium text-gray-700">Status</label>
+                      <select id="status" name="status" autocomplete="status" class="form-control form-control-sm">
+                        <option>OK</option>
+                        <option>NG</option>
+                      </select>
+                    </div>
                   
                     <!-- Note -->
-                    <div class="md:col-span-6 col-span-3 md:mt-0">
+                    <div class="col-lg-8 col-12">
                       <label for="note" class="block text-sm font-medium text-gray-700">Note</label>
-                      <input type="text" name="note" id="note" autocomplete="given-name" class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
+                      <textarea type="text" name="note" id="note" autocomplete="given-name" placeholder="catatan" class="form-control form-control-sm"></textarea>
                     </div>
                   </div>
 
                   <!-- uraian pekerjaan 6-->
-                  <h2 class="mt-10 font-bold text-xl mb-5">Uraian Pekerjaan 6</h2>
-                  <div class="grid grid-cols-12 gap-6">  
+                  <h4 class="mt-5">Uraian Pekerjaan 6</h4>
+                  <div class="row">  
                     <!-- no urut -->
-                    <div class="md:col-span-2 col-span-4">
+                    <div class="col-3 col-lg-1 mt-3">
                       <label for="number" class="block text-sm font-medium text-gray-700">Number</label>
                       <input disabled 
                         id="number" 
                         name="number" 
                         autocomplete="number" 
                         placeholder="1" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        class="form-control form-control-sm"
                       >
                     </div>
                     
                     <!-- deskripsi -->
-                    <div class="md:col-span-6 col-span-8">
+                    <div class="col-9 col-lg-6 mt-3">
                       <label for="note" class="block text-sm font-medium text-gray-700">Deskripsi Pekerjaan</label>
                       <input type="text" name="note" id="note" 
                         autocomplete="given-name" 
-                        placeholder="Cek Lokasi Pemasangan" disabled
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        placeholder="Periksa dan ukur Jalur kabel untuk 
+                        instalasi dari Unit EV-Charging ke 
+                        panel listrik" disabled
+                        class="form-control form-control-sm"
                       >
                     </div>
 
                     <!-- up foto -->
-                    <div class="md:col-span-4 col-span-6">
+                    <div class="col-12 col-lg-5 mt-3">
                         <div class="flex justify-center">
-                            <div class="mb-3 w-96">
-                              <label for="country" class="block text-sm font-medium text-gray-700">Value Upload</label>
-                              <input class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" type="file" id="formFileMultiple" multiple>
-                            </div>
+                          <div class="mb-3 w-96">
+                            <label for="status" class="block text-sm font-medium text-gray-700">Value Upload</label>
+                            <input class="form-control form-control-sm" type="file" id="formFileMultiple" multiple>
                           </div>
+                        </div>
                           
-                          <!-- Custom scripts -->
-                          <script type="text/javascript">
-                            const checkbox = document.getElementById("flexCheckIndeterminate");
-                            checkbox.indeterminate = true;
-                          </script>
+                        <!-- Custom scripts -->
+                        <script type="text/javascript">
+                          const checkbox = document.getElementById("flexCheckIndeterminate");
+                          checkbox.indeterminate = true;
+                        </script>
                     </div>
                     
                     <!-- satuan -->
-                    <div class="md:col-span-5 col-span-6">
+                    <div class="col-6 col-lg-2">
                       <label for="number" class="block text-sm font-medium text-gray-700">Satuan</label>
                       <input type="text" 
                         id="satuan" 
                         name="satuan" 
                         autocomplete="satuan" 
-                        placeholder="A" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        placeholder="input satuan" 
+                        class="form-control form-control-sm"
                       >
                     </div>
 
-                    <!-- Good / Not Good -->
-                    <div class="col-span-3 md:col-span-1">
-                      <label for="country" class="block text-sm font-medium text-gray-700">Status</label>
-                      <div class="flex justify-center">                         
-                        <div>
-                          <div class="form-check">
-                            <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="flexCheckDefault">
-                              <label class="form-check-label inline-block text-gray-800" for="flexCheckDefault">
-                                OK
-                              </label>
-                            </div>
-                          <div class="form-check">
-                            <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="flexCheckChecked" checked>
-                              <label class="form-check-label inline-block text-gray-800" for="flexCheckChecked">
-                                NG
-                              </label>
-                            </div>
-                          </div>
-                        </div>  
-                      </div>
+                    <!-- status -->
+                    <div class="col-6 col-lg-2">
+                      <label for="status" class="block text-sm font-medium text-gray-700">Status</label>
+                      <select id="status" name="status" autocomplete="status" class="form-control form-control-sm">
+                        <option>OK</option>
+                        <option>NG</option>
+                      </select>
+                    </div>
                   
                     <!-- Note -->
-                    <div class="md:col-span-6 col-span-3 md:mt-0">
+                    <div class="col-lg-8 col-12">
                       <label for="note" class="block text-sm font-medium text-gray-700">Note</label>
-                      <input type="text" name="note" id="note" autocomplete="given-name" class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
+                      <textarea type="text" name="note" id="note" autocomplete="given-name" placeholder="catatan" class="form-control form-control-sm"></textarea>
                     </div>
                   </div>
 
                   <!-- uraian pekerjaan 7-->
-                  <h2 class="mt-10 font-bold text-xl mb-5">Uraian Pekerjaan 7</h2>
-                  <div class="grid grid-cols-12 gap-6">  
+                  <h4 class="mt-5">Uraian Pekerjaan 7</h4>
+                  <div class="row">  
                     <!-- no urut -->
-                    <div class="md:col-span-2 col-span-4">
+                    <div class="col-3 col-lg-1 mt-3">
                       <label for="number" class="block text-sm font-medium text-gray-700">Number</label>
                       <input disabled 
                         id="number" 
                         name="number" 
                         autocomplete="number" 
                         placeholder="1" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        class="form-control form-control-sm"
                       >
                     </div>
                     
                     <!-- deskripsi -->
-                    <div class="md:col-span-6 col-span-8">
+                    <div class="col-9 col-lg-6 mt-3">
                       <label for="note" class="block text-sm font-medium text-gray-700">Deskripsi Pekerjaan</label>
                       <input type="text" name="note" id="note" 
                         autocomplete="given-name" 
-                        placeholder="Cek Lokasi Pemasangan" disabled
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        placeholder=" Periksa Ukuran kabel Tufur" disabled
+                        class="form-control form-control-sm"
                       >
                     </div>
 
                     <!-- up foto -->
-                    <div class="md:col-span-4 col-span-6">
+                    <div class="col-12 col-lg-5 mt-3">
                         <div class="flex justify-center">
-                            <div class="mb-3 w-96">
-                              <label for="country" class="block text-sm font-medium text-gray-700">Value Upload</label>
-                              <input class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" type="file" id="formFileMultiple" multiple>
-                            </div>
+                          <div class="mb-3 w-96">
+                            <label for="status" class="block text-sm font-medium text-gray-700">Value Upload</label>
+                            <input class="form-control form-control-sm" type="file" id="formFileMultiple" multiple>
                           </div>
+                        </div>
                           
-                          <!-- Custom scripts -->
-                          <script type="text/javascript">
-                            const checkbox = document.getElementById("flexCheckIndeterminate");
-                            checkbox.indeterminate = true;
-                          </script>
+                        <!-- Custom scripts -->
+                        <script type="text/javascript">
+                          const checkbox = document.getElementById("flexCheckIndeterminate");
+                          checkbox.indeterminate = true;
+                        </script>
                     </div>
                     
                     <!-- satuan -->
-                    <div class="md:col-span-5 col-span-6">
+                    <div class="col-6 col-lg-2">
                       <label for="number" class="block text-sm font-medium text-gray-700">Satuan</label>
                       <input type="text" 
                         id="satuan" 
                         name="satuan" 
                         autocomplete="satuan" 
-                        placeholder="A" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        placeholder="input satuan" 
+                        class="form-control form-control-sm"
                       >
                     </div>
 
-                    <!-- Good / Not Good -->
-                    <div class="col-span-3 md:col-span-1">
-                      <label for="country" class="block text-sm font-medium text-gray-700">Status</label>
-                      <div class="flex justify-center">                         
-                        <div>
-                          <div class="form-check">
-                            <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="flexCheckDefault">
-                              <label class="form-check-label inline-block text-gray-800" for="flexCheckDefault">
-                                OK
-                              </label>
-                            </div>
-                          <div class="form-check">
-                            <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="flexCheckChecked" checked>
-                              <label class="form-check-label inline-block text-gray-800" for="flexCheckChecked">
-                                NG
-                              </label>
-                            </div>
-                          </div>
-                        </div>  
-                      </div>
+                    <!-- status -->
+                    <div class="col-6 col-lg-2">
+                      <label for="status" class="block text-sm font-medium text-gray-700">Status</label>
+                      <select id="status" name="status" autocomplete="status" class="form-control form-control-sm">
+                        <option>OK</option>
+                        <option>NG</option>
+                      </select>
+                    </div>
                   
                     <!-- Note -->
-                    <div class="md:col-span-6 col-span-3 md:mt-0">
+                    <div class="col-lg-8 col-12">
                       <label for="note" class="block text-sm font-medium text-gray-700">Note</label>
-                      <input type="text" name="note" id="note" autocomplete="given-name" class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
+                      <textarea type="text" name="note" id="note" autocomplete="given-name" placeholder="catatan" class="form-control form-control-sm"></textarea>
                     </div>
                   </div>
 
                   <!-- uraian pekerjaan 1-->
-                  <h2 class="mt-10 font-bold text-xl mb-5">Uraian Pekerjaan 8</h2>
-                  <div class="grid grid-cols-12 gap-6">  
+                  <h4 class="mt-5">Uraian Pekerjaan 8</h4>
+                  <div class="row">  
                     <!-- no urut -->
-                    <div class="md:col-span-2 col-span-4">
+                    <div class="col-3 col-lg-1 mt-3">
                       <label for="number" class="block text-sm font-medium text-gray-700">Number</label>
                       <input disabled 
                         id="number" 
                         name="number" 
                         autocomplete="number" 
                         placeholder="1" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        class="form-control form-control-sm"
                       >
                     </div>
                     
                     <!-- deskripsi -->
-                    <div class="md:col-span-6 col-span-8">
+                    <div class="col-9 col-lg-6 mt-3">
                       <label for="note" class="block text-sm font-medium text-gray-700">Deskripsi Pekerjaan</label>
                       <input type="text" name="note" id="note" 
                         autocomplete="given-name" 
-                        value="Cek Lokasi Pemasangan" disabled
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        placeholder="
+                        Periksa besar tahanan pembumian 
+                        di lokasi pemasangan" disabled
+                        class="form-control form-control-sm"
                       >
                     </div>
 
                     <!-- up foto -->
-                    <div class="md:col-span-4 col-span-6">
+                    <div class="col-12 col-lg-5 mt-3">
                         <div class="flex justify-center">
-                            <div class="mb-3 w-96">
-                              <label for="country" class="block text-sm font-medium text-gray-700">Value Upload</label>
-                              <input class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" type="file" id="formFileMultiple" multiple>
-                            </div>
+                          <div class="mb-3 w-96">
+                            <label for="status" class="block text-sm font-medium text-gray-700">Value Upload</label>
+                            <input class="form-control form-control-sm" type="file" id="formFileMultiple" multiple>
                           </div>
+                        </div>
                           
-                          <!-- Custom scripts -->
-                          <script type="text/javascript">
-                            const checkbox = document.getElementById("flexCheckIndeterminate");
-                            checkbox.indeterminate = true;
-                          </script>
+                        <!-- Custom scripts -->
+                        <script type="text/javascript">
+                          const checkbox = document.getElementById("flexCheckIndeterminate");
+                          checkbox.indeterminate = true;
+                        </script>
                     </div>
                     
                     <!-- satuan -->
-                    <div class="md:col-span-5 col-span-6">
+                    <div class="col-6 col-lg-2">
                       <label for="number" class="block text-sm font-medium text-gray-700">Satuan</label>
                       <input type="text" 
                         id="satuan" 
                         name="satuan" 
                         autocomplete="satuan" 
-                        placeholder="A" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        placeholder="input satuan" 
+                        class="form-control form-control-sm"
                       >
                     </div>
 
-                    <!-- Good / Not Good -->
-                    <div class="col-span-3 md:col-span-1">
-                      <label for="country" class="block text-sm font-medium text-gray-700">Status</label>
-                      <div class="flex justify-center">                         
-                        <div>
-                          <div class="form-check">
-                            <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="flexCheckDefault">
-                              <label class="form-check-label inline-block text-gray-800" for="flexCheckDefault">
-                                OK
-                              </label>
-                            </div>
-                          <div class="form-check">
-                            <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="flexCheckChecked" checked>
-                              <label class="form-check-label inline-block text-gray-800" for="flexCheckChecked">
-                                NG
-                              </label>
-                            </div>
-                          </div>
-                        </div>  
-                      </div>
+                    <!-- status -->
+                    <div class="col-6 col-lg-2">
+                      <label for="status" class="block text-sm font-medium text-gray-700">Status</label>
+                      <select id="status" name="status" autocomplete="status" class="form-control form-control-sm">
+                        <option>OK</option>
+                        <option>NG</option>
+                      </select>
+                    </div>
                   
                     <!-- Note -->
-                    <div class="md:col-span-6 col-span-3 md:mt-0">
+                    <div class="col-lg-8 col-12">
                       <label for="note" class="block text-sm font-medium text-gray-700">Note</label>
-                      <textarea name="note" id="note" autocomplete="given-name" class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"></textarea>
+                      <textarea type="text" name="note" id="note" autocomplete="given-name" placeholder="catatan" class="form-control form-control-sm"></textarea>
                     </div>
                   </div>
                 </div>
 
                 <!-- ttd -->
                 <div class="container">
-                  <h1 class="alert alert-success mt-5 text-dark">
-                      Latihan Membuat Tanda Tangan Digital - sahretech.com
-                  </h1>
                   <div class="card">
                       <div class="card-header">
-                          Form Tanda Tangan
+                          Tanda Tangan Kostumer
                       </div>
                       <div class="card-body">
                           <!-- canvas tanda tangan  -->
@@ -799,25 +713,25 @@
           
                           <!-- tombol submit  -->
                           <div style="float: left;">
-                              <button id="btn-submit" class="bg-blue-500 text-white px-3 py-1 rounded mt-3">
+                              <button id="btn-submit" class="btn btn-secondary">
                                   Submit
                               </button>
                           </div>
           
                           <div style="float: right;">
                               <!-- tombol ganti warna  -->
-                              <button type="button" class="bg-green-500 text-white px-3 py-1 rounded mt-3" id="change-color">
+                              <button type="button" class="btn btn-dark" id="change-color">
                                   Change Color
                               </button>
           
                               <!-- tombol undo  -->
-                              <button type="button" class="bg-black text-white px-3 py-1 rounded mt-3" id="undo">
+                              <button type="button" class="btn btn-warning" id="undo">
                                   <span class="fas fa-undo"></span>
                                   Undo
                               </button>
           
                               <!-- tombol hapus tanda tangan  -->
-                              <button type="button" class="bg-red-500 text-white px-3 py-1 rounded mt-3" id="clear">
+                              <button type="button" class="btn btn-danger" id="clear">
                                   <span class="fas fa-eraser"></span>
                                   Clear
                               </button>
@@ -898,15 +812,15 @@
               </script>
               <!-- ttd end -->
 
-                <div class="flex gap-10 px-4 py-3 bg-gray-50 text-right sm:px-6">
-                  <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                <div class="row mt-3">
+                  <button type="submit" class="btn btn-success col-4 col-lg-1">
                     Save
                   </button>
-                  <a href="./material.html" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                  <div class="col-lg-1 col-1"></div>
+                  <a href="./material.html" class="btn btn-primary col-4 col-lg-1">
                     Next
                   </a>
                 </div>
-              </div>
             </form>
         </div>
       </div>
