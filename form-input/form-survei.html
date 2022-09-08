@@ -26,14 +26,16 @@
     <!--navbar-->
     <nav class="bg-gray-100 shadow-lg">
         <div class="px-4">
-            <div class="flex justify-between">
-                <div>
+            <div class="row">
+                <div class="col-lg-2">
                     <img class="h-10 mt-2 mr-4" src="../images/logo.png" alt="">
                 </div>
-                <div class="hidden md:flex justify-arround">
-                    <a href="index.html" class="block text-sm px-2 py-4 text-white bg-blue-500 font-semibold">Home</a>
-                    <a href="./service.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Survei</a>
-                    <a href="./service.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Installation</a>
+                <div class="col-lg-8">
+                    <div class="row">
+                      <a href="index.html" class="col-lg-2">Home</a>
+                      <a href="./service.html" class="col-lg-2">Survei</a>
+                      <a href="./service.html" class="col-lg-2">Installation</a>
+                    </div>
                 </div>
                 
                 <!-- Mobile menu button -->
@@ -55,13 +57,13 @@
             </div>
         </div>
         <!-- mobile menu -->
-        <div class="hidden mobile-menu">
+        <!-- <div class="hidden mobile-menu">
             <ul class="">
               <a href="index.html" class="block text-sm px-2 py-4 text-white bg-blue-500 font-semibold">Home</a>
               <a href="./service.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Survei</a>
               <a href="./service.html" class="block text-sm px-2 py-4 hover:bg-blue-400 delay-50 transition ease-in duration-600 hover:font-semibold hover:text-white">Installation</a>
             </ul>
-        </div>
+        </div> -->
         <script>
             const btn = document.querySelector("button.mobile-menu-button");
             const menu = document.querySelector(".mobile-menu");
