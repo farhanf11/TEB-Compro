@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Forms / Survey</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block">Form Survey</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div><!-- End Search Bar -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Kevin Anderson</h6>
+              <span>Web Designer</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <!-- user Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-menu-button-wide"></i><span>User</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="users-profile.html">
+              <i class="bi bi-circle"></i><span>Admin</span>
+            </a>
+          </li>
+          <li>
+            <a href="pelaksana.html">
+              <i class="bi bi-circle"></i><span>Pelaksana</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End user Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-journal-text"></i><span>Forms</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="forms-survei.html">
+              <i class="bi bi-circle"></i><span>Form Survey</span>
+            </a>
+          </li>
+          <li>
+            <a href="forms-material.html">
+              <i class="bi bi-circle"></i><span>Form Material</span>
+            </a>
+          </li>
+          <li>
+            <a href="forms-instalasi.html">
+              <i class="bi bi-circle"></i><span>Form Instalasi</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Forms Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#material-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-layout-text-window-reverse"></i><span>Material</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="material-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="kategori.html">
+              <i class="bi bi-circle"></i><span>Kategori</span>
+            </a>
+          </li>
+          <li>
+            <a href="item.html">
+              <i class="bi bi-circle"></i><span>Items</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Tables Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#survei" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-bar-chart"></i><span>Survey</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="survei" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="survei.html">
+              <i class="bi bi-circle"></i><span>List</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End survei -->
+
+  </aside>
+  <!-- End Sidebar-->
+
+  <!-- form -->
+  <main id="main" class="main mt-5">
+    <form action="#" method="POST">
+      <div class="overflow-hidden">
+        <div class="px-4 py-5 bg-white sm:p-6">
+          <h3 class="fw-bolder text-center">Form Survei Tri Energi Berkarya</h4>
+          <!-- awalan survei -->
+          <div class="row">
+            <!-- name -->
+            <div class="col-12 col-lg-3 form-group mt-3">
+              <label for="name">Nama Kostumer</label>
+              <input type="text" class="form-control form-control-sm" id="name" aria-describedby="name" placeholder="Enter name">
+            </div>
+            
+            <!-- phone -->
+            <div class="col-12 col-lg-3 mt-3">
+              <label for="phone_number" class="block text-sm font-medium text-gray-700">Nomor Telepon</label>
+              <input class="form-control form-control-sm" type="number" placeholder="">
+            </div>
+
+            <!-- dealer -->
+            <div class="col-12 col-lg-3 form-group mt-3">
+              <label for="name text-sm ">Dealer/Perusahaan</label>
+              <input type="text" class="form-control form-control-sm" id="name" aria-describedby="name" placeholder="Enter name">
+            </div>
+
+            <!-- date -->
+            <div class="col-12 col-lg-3 mt-3">
+              <div class="flex items-center justify-center">
+                <div class="datepicker" data-mdb-toggle-button="false">
+                  <label for="floatingInput" class="text-gray-700">Tanggal</label>
+                  <input type="text"
+                    class="form-control form-control-sm"
+                    placeholder="Select a date" data-mdb-toggle="datepicker" 
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- tipe charger -->
+            <div class="col-12 col-lg-4 mt-3">
+                <label for="status" class="block text-sm font-medium text-gray-700">Tipe Charger</label>
+                <select id="status" name="status" autocomplete="status" class="form-control form-control-sm">
+                  <option>ACMINI 7,4KW</option>
+                  <option>ACMAX SMART 22KW</option>
+                  <option>ACMAX BASIC 22KW</option>
+                  <option>DCWB 25KW</option>
+                  <option>DCCT 50KW</option>
+                  <option>DCCT 100KW</option>
+                  <option>DCCT 200KW</option>
+                </select>
+            </div>
+
+            <!-- alamat -->
+            <div class="col-lg-8 col-12 mt-3">
+              <label for="address" class="block text-sm font-medium text-gray-700">Alamat Kostumer</label>
+              <textarea 
+                type="text" 
+                name="address" 
+                id="address" 
+                autocomplete="address" 
+                class="form-control form-control-sm"
+              >
+              </textarea>
+            </div>
+          </div>
+          <!-- end awalan survei -->
+
+          <!-- uraian pekerjaan 1-->
+          <h4 class="mt-5 fw-bolder">Uraian Pekerjaan 1</h4>
+          <div class="row">  
+            <!-- no urut -->
+            <div class="col-3 col-lg-1 mt-3">
+              <label for="number" class="block text-sm font-medium text-gray-700">Number</label>
+              <input disabled 
+                id="number" 
+                name="number" 
+                autocomplete="number" 
+                placeholder="1" 
+                class="form-control form-control-sm"
+              >
+            </div>
+            
+            <!-- deskripsi -->
+            <div class="col-9 col-lg-6 mt-3">
+              <label for="note" class="block text-sm font-medium text-gray-700">Deskripsi Pekerjaan</label>
+              <input type="text" name="note" id="note" 
+                autocomplete="given-name" 
+                placeholder="Cek Lokasi Pemasangan" disabled
+                class="form-control form-control-sm"
+              >
+            </div>
+
+            <!-- up foto -->
+            <div class="col-12 col-lg-5 mt-3">
+                <div class="flex justify-center">
+                  <div class="mb-3 w-96">
+                    <label for="status" class="block text-sm font-medium text-gray-700">Value Upload</label>
+                    <input class="form-control form-control-sm" type="file" id="formFileMultiple" multiple>
+                  </div>
+                </div>
+                  
+                <!-- Custom scripts -->
+                <script type="text/javascript">
+                  const checkbox = document.getElementById("flexCheckIndeterminate");
+                  checkbox.indeterminate = true;
+                </script>
+            </div>
+            
+            <!-- satuan -->
+            <div class="col-6 col-lg-2">
+              <label for="number" class="block text-sm font-medium text-gray-700">Satuan</label>
+              <input type="text" 
+                id="satuan" 
+                name="satuan" 
+                autocomplete="satuan" 
+                placeholder="input satuan" 
+                class="form-control form-control-sm"
+              >
+            </div>
+
+            <!-- status -->
+            <div class="col-6 col-lg-2">
+              <label for="status" class="block text-sm font-medium text-gray-700">Status</label>
+              <select id="status" name="status" autocomplete="status" class="form-control form-control-sm">
+                <option>OK</option>
+                <option>NG</option>
+              </select>
+            </div>
+          
+            <!-- Note -->
+            <div class="col-lg-8 col-12">
+              <label for="note" class="block text-sm font-medium text-gray-700">Note</label>
+              <textarea type="text" name="note" id="note" autocomplete="given-name" placeholder="catatan" class="form-control form-control-sm"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- ttd -->
+        <div class="container">
+          <div class="card">
+              <div class="card-header">
+                  Tanda Tangan Kostumer
+              </div>
+              <div class="card-body">
+                  <!-- canvas tanda tangan  -->
+                  <canvas id="signature-pad" class="signature-pad"></canvas>
+  
+                  <!-- tombol submit  -->
+                  <div style="float: left;">
+                      <button id="btn-submit" class="btn btn-secondary">
+                          Submit
+                      </button>
+                  </div>
+  
+                  <div style="float: right;">
+                      <!-- tombol ganti warna  -->
+                      <button type="button" class="btn btn-dark" id="change-color">
+                          Change Color
+                      </button>
+  
+                      <!-- tombol undo  -->
+                      <button type="button" class="btn btn-warning" id="undo">
+                          <span class="fas fa-undo"></span>
+                          Undo
+                      </button>
+  
+                      <!-- tombol hapus tanda tangan  -->
+                      <button type="button" class="btn btn-danger" id="clear">
+                          <span class="fas fa-eraser"></span>
+                          Clear
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+      <script>
+          // script di dalam ini akan dijalankan pertama kali saat dokumen dimuat
+          document.addEventListener('DOMContentLoaded', function () {
+              resizeCanvas();
+          })
+  
+          //script ini berfungsi untuk menyesuaikan tanda tangan dengan ukuran canvas
+          function resizeCanvas() {
+              var ratio = Math.max(window.devicePixelRatio || 1, 1);
+              canvas.width = canvas.offsetWidth * ratio;
+              canvas.height = canvas.offsetHeight * ratio;
+              canvas.getContext("2d").scale(ratio, ratio);
+          }
+  
+  
+          var canvas = document.getElementById('signature-pad');
+  
+          //warna dasar signaturepad
+          var signaturePad = new SignaturePad(canvas, {
+              backgroundColor: 'rgb(255, 255, 255)'
+          });
+  
+          //saat tombol clear diklik maka akan menghilangkan seluruh tanda tangan
+          document.getElementById('clear').addEventListener('click', function () {
+              signaturePad.clear();
+          });
+  
+          //saat tombol undo diklik maka akan mengembalikan tanda tangan sebelumnya
+          document.getElementById('undo').addEventListener('click', function () {
+              var data = signaturePad.toData();
+              if (data) {
+                  data.pop(); // remove the last dot or line
+                  signaturePad.fromData(data);
+              }
+          });
+  
+          //saat tombol change color diklik maka akan merubah warna pena
+          document.getElementById('change-color').addEventListener('click', function () {
+  
+              //jika warna pena biru maka buat menjadi hitam dan sebaliknya
+              if(signaturePad.penColor == "rgba(0, 0, 255, 1)"){
+  
+                  signaturePad.penColor = "rgba(0, 0, 0, 1)";
+              }else{
+                  signaturePad.penColor = "rgba(0, 0, 255, 1)";
+              }
+          })
+  
+          //fungsi untuk menyimpan tanda tangan dengan metode ajax
+          $(document).on('click', '#btn-submit', function () {
+              var signature = signaturePad.toDataURL();
+  
+              $.ajax({
+                  url: "proses.php",
+                  data: {
+                      foto: signature,
+                  },
+                  method: "POST",
+                  success: function () {
+                      location.reload();
+                      alert('Tanda Tangan Berhasil Disimpan');
+                  }
+  
+              })
+          })
+      </script>
+      <!-- ttd end -->
+
+        <div class="row mt-3 mb-3 justify-content-center">
+          <button type="submit" class="btn btn-success col-2">
+            Save
+          </button>
+          <div class="col-lg-1 col-1"></div>
+          <a href="./material.html" class="btn btn-primary col-2">
+            Next
+          </a>
+        </div>
+    </form>
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Tri Energi Berkarya</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.min.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
