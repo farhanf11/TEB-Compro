@@ -559,28 +559,36 @@
           class="form-control form-control-sm"
         >
       </div>
-
+      <div class="col-2 col-lg-0"></div>
       <!-- status -->
-      <div class="col-6 col-lg-2">
+      <div class="col-4 col-lg-1">
         <label for="status" class="block text-sm font-medium text-gray-700">Status</label>
-        <select id="status" name="status" autocomplete="status" class="form-control form-control-sm">
-          <option>OK</option>
-          <option>NG</option>
-        </select>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            OK
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            NG
+          </label>
+        </div>
       </div>
     
       <!-- Note -->
-      <div class="col-lg-8 col-12">
+      <div class="col-lg-9 col-12">
         <label for="note" class="block text-sm font-medium text-gray-700">Note</label>
         <textarea type="text" name="note" id="note" autocomplete="given-name" placeholder="catatan" class="form-control form-control-sm"></textarea>
       </div>
     </div>
 
     <div class="row mt-5">
-      <div class="col-1">
+      <div class="col-4 col-lg-1">
         <button type="submit" class="btn btn-success">Save</button>
       </div>
-      <div class="col-1">
+      <div class="col-4 col-lg-1">
         <button type="submit" class="btn btn-danger">Cancle</button>
       </div>
     </div>
