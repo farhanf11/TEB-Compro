@@ -186,7 +186,7 @@
         </a>
         <ul id="survei" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="survei.html">
+            <a href="material.html">
               <i class="bi bi-circle"></i><span>List</span>
             </a>
           </li>
@@ -196,1486 +196,291 @@
   </aside>
   <!-- End Sidebar-->
 
-  <main id="main" class="main mt-5 sm:mt-0">
-    <div class="mt-5">
-      <div class="mt-5 md:mt-0 md:col-span-2">
-        <form action="#" method="POST">
-          <div class="overflow-hidden">
-            <!-- card NYY -->
-            <div class="pl-5 pr-5">
-              <h4 class="font-bold text-2xl mb-3 ml-3">Kabel Power (
-                <select class="text-lg" id="Kabel_Power">
-                  <option>NYY 3x4</option>
-                  <option>NYY 3x6</option>
-                  <option>NYY 3x10</option>
-                  <option>NYY 4x10</option>
-                  <option>NYY 4x16</option>
-                  <option>NYY 4x25</option>
-                  <option>NYY 4x35</option>
-                  <option>NYFGBY 3x10</option>
-                  <option>NYFGBY 3x16</option>
-                  <option>NYFGBY 3x25</option>
-                  <option>NYFGBY 3x35</option>
-                  <option>NYFGBY 4x10</option>
-                  <option>NYFGBY 4x16</option>
-                  <option>NYFGBY 4x35</option>
-                </select>)
-              </h4>
-              <div class="border-1 md:py-5 rounded px-3 shadow bg-white pl-3 pr-3">
-                <div class="md:px-24 px-5"></div>
-                  <label for="kabel" class="block text-sm fw-bolder mb-2 mt-3">
-                    Paket Standard
-                  </label>
-                  <!-- uraian paket standard-->
-                  <div class="row"> 
-                    <!-- qty -->
-                    <div class="col-6 col-lg-6">
-                      <label for="Qty" class="block text-sm font-medium text-gray-700">
-                        Qty
-                      </label>
-                      <input disabled 
-                        type="text"
-                        id="Qty" 
-                        name="Qty" 
-                        autocomplete="Qty" 
-                        value="5" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal 
-                        text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
-                        rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
-                        focus:border-blue-600 focus:outline-none"
-                      >
-                    </div>
-                    
-                    <!-- satuan -->
-                    <div class="col-6">
-                      <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                        Satuan
-                      </label>
-                      <input type="text" name="costumer_name" id="costumer_name" 
-                        autocomplete="given-name" 
-                        value="M" disabled
-                        class="form-control block w-full px-3 py-1.5 text-base 
-                        font-normal text-gray-700 bg-white bg-clip-padding border 
-                        border-solid border-gray-300 rounded transition ease-in-out 
-                        m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
-                        focus:outline-none"
-                      >
-                    </div>
-                  </div>
-                  <!-- uraian paket tambahan-->
-                  <label for="kabel" class="block text-sm fw-bolder text-danger mt-5 mb-2">
-                    Tambahan
-                  </label>
+  <!-- form -->
+  <main id="main" class="main mt-5">
+    <!-- card -->
+    <div class="card mt-5">
+      <div class="flex">
+        <!-- form survei card -->
+        <div class="card-body mt-3 row">
+          <div class="col-lg-9">1. Kabel Power (NYY)</div>
+          <a href="./material.html" class="col-lg-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+              <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+              <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+            </svg>
+            edit
+          </a>
+        
+          <!-- done -->
+          <div class="col-lg-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+            </svg>
+          </div>
+        </div>
+        <!-- end -->
 
-                  <!-- tambahan -->
-                  <div class="row">
-                  <!-- qty -->
-                  <div class="col-6 col-lg-6">
-                    <label for="Qty" class="block text-sm font-medium text-gray-700">
-                      Qty
-                    </label>
-                    <input 
-                      type="number"
-                      id="Qty" 
-                      name="Qty" 
-                      autocomplete="Qty" 
-                      value="10" 
-                      class="form-control block w-full px-3 py-1.5 text-base font-normal 
-                      text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
-                      rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
-                      focus:border-blue-600 focus:outline-none"
-                    >
-                  </div>
-                  
-                  <!-- satuan -->
-                  <div class="col-6 col-lg-6">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Satuan
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="M" disabled
-                      class="form-control"
-                    >
-                  </div>
+        <!-- form survei card -->
+        <div class="card-body mt-3 row">
+          <div class="col-lg-9">2. Kabel Grounding</div>
+          <a href="./material.html" class="col-lg-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+              <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+              <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+            </svg>
+            edit
+          </a>
+          
+          <!-- done -->
+          <div class="col-lg-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+            </svg>
+          </div>
+        </div>
+        <!-- end -->
+        
+        <!-- form survei card -->
+        <div class="card-body mt-3 row">
+          <div class="col-lg-9">3. MCB</div>
+          <a href="./material.html" class="col-lg-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+              <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+              <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+            </svg>
+            edit
+          </a>
+          
+          <!-- done -->
+          <div class="col-lg-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+            </svg>
+          </div>
+        </div>
+        <!-- end -->
 
-                  <!-- harga -->
-                  <div class="col-12 col-lg-6 mt-2">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Harga (per satuan)
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="129,000" disabled
-                      class="form-control"
-                    >
-                  </div>
-
-                  <!-- harga -->
-                  <div class="col-12 col-lg-6 mt-2 mb-3">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Harga Total
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="645,000" disabled
-                      class="form-control"
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- card Grounding -->
-            <div class="py-3 px-40">
-              <h4 class="fw-bold mb-3 mt-5 ml-3">Kabel Grounding (
-                <select class="text-lg" id="Kabel Grounding">
-                  <option>NYA 1x10</option>
-                  <option>NYA 1x16</option>
-                  <option value="NYAF 1x10">NYAF 1x10</option>
-                  <option value="NYAF 1x16">NYAF 1x16</option>
-                </select>)</h4>
-              <div class="border-1 md:py-5 rounded px-3 shadow bg-white pl-3 pr-3">
-                <div class="md:px-24 px-5"></div>
-                  <label for="kabel" class="fw-bolder mb-2 mt-3 mb-2">
-                    Standard
-                  </label>
-                  <!-- uraian paket standard-->
-                  <div class="row"> 
-                    <!-- qty -->
-                    <div class="col-6 col-lg-6">
-                      <label for="Qty" class="block text-sm font-medium text-gray-700">
-                        Qty
-                      </label>
-                      <input disabled 
-                        type="text"
-                        id="Qty" 
-                        name="Qty" 
-                        autocomplete="Qty" 
-                        value="5" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal 
-                        text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
-                        rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
-                        focus:border-blue-600 focus:outline-none"
-                      >
-                    </div>
-                    
-                    <!-- satuan -->
-                    <div class="col-6 col-lg-6">
-                      <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                        Satuan
-                      </label>
-                      <input type="text" name="costumer_name" id="costumer_name" 
-                        autocomplete="given-name" 
-                        value="M" disabled
-                        class="form-control block w-full px-3 py-1.5 text-base 
-                        font-normal text-gray-700 bg-white bg-clip-padding border 
-                        border-solid border-gray-300 rounded transition ease-in-out 
-                        m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
-                        focus:outline-none"
-                      >
-                    </div>
-                  </div>
-                  <!-- uraian paket tambahan-->
-                  <label for="kabel" class="block text-sm fw-bolder text-danger mt-5 mb-2">
-                    Tambahan
-                  </label>
-
-                  <!-- tambahan -->
-                  <div class="row">              
-                  <!-- qty -->
-                  <div class="col-6 col-lg-6">
-                    <label for="Qty" class="block text-sm font-medium text-gray-700">
-                      Qty
-                    </label>
-                    <input 
-                      type="number"
-                      id="Qty" 
-                      name="Qty" 
-                      autocomplete="Qty" 
-                      value="10" 
-                      class="form-control block w-full px-3 py-1.5 text-base font-normal 
-                      text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
-                      rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
-                      focus:border-blue-600 focus:outline-none"
-                    >
-                  </div>
-                  
-                  <!-- satuan -->
-                  <div class="col-6 col-lg-6">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Satuan
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="M" disabled
-                      class="form-control"
-                    >
-                  </div>
-
-                  <!-- harga -->
-                  <div class="col-12 col-lg-6 mt-2">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Harga (per satuan)
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="20,848" disabled
-                      class="form-control"
-                    >
-                  </div>
-
-                  <!-- harga -->
-                  <div class="col-12 col-lg-6 mt-2 mb-3">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Harga Total
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="xxxx" disabled
-                      class="form-control"
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- card Gland 1 -->
-            <div class="py-3 px-40">
-              <h4 class="fw-bold mb-3 mt-5 ml-3">Kabel Gland 1 (
-                <select class="text-lg" id="Kabel Grounding">
-                  <option value="Kabel Gland MG 25">Kabel Gland MG 25</option>
-                  <option value="Kabel Gland MG 32">Kabel Gland MG 32</option>
-                  <option value="Kabel Gland MG 40">Kabel Gland MG 40</option>
-                </select>)</h4>
-              <div class="border-1 md:py-5 rounded px-3 shadow bg-white pl-3 pr-3">
-                <div class="md:px-24 px-5"></div>
-                  <label for="kabel" class="fw-bolder mb-2 mt-3 mb-2">
-                    Standard
-                  </label>
-                  <!-- uraian paket standard-->
-                  <div class="row"> 
-                    <!-- qty -->
-                    <div class="col-6 col-lg-6">
-                      <label for="Qty" class="block text-sm font-medium text-gray-700">
-                        Qty
-                      </label>
-                      <input disabled 
-                        type="text"
-                        id="Qty" 
-                        name="Qty" 
-                        autocomplete="Qty" 
-                        value="5" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal 
-                        text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
-                        rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
-                        focus:border-blue-600 focus:outline-none"
-                      >
-                    </div>
-                    
-                    <!-- satuan -->
-                    <div class="col-6 col-lg-6">
-                      <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                        Satuan
-                      </label>
-                      <input type="text" name="costumer_name" id="costumer_name" 
-                        autocomplete="given-name" 
-                        value="M" disabled
-                        class="form-control block w-full px-3 py-1.5 text-base 
-                        font-normal text-gray-700 bg-white bg-clip-padding border 
-                        border-solid border-gray-300 rounded transition ease-in-out 
-                        m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
-                        focus:outline-none"
-                      >
-                    </div>
-                  </div>
-                  <!-- uraian paket tambahan-->
-                  <label for="kabel" class="block text-sm fw-bolder text-danger mt-5 mb-2">
-                    Tambahan
-                  </label>
-
-                  <!-- tambahan -->
-                  <div class="row">              
-                  <!-- qty -->
-                  <div class="col-6 col-lg-6">
-                    <label for="Qty" class="block text-sm font-medium text-gray-700">
-                      Qty
-                    </label>
-                    <input 
-                      type="number"
-                      id="Qty" 
-                      name="Qty" 
-                      autocomplete="Qty" 
-                      value="10" 
-                      class="form-control block w-full px-3 py-1.5 text-base font-normal 
-                      text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
-                      rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
-                      focus:border-blue-600 focus:outline-none"
-                    >
-                  </div>
-                  
-                  <!-- satuan -->
-                  <div class="col-6 col-lg-6">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Satuan
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="M" disabled
-                      class="form-control"
-                    >
-                  </div>
-
-                  <!-- harga -->
-                  <div class="col-12 col-lg-6 mt-2">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Harga (per satuan)
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="20,848" disabled
-                      class="form-control"
-                    >
-                  </div>
-
-                  <!-- harga -->
-                  <div class="col-12 col-lg-6 mt-2 mb-3">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Harga Total
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="xxxx" disabled
-                      class="form-control"
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- card Gland 2 -->
-            <div class="py-3 px-40">
-              <h4 class="fw-bold mb-3 mt-5 ml-3">Kabel Gland 2 (
-                <select class="text-lg" id="Kabel Grounding">
-                  <option value="Kabel Gland MG 25">Kabel Gland MG 25</option>
-                  <option value="Kabel Gland MG 32">Kabel Gland MG 32</option>
-                  <option value="Kabel Gland MG 40">Kabel Gland MG 40</option>
-                </select>)</h4>
-              <div class="border-1 md:py-5 rounded px-3 shadow bg-white pl-3 pr-3">
-                <div class="md:px-24 px-5"></div>
-                  <label for="kabel" class="fw-bolder mb-2 mt-3 mb-2">
-                    Standard
-                  </label>
-                  <!-- uraian paket standard-->
-                  <div class="row"> 
-                    <!-- qty -->
-                    <div class="col-6 col-lg-6">
-                      <label for="Qty" class="block text-sm font-medium text-gray-700">
-                        Qty
-                      </label>
-                      <input disabled 
-                        type="text"
-                        id="Qty" 
-                        name="Qty" 
-                        autocomplete="Qty" 
-                        value="5" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal 
-                        text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
-                        rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
-                        focus:border-blue-600 focus:outline-none"
-                      >
-                    </div>
-                    
-                    <!-- satuan -->
-                    <div class="col-6 col-lg-6">
-                      <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                        Satuan
-                      </label>
-                      <input type="text" name="costumer_name" id="costumer_name" 
-                        autocomplete="given-name" 
-                        value="M" disabled
-                        class="form-control block w-full px-3 py-1.5 text-base 
-                        font-normal text-gray-700 bg-white bg-clip-padding border 
-                        border-solid border-gray-300 rounded transition ease-in-out 
-                        m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
-                        focus:outline-none"
-                      >
-                    </div>
-                  </div>
-                  <!-- uraian paket tambahan-->
-                  <label for="kabel" class="block text-sm fw-bolder text-danger mt-5 mb-2">
-                    Tambahan
-                  </label>
-
-                  <!-- tambahan -->
-                  <div class="row">              
-                  <!-- qty -->
-                  <div class="col-6 col-lg-6">
-                    <label for="Qty" class="block text-sm font-medium text-gray-700">
-                      Qty
-                    </label>
-                    <input 
-                      type="number"
-                      id="Qty" 
-                      name="Qty" 
-                      autocomplete="Qty" 
-                      value="10" 
-                      class="form-control block w-full px-3 py-1.5 text-base font-normal 
-                      text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
-                      rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
-                      focus:border-blue-600 focus:outline-none"
-                    >
-                  </div>
-                  
-                  <!-- satuan -->
-                  <div class="col-6 col-lg-6">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Satuan
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="M" disabled
-                      class="form-control"
-                    >
-                  </div>
-
-                  <!-- harga -->
-                  <div class="col-12 col-lg-6 mt-2">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Harga (per satuan)
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="20,848" disabled
-                      class="form-control"
-                    >
-                  </div>
-
-                  <!-- harga -->
-                  <div class="col-12 col-lg-6 mt-2 mb-3">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Harga Total
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="xxxx" disabled
-                      class="form-control"
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- MCB -->
-            <div class="py-3 px-40">
-              <h4 class="fw-bold text-2xl mb-3 mt-5 ml-3">MCB (
-                <select class="text-lg" id="MCB">
-                  <option>1 Pole 16A</option>
-                  <option value="4 Pole 20A">4 Pole 20A</option>
-                  <option>1 Pole 32A</option>
-                  <option value="2 Pole 40A">2 Pole 40A</option>
-                  <option value="3 Pole 40A">3 Pole 40A</option>
-                  <option value="3 Pole 50A">3 Pole 50A</option>
-                </select>)</h4>
-              <div class="border-1 md:py-5 rounded px-3 shadow bg-white pl-3 pr-3">
-                <div class="md:px-24 px-5"></div>
-                  <label for="kabel" class="fw-bolder text-xl mb-2 mt-3 mb-2">
-                    Standard
-                  </label>
-                  <!-- uraian paket standard-->
-                  <div class="row"> 
-                    <!-- qty -->
-                    <div class="col-6 col-lg-6">
-                      <label for="Qty" class="block text-sm font-medium text-gray-700">
-                        Qty
-                      </label>
-                      <input disabled 
-                        type="text"
-                        id="Qty" 
-                        name="Qty" 
-                        autocomplete="Qty" 
-                        value="1" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal 
-                        text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
-                        rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
-                        focus:border-blue-600 focus:outline-none"
-                      >
-                    </div>
-                    
-                    <!-- satuan -->
-                    <div class="col-6 col-lg-6">
-                      <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                        Satuan
-                      </label>
-                      <input type="text" name="costumer_name" id="costumer_name" 
-                        autocomplete="given-name" 
-                        value="Pcs" disabled
-                        class="form-control block w-full px-3 py-1.5 text-base 
-                        font-normal text-gray-700 bg-white bg-clip-padding border 
-                        border-solid border-gray-300 rounded transition ease-in-out 
-                        m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
-                        focus:outline-none"
-                      >
-                    </div>
-                  </div>
-                  <!-- uraian paket tambahan-->
-                  <label for="kabel" class="block text-sm fw-bolder text-danger mt-5 mb-2">
-                    Tambahan
-                  </label>
-
-                  <!-- tambahan -->
-                  <div class="row">              
-                  <!-- qty -->
-                  <div class="col-6 col-lg-6">
-                    <label for="Qty" class="block text-sm font-medium text-gray-700">
-                      Qty
-                    </label>
-                    <input 
-                      type="number"
-                      id="Qty" 
-                      name="Qty" 
-                      autocomplete="Qty" 
-                      value="" 
-                      class="form-control block w-full px-3 py-1.5 text-base font-normal 
-                      text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
-                      rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
-                      focus:border-blue-600 focus:outline-none"
-                    >
-                  </div>
-                  
-                  <!-- satuan -->
-                  <div class="col-6 col-lg-6">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Satuan
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="Pcs" disabled
-                      class="form-control"
-                    >
-                  </div>
-
-                  <!-- harga -->
-                  <div class="col-12 col-lg-6 mt-2">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Harga (per satuan)
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="164,775" disabled
-                      class="form-control"
-                    >
-                  </div>
-
-                  <!-- harga -->
-                  <div class="col-12 col-lg-6 mt-2 mb-3">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Harga Total
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="xxxx" disabled
-                      class="form-control"
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- RCCB 4 pole 40A -->
-            <div class="py-3 px-40">
-              <h4 class="fw-bold text-2xl mb-3 mt-5 ml-3">RCCB (
-                <select class="text-lg" id="RCCB">
-                  <option>2 Pole 16A</option>
-                  <option value="4 Pole 20A">4 Pole 20A</option>
-                  <option>2 Pole 40A</option>
-                  <option value="2 Pole 40A">4 Pole 40A</option>
-                  <option value="3 Pole 40A">4 Pole 50A</option>
-                  <option value="3 Pole 50A">4 Pole 63A</option>
-                </select>)</h4>
-              <div class="border-1 md:py-5 rounded px-3 shadow bg-white pl-3 pr-3">
-                <div class="md:px-24 px-5"></div>
-                  <label for="kabel" class="fw-bolder text-xl mb-2 mt-3 mb-2">
-                    Standard
-                  </label>
-                  <!-- uraian paket standard-->
-                  <div class="row"> 
-                    <!-- qty -->
-                    <div class="col-6 col-lg-6">
-                      <label for="Qty" class="block text-sm font-medium text-gray-700">
-                        Qty
-                      </label>
-                      <input disabled 
-                        type="text"
-                        id="Qty" 
-                        name="Qty" 
-                        autocomplete="Qty" 
-                        value="1" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal 
-                        text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
-                        rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
-                        focus:border-blue-600 focus:outline-none"
-                      >
-                    </div>
-                    
-                    <!-- satuan -->
-                    <div class="col-6 col-lg-6">
-                      <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                        Satuan
-                      </label>
-                      <input type="text" name="costumer_name" id="costumer_name" 
-                        autocomplete="given-name" 
-                        value="pcs" disabled
-                        class="form-control block w-full px-3 py-1.5 text-base 
-                        font-normal text-gray-700 bg-white bg-clip-padding border 
-                        border-solid border-gray-300 rounded transition ease-in-out 
-                        m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
-                        focus:outline-none"
-                      >
-                    </div>
-                  </div>
-                  <!-- uraian paket tambahan-->
-                  <label for="kabel" class="block text-sm fw-bolder text-danger mt-5 mb-2">
-                    Tambahan
-                  </label>
-
-                  <!-- tambahan -->
-                  <div class="row">              
-                  <!-- qty -->
-                  <div class="col-6 col-lg-6">
-                    <label for="Qty" class="block text-sm font-medium text-gray-700">
-                      Qty
-                    </label>
-                    <input 
-                      type="number"
-                      id="Qty" 
-                      name="Qty" 
-                      autocomplete="Qty" 
-                      value="10" 
-                      class="form-control block w-full px-3 py-1.5 text-base font-normal 
-                      text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
-                      rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
-                      focus:border-blue-600 focus:outline-none"
-                    >
-                  </div>
-                  
-                  <!-- satuan -->
-                  <div class="col-6 col-lg-6">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Satuan
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="Pcs" disabled
-                      class="form-control"
-                    >
-                  </div>
-
-                  <!-- harga -->
-                  <div class="col-12 col-lg-6 mt-2">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Harga (per satuan)
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="929,370" disabled
-                      class="form-control"
-                    >
-                  </div>
-
-                  <!-- harga -->
-                  <div class="col-12 col-lg-6 mt-2 mb-3">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Harga Total
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="xxxx" disabled
-                      class="form-control"
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Box MCB -->
-            <div class="py-3 px-40">
-              <h4 class="fw-bold text-2xl mb-3 mt-5 ml-3">Box MCB (
-                <select class="text-lg" id="Box_MCB">
-                  <option value="1 way">1 way</option>
-                  <option value="4 way">4 way</option>
-                  <option value="8 way">8 way</option>
-                </select>)</h4>
-              <div class="border-1 md:py-5 rounded px-3 shadow bg-white pl-3 pr-3">
-                <div class="md:px-24 px-5"></div>
-                  <label for="kabel" class="fw-bolder text-xl mb-2 mt-3 mb-2">
-                    Standard
-                  </label>
-                  <!-- uraian paket standard-->
-                  <div class="row"> 
-                    <!-- qty -->
-                    <div class="col-6 col-lg-6">
-                      <label for="Qty" class="block text-sm font-medium text-gray-700">
-                        Qty
-                      </label>
-                      <input disabled 
-                        type="text"
-                        id="Qty" 
-                        name="Qty" 
-                        autocomplete="Qty" 
-                        value="1" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal 
-                        text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
-                        rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
-                        focus:border-blue-600 focus:outline-none"
-                      >
-                    </div>
-                    
-                    <!-- satuan -->
-                    <div class="col-6 col-lg-6">
-                      <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                        Satuan
-                      </label>
-                      <input type="text" name="costumer_name" id="costumer_name" 
-                        autocomplete="given-name" 
-                        value="Pcs" disabled
-                        class="form-control block w-full px-3 py-1.5 text-base 
-                        font-normal text-gray-700 bg-white bg-clip-padding border 
-                        border-solid border-gray-300 rounded transition ease-in-out 
-                        m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
-                        focus:outline-none"
-                      >
-                    </div>
-                  </div>
-                  <!-- uraian paket tambahan-->
-                  <label for="kabel" class="block text-sm fw-bolder text-danger mt-5 mb-2">
-                    Tambahan
-                  </label>
-
-                  <!-- tambahan -->
-                  <div class="row">              
-                  <!-- qty -->
-                  <div class="col-6 col-lg-6">
-                    <label for="Qty" class="block text-sm font-medium text-gray-700">
-                      Qty
-                    </label>
-                    <input 
-                      type="number"
-                      id="Qty" 
-                      name="Qty" 
-                      autocomplete="Qty" 
-                      value="" 
-                      class="form-control block w-full px-3 py-1.5 text-base font-normal 
-                      text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
-                      rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
-                      focus:border-blue-600 focus:outline-none"
-                    >
-                  </div>
-                  
-                  <!-- satuan -->
-                  <div class="col-6 col-lg-6">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Satuan
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="Pcs" disabled
-                      class="form-control"
-                    >
-                  </div>
-
-                  <!-- harga -->
-                  <div class="col-12 col-lg-6 mt-2">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Harga (per satuan)
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="75,400" disabled
-                      class="form-control"
-                    >
-                  </div>
-
-                  <!-- harga -->
-                  <div class="col-12 col-lg-6 mt-2 mb-3">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Harga Total
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="xxxx" disabled
-                      class="form-control"
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- pipa konduit -->
-            <div class="py-3 px-40">
-              <h4 class="fw-bold text-2xl mb-3 mt-5 ml-3">Pipa (
-                <select class="text-lg" id="Pipa">
-                  <option>Conduit 20mm</option>
-                  <option value="Conduit 25mm">Conduit 25mm</option>
-                  <option value="Pipa Galvanis 3/4 inc">Pipa Galvanis 3/4 inc
-                  </option>
-                </select>)</h4>
-              <div class="border-1 md:py-5 rounded px-3 shadow bg-white pl-3 pr-3">
-                <div class="md:px-24 px-5"></div>
-                  <label for="kabel" class="fw-bolder text-xl mb-2 mt-3 mb-2">
-                    Standard
-                  </label>
-                  <!-- uraian paket standard-->
-                  <div class="row"> 
-                    <!-- qty -->
-                    <div class="col-6 col-lg-6">
-                      <label for="Qty" class="block text-sm font-medium text-gray-700">
-                        Qty
-                      </label>
-                      <input disabled 
-                        type="text"
-                        id="Qty" 
-                        name="Qty" 
-                        autocomplete="Qty" 
-                        value="1" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal 
-                        text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
-                        rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
-                        focus:border-blue-600 focus:outline-none"
-                      >
-                    </div>
-                    
-                    <!-- satuan -->
-                    <div class="col-6 col-lg-6">
-                      <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                        Satuan
-                      </label>
-                      <input type="text" name="costumer_name" id="costumer_name" 
-                        autocomplete="given-name" 
-                        value="Batang" disabled
-                        class="form-control block w-full px-3 py-1.5 text-base 
-                        font-normal text-gray-700 bg-white bg-clip-padding border 
-                        border-solid border-gray-300 rounded transition ease-in-out 
-                        m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
-                        focus:outline-none"
-                      >
-                    </div>
-                  </div>
-                  <!-- uraian paket tambahan-->
-                  <label for="Pipa-Konduit" class="block text-sm fw-bolder text-danger mt-5 mb-2">
-                    Tambahan
-                  </label>
-
-                  <!-- tambahan -->
-                  <div class="row">              
-                  <!-- qty -->
-                  <div class="col-6 col-lg-6">
-                    <label for="Qty" class="block text-sm font-medium text-gray-700">
-                      Qty
-                    </label>
-                    <input 
-                      type="number"
-                      id="Qty" 
-                      name="Qty" 
-                      autocomplete="Qty" 
-                      value="" 
-                      class="form-control block w-full px-3 py-1.5 text-base font-normal 
-                      text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
-                      rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
-                      focus:border-blue-600 focus:outline-none"
-                    >
-                  </div>
-                  
-                  <!-- satuan -->
-                  <div class="col-6 col-lg-6">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Satuan
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="Batang" disabled
-                      class="form-control"
-                    >
-                  </div>
-
-                  <!-- harga -->
-                  <div class="col-12 col-lg-6 mt-2">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Harga (per satuan)
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="31,200" disabled
-                      class="form-control"
-                    >
-                  </div>
-
-                  <!-- harga -->
-                  <div class="col-12 col-lg-6 mt-2 mb-3">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Harga Total
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="xxxx" disabled
-                      class="form-control"
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- klem pipa -->
-            <div class="py-3 px-40">
-              <h4 class="fw-bold text-2xl mb-3 mt-5 ml-3">Klem Pipa 25mm</h4>
-              <div class="border-1 md:py-5 rounded px-3 shadow bg-white pl-3 pr-3">
-                <div class="md:px-24 px-5"></div>
-                  <label for="kabel" class="fw-bolder text-xl mb-2 mt-3 mb-2">
-                    Standard
-                  </label>
-                  <!-- uraian paket standard-->
-                  <div class="row"> 
-                    <!-- qty -->
-                    <div class="col-6 col-lg-6">
-                      <label for="Qty" class="block text-sm font-medium text-gray-700">
-                        Qty
-                      </label>
-                      <input disabled 
-                        type="text"
-                        id="Qty" 
-                        name="Qty" 
-                        autocomplete="Qty" 
-                        value="4" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal 
-                        text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
-                        rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
-                        focus:border-blue-600 focus:outline-none"
-                      >
-                    </div>
-                    
-                    <!-- satuan -->
-                    <div class="col-6 col-lg-6">
-                      <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                        Satuan
-                      </label>
-                      <input type="text" name="costumer_name" id="costumer_name" 
-                        autocomplete="given-name" 
-                        value="Pcs" disabled
-                        class="form-control block w-full px-3 py-1.5 text-base 
-                        font-normal text-gray-700 bg-white bg-clip-padding border 
-                        border-solid border-gray-300 rounded transition ease-in-out 
-                        m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
-                        focus:outline-none"
-                      >
-                    </div>
-                  </div>
-                  <!-- uraian paket tambahan-->
-                  <label for="Klem-Pipa" class="block text-sm fw-bolder text-danger mt-5 mb-2">
-                    Tambahan
-                  </label>
-
-                  <!-- tambahan -->
-                  <div class="row">              
-                  <!-- qty -->
-                  <div class="col-6 col-lg-6">
-                    <label for="Qty" class="block text-sm font-medium text-gray-700">
-                      Qty
-                    </label>
-                    <input 
-                      type="number"
-                      id="Qty" 
-                      name="Qty" 
-                      autocomplete="Qty" 
-                      value="" 
-                      class="form-control block w-full px-3 py-1.5 text-base font-normal 
-                      text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
-                      rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
-                      focus:border-blue-600 focus:outline-none"
-                    >
-                  </div>
-                  
-                  <!-- satuan -->
-                  <div class="col-6 col-lg-6">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Satuan
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="Pcs" disabled
-                      class="form-control"
-                    >
-                  </div>
-
-                  <!-- harga -->
-                  <div class="col-12 col-lg-6 mt-2">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Harga (per satuan)
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="2,600" disabled
-                      class="form-control"
-                    >
-                  </div>
-
-                  <!-- harga -->
-                  <div class="col-12 col-lg-6 mt-2 mb-3">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Harga Total
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="xxxx" disabled
-                      class="form-control"
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- fleksibel -->
-            <div class="py-3 px-40">
-              <h4 class="fw-bold text-2xl mb-3 mt-5 ml-3">Flexible (
-                <select class="text-lg" id="Flexible">
-                  <option value="Conduit 25mm">Conduit 25mm</option>
-                  <option value="Pipa Galvanis 3/4 inc">Metal 25mm</option>
-                </select>)</h4>
-              <div class="border-1 md:py-5 rounded px-3 shadow bg-white pl-3 pr-3">
-                <div class="md:px-24 px-5"></div>
-                  <label for="kabel" class="fw-bolder text-xl mb-2 mt-3 mb-2">
-                    Standard
-                  </label>
-                  <!-- uraian paket standard-->
-                  <div class="row"> 
-                    <!-- qty -->
-                    <div class="col-6 col-lg-6">
-                      <label for="Qty" class="block text-sm font-medium text-gray-700">
-                        Qty
-                      </label>
-                      <input disabled 
-                        type="text"
-                        id="Qty" 
-                        name="Qty" 
-                        autocomplete="Qty" 
-                        value="2" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal 
-                        text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
-                        rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
-                        focus:border-blue-600 focus:outline-none"
-                      >
-                    </div>
-                    
-                    <!-- satuan -->
-                    <div class="col-6 col-lg-6">
-                      <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                        Satuan
-                      </label>
-                      <input type="text" name="costumer_name" id="costumer_name" 
-                        autocomplete="given-name" 
-                        value="Pcs" disabled
-                        class="form-control block w-full px-3 py-1.5 text-base 
-                        font-normal text-gray-700 bg-white bg-clip-padding border 
-                        border-solid border-gray-300 rounded transition ease-in-out 
-                        m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
-                        focus:outline-none"
-                      >
-                    </div>
-                  </div>
-                  <!-- uraian paket tambahan-->
-                  <label for="kabel" class="block text-sm fw-bolder text-danger mt-5 mb-2">
-                    Tambahan
-                  </label>
-
-                  <!-- tambahan -->
-                  <div class="row">              
-                  <!-- qty -->
-                  <div class="col-6 col-lg-6">
-                    <label for="Qty" class="block text-sm font-medium text-gray-700">
-                      Qty
-                    </label>
-                    <input 
-                      type="number"
-                      id="Qty" 
-                      name="Qty" 
-                      autocomplete="Qty" 
-                      value="" 
-                      class="form-control block w-full px-3 py-1.5 text-base font-normal 
-                      text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
-                      rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
-                      focus:border-blue-600 focus:outline-none"
-                    >
-                  </div>
-                  
-                  <!-- satuan -->
-                  <div class="col-6 col-lg-6">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Satuan
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="Pcs" disabled
-                      class="form-control"
-                    >
-                  </div>
-
-                  <!-- harga -->
-                  <div class="col-12 col-lg-6 mt-2">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Harga (per satuan)
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="1,300" disabled
-                      class="form-control"
-                    >
-                  </div>
-
-                  <!-- harga -->
-                  <div class="col-12 col-lg-6 mt-2 mb-3">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Harga Total
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="xxxx" disabled
-                      class="form-control"
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Sok Pipa -->
-            <div class="py-3 px-40">
-              <h4 class="fw-bold text-2xl mb-3 mt-5 ml-3">Sok Pipa 25mm</h4>
-              <div class="border-1 md:py-5 rounded px-3 shadow bg-white pl-3 pr-3">
-                <div class="md:px-24 px-5"></div>
-                  <label for="kabel" class="fw-bolder text-xl mb-2 mt-3 mb-2">
-                    Standard
-                  </label>
-                  <!-- uraian paket standard-->
-                  <div class="row"> 
-                    <!-- qty -->
-                    <div class="col-6 col-lg-6">
-                      <label for="Qty" class="block text-sm font-medium text-gray-700">
-                        Qty
-                      </label>
-                      <input disabled 
-                        type="text"
-                        id="Qty" 
-                        name="Qty" 
-                        autocomplete="Qty" 
-                        value="2" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal 
-                        text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
-                        rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
-                        focus:border-blue-600 focus:outline-none"
-                      >
-                    </div>
-                    
-                    <!-- satuan -->
-                    <div class="col-6 col-lg-6">
-                      <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                        Satuan
-                      </label>
-                      <input type="text" name="costumer_name" id="costumer_name" 
-                        autocomplete="given-name" 
-                        value="Pcs" disabled
-                        class="form-control block w-full px-3 py-1.5 text-base 
-                        font-normal text-gray-700 bg-white bg-clip-padding border 
-                        border-solid border-gray-300 rounded transition ease-in-out 
-                        m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
-                        focus:outline-none"
-                      >
-                    </div>
-                  </div>
-                  <!-- uraian paket tambahan-->
-                  <label for="kabel" class="block text-sm fw-bolder text-danger mt-5 mb-2">
-                    Tambahan
-                  </label>
-
-                  <!-- tambahan -->
-                  <div class="row">              
-                  <!-- qty -->
-                  <div class="col-6 col-lg-6">
-                    <label for="Qty" class="block text-sm font-medium text-gray-700">
-                      Qty
-                    </label>
-                    <input 
-                      type="number"
-                      id="Qty" 
-                      name="Qty" 
-                      autocomplete="Qty" 
-                      value="" 
-                      class="form-control block w-full px-3 py-1.5 text-base font-normal 
-                      text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
-                      rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
-                      focus:border-blue-600 focus:outline-none"
-                    >
-                  </div>
-                  
-                  <!-- satuan -->
-                  <div class="col-6 col-lg-6">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Satuan
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="Pcs" disabled
-                      class="form-control"
-                    >
-                  </div>
-
-                  <!-- harga -->
-                  <div class="col-12 col-lg-6 mt-2">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Harga (per satuan)
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="2,600" disabled
-                      class="form-control"
-                    >
-                  </div>
-
-                  <!-- harga -->
-                  <div class="col-12 col-lg-6 mt-2 mb-3">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Harga Total
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="xxxx" disabled
-                      class="form-control"
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Stapping Fischer -->
-            <div class="py-3 px-40">
-              <h4 class="fw-bold mb-3 mt-5 ml-3">Stapping Fischer S6</h4>
-              <div class="border-1 md:py-5 rounded px-3 shadow bg-white pl-3 pr-3">
-                <div class="md:px-24 px-5"></div>
-                  <label for="kabel" class="fw-bolder text-xl mb-2 mt-3 mb-2">
-                    Standard
-                  </label>
-                  <!-- uraian paket standard-->
-                  <div class="row"> 
-                    <!-- qty -->
-                    <div class="col-6 col-lg-6">
-                      <label for="Qty" class="block text-sm font-medium text-gray-700">
-                        Qty
-                      </label>
-                      <input disabled 
-                        type="text"
-                        id="Qty" 
-                        name="Qty" 
-                        autocomplete="Qty" 
-                        value="8" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal 
-                        text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
-                        rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
-                        focus:border-blue-600 focus:outline-none"
-                      >
-                    </div>
-                    
-                    <!-- satuan -->
-                    <div class="col-6 col-lg-6">
-                      <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                        Satuan
-                      </label>
-                      <input type="text" name="costumer_name" id="costumer_name" 
-                        autocomplete="given-name" 
-                        value="Pcs" disabled
-                        class="form-control block w-full px-3 py-1.5 text-base 
-                        font-normal text-gray-700 bg-white bg-clip-padding border 
-                        border-solid border-gray-300 rounded transition ease-in-out 
-                        m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
-                        focus:outline-none"
-                      >
-                    </div>
-                  </div>
-                  <!-- uraian paket tambahan-->
-                  <label for="kabel" class="block text-sm fw-bolder text-danger mt-5 mb-2">
-                    Tambahan
-                  </label>
-
-                  <!-- tambahan -->
-                  <div class="row">              
-                  <!-- qty -->
-                  <div class="col-6 col-lg-6">
-                    <label for="Qty" class="block text-sm font-medium text-gray-700">
-                      Qty
-                    </label>
-                    <input 
-                      type="number"
-                      id="Qty" 
-                      name="Qty" 
-                      autocomplete="Qty" 
-                      value="" 
-                      class="form-control block w-full px-3 py-1.5 text-base font-normal 
-                      text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
-                      rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
-                      focus:border-blue-600 focus:outline-none"
-                    >
-                  </div>
-                  
-                  <!-- satuan -->
-                  <div class="col-6 col-lg-6">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Satuan
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="Pcs" disabled
-                      class="form-control"
-                    >
-                  </div>
-
-                  <!-- harga -->
-                  <div class="col-12 col-lg-6 mt-2">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Harga (per satuan)
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="4,000" disabled
-                      class="form-control"
-                    >
-                  </div>
-
-                  <!-- harga -->
-                  <div class="col-12 col-lg-6 mt-2 mb-3">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Harga Total
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="xxxx" disabled
-                      class="form-control"
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- standing pole -->
-            <div class="py-3 px-40">
-              <h4 class="fw-bold text-2xl mb-3 mt-5 ml-3">Standing Pole</h4>
-              <div class="border-1 md:py-5 rounded px-3 shadow bg-white pl-3 pr-3">
-                <div class="md:px-24 px-5"></div>
-                  <label for="kabel" class="fw-bolder text-xl mb-2 mt-3 mb-2">
-                    Standard
-                  </label>
-                  <!-- uraian paket standard-->
-                  <div class="row"> 
-                    <!-- qty -->
-                    <div class="col-6 col-lg-6">
-                      <label for="Qty" class="block text-sm font-medium text-gray-700">
-                        Qty
-                      </label>
-                      <input disabled 
-                        type="text"
-                        id="Qty" 
-                        name="Qty" 
-                        autocomplete="Qty" 
-                        value="0" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal 
-                        text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
-                        rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
-                        focus:border-blue-600 focus:outline-none"
-                      >
-                    </div>
-                    
-                    <!-- satuan -->
-                    <div class="col-6 col-lg-6">
-                      <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                        Satuan
-                      </label>
-                      <input type="text" name="costumer_name" id="costumer_name" 
-                        autocomplete="given-name" 
-                        value="" disabled
-                        class="form-control block w-full px-3 py-1.5 text-base 
-                        font-normal text-gray-700 bg-white bg-clip-padding border 
-                        border-solid border-gray-300 rounded transition ease-in-out 
-                        m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 
-                        focus:outline-none"
-                      >
-                    </div>
-                  </div>
-                  <!-- uraian paket tambahan-->
-                  <label for="kabel" class="block text-sm fw-bolder text-danger mt-5 mb-2">
-                    Tambahan
-                  </label>
-
-                  <!-- tambahan -->
-                  <div class="row">              
-                  <!-- qty -->
-                  <div class="col-6 col-lg-6">
-                    <label for="Qty" class="block text-sm font-medium text-gray-700">
-                      Qty
-                    </label>
-                    <input 
-                      type="number"
-                      id="Qty" 
-                      name="Qty" 
-                      autocomplete="Qty" 
-                      value="10" 
-                      class="form-control block w-full px-3 py-1.5 text-base font-normal 
-                      text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
-                      rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
-                      focus:border-blue-600 focus:outline-none"
-                    >
-                  </div>
-                  
-                  <!-- satuan -->
-                  <div class="col-6 col-lg-6">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Satuan
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="Unit" disabled
-                      class="form-control"
-                    >
-                  </div>
-
-                  <!-- harga -->
-                  <div class="col-12 col-lg-6 mt-2">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Harga (per satuan)
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="2,500,000" disabled
-                      class="form-control"
-                    >
-                  </div>
-
-                  <!-- harga -->
-                  <div class="col-12 col-lg-6 mt-2 mb-3">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Harga Total
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="xxxx" disabled
-                      class="form-control"
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- button -->
-            <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
-              <button type="submit" class="btn btn-primary">
-                Submit
-              </button>
+        <!-- form survei card -->
+        <div class="card-body mt-3 row">
+            <div class="col-lg-9">4. RCCB</div>
+            <a href="./material.html" class="col-lg-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+              </svg>
+              edit
+            </a>
+            
+            <!-- done -->
+            <div class="col-lg-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+              </svg>
             </div>
           </div>
-        </form>
+          <!-- end -->
+
+          <!-- form survei card -->
+        <div class="card-body mt-3 row">
+            <div class="col-lg-9">5. Box MCB</div>
+            <a href="./material.html" class="col-lg-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+              </svg>
+              edit
+            </a>
+            
+            <!-- done -->
+            <div class="col-lg-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+              </svg>
+            </div>
+          </div>
+          <!-- end -->
+
+          <!-- form survei card -->
+        <div class="card-body mt-3 row">
+            <div class="col-lg-9">6. Pipa Conduit</div>
+            <a href="./material.html" class="col-lg-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+              </svg>
+              edit
+            </a>
+            
+            <!-- done -->
+            <div class="col-lg-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+              </svg>
+            </div>
+          </div>
+          <!-- end -->
+
+          <!-- form survei card -->
+          <div class="card-body mt-3 row">
+            <div class="col-lg-9">7. Klem Pipa</div>
+            <a href="./material.html" class="col-lg-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+              </svg>
+              edit
+            </a>
+            
+            <!-- done -->
+            <div class="col-lg-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+              </svg>
+            </div>
+          </div>
+          <!-- end -->
+
+           <!-- FLexible card -->
+          <div class="card-body mt-3 row">
+            <div class="col-lg-9">8. Flexible </div>
+            <a href="./material.html" class="col-lg-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+              </svg>
+              edit
+            </a>
+            
+            <!-- done -->
+            <div class="col-lg-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+              </svg>
+            </div>
+          </div>
+          <!-- end -->
+
+          <!-- sok pipa -->
+          <div class="card-body mt-3 row">
+            <div class="col-lg-9">9. Sok Pipa </div>
+            <a href="./material.html" class="col-lg-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+              </svg>
+              edit
+            </a>
+            
+            <!-- done -->
+            <div class="col-lg-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+              </svg>
+            </div>
+          </div>
+          <!-- end -->
+
+          <!-- staping fischer -->
+          <div class="card-body mt-3 row">
+            <div class="col-lg-9">10. Stapping Fischer </div>
+            <a href="./material.html" class="col-lg-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+              </svg>
+              edit
+            </a>
+            
+            <!-- done -->
+            <div class="col-lg-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+              </svg>
+            </div>
+          </div>
+          <!-- end -->
+
+          <!-- box pannel -->
+          <div class="card-body mt-3 row">
+            <div class="col-lg-9">11. Wifi Extender </div>
+            <a href="./material.html" class="col-lg-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+              </svg>
+              edit
+            </a>
+            
+            <!-- done -->
+            <div class="col-lg-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+              </svg>
+            </div>
+          </div>
+          <!-- end -->
+
+          <!-- wifi -->
+          <div class="card-body mt-3 row">
+            <div class="col-lg-9">12. Kabel Lan </div>
+            <a href="./material.html" class="col-lg-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+              </svg>
+              edit
+            </a>
+            
+            <!-- done -->
+            <div class="col-lg-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+              </svg>
+            </div>
+          </div>
+          <!-- end -->
+
+          <!-- rj45 -->
+          <div class="card-body mt-3 row">
+            <div class="col-lg-9">13. RJ45 </div>
+            <a href="./material.html" class="col-lg-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+              </svg>
+              edit
+            </a>
+            
+            <!-- done -->
+            <div class="col-lg-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+              </svg>
+            </div>
+          </div>
+          <!-- end -->
+
+          <!-- kabel gland -->
+          <div class="card-body mt-3 row">
+            <div class="col-lg-9">13. Kabel Gland </div>
+            <a href="./material.html" class="col-lg-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+              </svg>
+              edit
+            </a>
+            
+            <!-- done -->
+            <div class="col-lg-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+              </svg>
+            </div>
+          </div>
+          <!-- end -->
+
       </div>
     </div>
   </main>
