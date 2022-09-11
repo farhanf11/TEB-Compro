@@ -99,6 +99,57 @@ h6 {
   opacity: 1;
 }
 
+/* tabel */
+.table{
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  display: flex;
+}
+table {
+  border-collapse: collapse;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.catatan{
+  width: 300px;
+  height: auto;
+}
+.awalan{
+  margin-bottom: 5px;
+}
+.paraf{
+  width: 200px;
+  height: 80px;
+}
+.hasil{
+  width: 100px;
+  height: 60px;
+}
+table, th, td {
+  border: 1px solid black;
+}
+th, td {
+  padding: 10px;
+}
+th {
+  color: rgb(0, 0, 0);
+}
+.judul{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.form-awal{
+  margin-left: 20px;
+}
+.uraian{
+  width: 400px;
+}
+
 /*--------------------------------------------------------------
 # Override some default Bootstrap stylings
 --------------------------------------------------------------*/
