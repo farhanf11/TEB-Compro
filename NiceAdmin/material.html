@@ -200,53 +200,22 @@
       <div class="mt-5 md:mt-0 md:col-span-2">
         <form action="#" method="POST">
           <div class="overflow-hidden">
-            <!-- card NYY -->
+            <!-- Kabel power -->
             <div class="pl-5 pr-5">
-              <h4 class="font-bold text-2xl mb-3 ml-3">Kabel Power (
-                <select class="text-lg" id="Kabel_Power">
-                  <option>NYY 3x4</option>
-                  <option>NYY 3x6</option>
-                  <option>NYY 3x10</option>
-                  <option>NYY 4x10</option>
-                  <option>NYY 4x16</option>
-                  <option>NYY 4x25</option>
-                  <option>NYY 4x35</option>
-                  <option>NYFGBY 3x10</option>
-                  <option>NYFGBY 3x16</option>
-                  <option>NYFGBY 3x25</option>
-                  <option>NYFGBY 3x35</option>
-                  <option>NYFGBY 4x10</option>
-                  <option>NYFGBY 4x16</option>
-                  <option>NYFGBY 4x35</option>
-                </select>)
-              </h4>
-              <div class="border-1 md:py-5 rounded px-3 shadow bg-white pl-3 pr-3">
-                <div class="md:px-24 px-5"></div>
-                  <label for="kabel" class="block text-sm fw-bolder mb-2 mt-3">
-                    Paket Standard
-                  </label>
-                  <!-- uraian paket standard-->
-                  <div class="row"> 
-                    <!-- qty -->
-                    <div class="col-6 col-lg-6">
-                      <label for="Qty" class="block text-sm font-medium text-gray-700">
-                        Qty
-                      </label>
-                      <input disabled 
-                        type="text"
-                        id="Qty" 
-                        name="Qty" 
-                        autocomplete="Qty" 
-                        value="5" 
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal 
-                        text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
-                        rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
-                        focus:border-blue-600 focus:outline-none"
-                      >
-                    </div>
-                    
+              <h4 class="fw-bold text-2xl mb-3 ml-3">Kabel Power </h4>
+              <div class="border-1 md:py-5 rounded px-4 py-4 shadow bg-white pl-3 pr-3">
+                <div class="row">  
+                  <!-- Nama Material -->
+                  <div class="col-12 col-lg-4">
+                    <label for="status" class="block text-sm font-medium text-gray-700">Nama Material</label>
+                    <select id="status" name="status" autocomplete="status" class="form-control form-control-sm">
+                      <option>material 1</option>
+                      <option>material 2</option>
+                      <option>material 3</option>
+                    </select>
+                  </div>                  
                     <!-- satuan -->
-                    <div class="col-6">
+                    <div class="col-4 col-lg-4">
                       <label for="costumer_name" class="block text-sm font-medium text-gray-700">
                         Satuan
                       </label>
@@ -260,68 +229,47 @@
                         focus:outline-none"
                       >
                     </div>
-                  </div>
-                  <!-- uraian paket tambahan-->
-                  <label for="kabel" class="block text-sm fw-bolder text-danger mt-5 mb-2">
-                    Tambahan
-                  </label>
-
-                  <!-- tambahan -->
-                  <div class="row">
-                  <!-- qty -->
-                  <div class="col-6 col-lg-6">
-                    <label for="Qty" class="block text-sm font-medium text-gray-700">
-                      Qty
-                    </label>
-                    <input 
-                      type="number"
-                      id="Qty" 
-                      name="Qty" 
-                      autocomplete="Qty" 
-                      value="10" 
-                      class="form-control block w-full px-3 py-1.5 text-base font-normal 
-                      text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
-                      rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
-                      focus:border-blue-600 focus:outline-none"
-                    >
-                  </div>
-                  
-                  <!-- satuan -->
-                  <div class="col-6 col-lg-6">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Satuan
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="M" disabled
-                      class="form-control"
-                    >
-                  </div>
-
-                  <!-- harga -->
-                  <div class="col-12 col-lg-6 mt-2">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Harga (per satuan)
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="129,000" disabled
-                      class="form-control"
-                    >
-                  </div>
-
-                  <!-- harga -->
-                  <div class="col-12 col-lg-6 mt-2 mb-3">
-                    <label for="costumer_name" class="block text-sm font-medium text-gray-700">
-                      Harga Total
-                    </label>
-                    <input type="text" name="costumer_name" id="costumer_name" 
-                      autocomplete="given-name" 
-                      value="645,000" disabled
-                      class="form-control"
-                    >
-                  </div>
-                </div>
+                    <div class="col-8 col-lg-4">
+                      <label for="Qty" class="block text-sm font-medium text-gray-700">
+                        Qty
+                      </label>
+                      <input 
+                        type="number"
+                        id="Qty" 
+                        name="Qty" 
+                        autocomplete="Qty" 
+                        placeholder="input qty tambahan" 
+                        class="form-control block w-full px-3 py-1.5 text-base font-normal 
+                        text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 
+                        rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white 
+                        focus:border-blue-600 focus:outline-none"
+                      >
+                    </div>
+  
+                    <!-- harga -->
+                    <div class="col-12 col-lg-6 mt-2">
+                      <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                        Harga (per satuan)
+                      </label>
+                      <input type="text" name="costumer_name" id="costumer_name" 
+                        autocomplete="given-name" 
+                        value="129,000" disabled
+                        class="form-control"
+                      >
+                    </div>
+  
+                    <!-- harga -->
+                    <div class="col-12 col-lg-6 mt-2 mb-3">
+                      <label for="costumer_name" class="block text-sm font-medium text-gray-700">
+                        Harga Total
+                      </label>
+                      <input type="text" name="costumer_name" id="costumer_name" 
+                        autocomplete="given-name" 
+                        value="645,000" disabled
+                        class="form-control"
+                      >
+                    </div>
+                </div>  
               </div>
             </div>
           </div>
